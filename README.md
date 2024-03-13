@@ -1,1 +1,1 @@
-GENERIC README
+SETgrp

@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Kyle P Messier, PhD">
+
+<title>{SET}grp - GeoTox and RGCA</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/setlogo.jpg" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">{SET}grp</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-people" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">People</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-people">    
+        <li>
+    <a class="dropdown-item" href="../../people.html#KPM">
+ <span class="dropdown-text">Kyle P Messier</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../people.html#MAK">
+ <span class="dropdown-text">Mariana Alifa</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../people.html#RD">
+ <span class="dropdown-text">Ranadeep Daw</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../people.html#ESM">
+ <span class="dropdown-text">Eva Marques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../people.html#IS">
+ <span class="dropdown-text">Insang Song</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../people.html#DZ">
+ <span class="dropdown-text">Daniel Zilber</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../people.html#MM">
+ <span class="dropdown-text">Mitchell Manware</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../people.html#FormerMembers">
+ <span class="dropdown-text">Former Members</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-software" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Software</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-software">    
+        <li>
+    <a class="dropdown-item" href="https://spatiotemporal-exposures-and-toxicology.github.io/GeoTox/">
+ <span class="dropdown-text">GeoTox</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://spatiotemporal-exposures-and-toxicology.github.io/beethoven/">
+ <span class="dropdown-text">beethoven</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/Spatiotemporal-Exposures-and-Toxicology/chopin/">
+ <span class="dropdown-text">chopin</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://spatiotemporal-exposures-and-toxicology.github.io/PrestoGP/">
+ <span class="dropdown-text">prestoGP</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-presentations" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Presentations</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-presentations">    
+        <li>
+    <a class="dropdown-item" href="../../presentations/nimhd-2024-01-09.pdf">
+ <span class="dropdown-text">NIMHD-2024-01-09</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../presentations/20240214_SOT_ISES_Webinar/KPM_SOT_ISES_Webinar_20240214.html">
+ <span class="dropdown-text">SOT-ISES-Webinar-2024-02-14</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../presentations/20240222_UNC_ESE_Guest_Lecture/20240222_UNC_ESE_Guest_Lecture.html">
+ <span class="dropdown-text">UNC-ENVR-500-Lecture-2024-02-22</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../presentations/20240223_CEHD_Workshop/20240223_CEHD_Workshop.html">
+ <span class="dropdown-text">RENCI-Workshop-2024-02-23</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#about-us-setgroup" id="toc-about-us-setgroup" class="nav-link active" data-scroll-target="#about-us-setgroup">About Us: {SET}<sub>group</sub></a></li>
+  <li><a href="#about-us-setgroup-1" id="toc-about-us-setgroup-1" class="nav-link" data-scroll-target="#about-us-setgroup-1">About Us: {SET}<sub>group</sub></a></li>
+  <li><a href="#a-necessary-cascade-for-exogoneous-risk-factors" id="toc-a-necessary-cascade-for-exogoneous-risk-factors" class="nav-link" data-scroll-target="#a-necessary-cascade-for-exogoneous-risk-factors">A Necessary Cascade for Exogoneous Risk Factors</a></li>
+  <li><a href="#getting-two-frameworks-to-work-together" id="toc-getting-two-frameworks-to-work-together" class="nav-link" data-scroll-target="#getting-two-frameworks-to-work-together">Getting Two Frameworks to Work Together</a></li>
+  <li><a href="#getting-two-frameworks-to-work-together-1" id="toc-getting-two-frameworks-to-work-together-1" class="nav-link" data-scroll-target="#getting-two-frameworks-to-work-together-1">Getting Two Frameworks to Work Together</a></li>
+  <li><a href="#key-steps-of-geotox" id="toc-key-steps-of-geotox" class="nav-link" data-scroll-target="#key-steps-of-geotox">Key Steps of GeoTox</a></li>
+  <li><a href="#key-steps-of-geotox-1" id="toc-key-steps-of-geotox-1" class="nav-link" data-scroll-target="#key-steps-of-geotox-1">Key Steps of GeoTox</a></li>
+  <li><a href="#key-steps-of-geotox-2" id="toc-key-steps-of-geotox-2" class="nav-link" data-scroll-target="#key-steps-of-geotox-2">Key Steps of GeoTox</a></li>
+  <li><a href="#key-steps-of-geotox-3" id="toc-key-steps-of-geotox-3" class="nav-link" data-scroll-target="#key-steps-of-geotox-3">Key Steps of GeoTox</a></li>
+  <li><a href="#key-steps-of-geotox-4" id="toc-key-steps-of-geotox-4" class="nav-link" data-scroll-target="#key-steps-of-geotox-4">Key Steps of GeoTox</a></li>
+  <li><a href="#key-steps-of-geotox-5" id="toc-key-steps-of-geotox-5" class="nav-link" data-scroll-target="#key-steps-of-geotox-5">Key Steps of GeoTox</a></li>
+  <li><a href="#geotox-proof-of-concept" id="toc-geotox-proof-of-concept" class="nav-link" data-scroll-target="#geotox-proof-of-concept">GeoTox Proof of Concept</a></li>
+  <li><a href="#making-geotox-f.a.i.r." id="toc-making-geotox-f.a.i.r." class="nav-link" data-scroll-target="#making-geotox-f.a.i.r.">Making GeoTox F.A.I.R.</a></li>
+  <li><a href="#geotox-development" id="toc-geotox-development" class="nav-link" data-scroll-target="#geotox-development">GeoTox Development</a></li>
+  <li><a href="#geotox-simulating-data" id="toc-geotox-simulating-data" class="nav-link" data-scroll-target="#geotox-simulating-data">GeoTox: Simulating Data</a></li>
+  <li><a href="#geotox-simulating-data-1" id="toc-geotox-simulating-data-1" class="nav-link" data-scroll-target="#geotox-simulating-data-1">GeoTox: Simulating Data</a></li>
+  <li><a href="#geotox-core-functions" id="toc-geotox-core-functions" class="nav-link" data-scroll-target="#geotox-core-functions">GeoTox: Core Functions</a></li>
+  <li><a href="#geotox-core-functions-1" id="toc-geotox-core-functions-1" class="nav-link" data-scroll-target="#geotox-core-functions-1">GeoTox: Core Functions</a></li>
+  <li><a href="#geotox-core-functions-2" id="toc-geotox-core-functions-2" class="nav-link" data-scroll-target="#geotox-core-functions-2">GeoTox: Core Functions</a></li>
+  <li><a href="#geotox-documentation" id="toc-geotox-documentation" class="nav-link" data-scroll-target="#geotox-documentation">GeoTox: Documentation</a></li>
+  <li><a href="#geotox-documentation-1" id="toc-geotox-documentation-1" class="nav-link" data-scroll-target="#geotox-documentation-1">GeoTox: Documentation</a></li>
+  <li><a href="#geotox-dose-response" id="toc-geotox-dose-response" class="nav-link" data-scroll-target="#geotox-dose-response">GeoTox: Dose-Response</a></li>
+  <li><a href="#geotox-dose-response-1" id="toc-geotox-dose-response-1" class="nav-link" data-scroll-target="#geotox-dose-response-1">GeoTox: Dose-Response</a></li>
+  <li><a href="#geotox-map-visualization" id="toc-geotox-map-visualization" class="nav-link" data-scroll-target="#geotox-map-visualization">GeoTox: Map Visualization</a></li>
+  <li><a href="#geotox-under-development" id="toc-geotox-under-development" class="nav-link" data-scroll-target="#geotox-under-development">GeoTox: Under Development</a></li>
+  <li><a href="#revisiting-the-steps-of-geotox" id="toc-revisiting-the-steps-of-geotox" class="nav-link" data-scroll-target="#revisiting-the-steps-of-geotox">Revisiting the Steps of GeoTox</a></li>
+  <li><a href="#revisiting-the-steps-of-geotox-1" id="toc-revisiting-the-steps-of-geotox-1" class="nav-link" data-scroll-target="#revisiting-the-steps-of-geotox-1">Revisiting the Steps of GeoTox</a></li>
+  <li><a href="#revisiting-the-steps-of-geotox-2" id="toc-revisiting-the-steps-of-geotox-2" class="nav-link" data-scroll-target="#revisiting-the-steps-of-geotox-2">Revisiting the Steps of GeoTox</a></li>
+  <li><a href="#rgca-motivation" id="toc-rgca-motivation" class="nav-link" data-scroll-target="#rgca-motivation">RGCA Motivation</a></li>
+  <li><a href="#rgca-notation" id="toc-rgca-notation" class="nav-link" data-scroll-target="#rgca-notation">RGCA: Notation</a></li>
+  <li><a href="#rgca-common-mixture-models" id="toc-rgca-common-mixture-models" class="nav-link" data-scroll-target="#rgca-common-mixture-models">RGCA: Common Mixture Models</a></li>
+  <li><a href="#rgca-partial-agonists" id="toc-rgca-partial-agonists" class="nav-link" data-scroll-target="#rgca-partial-agonists">RGCA: Partial Agonists</a></li>
+  <li><a href="#rgca-partial-agonists-1" id="toc-rgca-partial-agonists-1" class="nav-link" data-scroll-target="#rgca-partial-agonists-1">RGCA: Partial Agonists</a></li>
+  <li><a href="#rgca-partial-agonists-2" id="toc-rgca-partial-agonists-2" class="nav-link" data-scroll-target="#rgca-partial-agonists-2">RGCA: Partial Agonists</a></li>
+  <li><a href="#rgca-partial-agonists-3" id="toc-rgca-partial-agonists-3" class="nav-link" data-scroll-target="#rgca-partial-agonists-3">RGCA: Partial Agonists</a></li>
+  <li><a href="#rgca-piecewise-inverse-function" id="toc-rgca-piecewise-inverse-function" class="nav-link" data-scroll-target="#rgca-piecewise-inverse-function">RGCA: Piecewise Inverse Function</a></li>
+  <li><a href="#rgca-piecewise-inverse-function-1" id="toc-rgca-piecewise-inverse-function-1" class="nav-link" data-scroll-target="#rgca-piecewise-inverse-function-1">RGCA: Piecewise Inverse Function</a></li>
+  <li><a href="#rgca-summary" id="toc-rgca-summary" class="nav-link" data-scroll-target="#rgca-summary">RGCA: Summary</a></li>
+  <li><a href="#rgca-future-work" id="toc-rgca-future-work" class="nav-link" data-scroll-target="#rgca-future-work">RGCA: Future Work</a></li>
+  <li><a href="#rgca-extensible-software" id="toc-rgca-extensible-software" class="nav-link" data-scroll-target="#rgca-extensible-software">RGCA: Extensible Software</a></li>
+  <li><a href="#rgca-extensible-software-1" id="toc-rgca-extensible-software-1" class="nav-link" data-scroll-target="#rgca-extensible-software-1">RGCA: Extensible Software</a></li>
+  <li><a href="#geotox-rgca-integration" id="toc-geotox-rgca-integration" class="nav-link" data-scroll-target="#geotox-rgca-integration">GeoTox + RGCA Integration</a></li>
+  <li><a href="#extensible-geotox" id="toc-extensible-geotox" class="nav-link" data-scroll-target="#extensible-geotox">Extensible GeoTox</a></li>
+  <li><a href="#geotox-temporal-feedback" id="toc-geotox-temporal-feedback" class="nav-link" data-scroll-target="#geotox-temporal-feedback">GeoTox: Temporal Feedback</a></li>
+  <li><a href="#geotox-with-complete-aops" id="toc-geotox-with-complete-aops" class="nav-link" data-scroll-target="#geotox-with-complete-aops">GeoTox: With Complete AOPs</a></li>
+  <li><a href="#multiple-assays-informing-an-aop" id="toc-multiple-assays-informing-an-aop" class="nav-link" data-scroll-target="#multiple-assays-informing-an-aop">Multiple Assays Informing an AOP</a></li>
+  <li><a href="#set-summary" id="toc-set-summary" class="nav-link" data-scroll-target="#set-summary">{SET} Summary</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="KPM_SOT_ISES_Webinar_20240214.html"><i class="bi bi-file-slides"></i>RevealJS (blackboard)</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">GeoTox and RGCA</h1>
+<p class="subtitle lead">Developing Extensible Software for Geospatial Exposure and Risk Assessment of Chemical Mixtures</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Kyle P Messier, PhD </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <strong>Stadtman Tenure Track Investigator</strong>
+          </p>
+        <p class="affiliation">
+            National Institute of Environmental Health Sciences
+          </p>
+        <p class="affiliation">
+            Division of Translational Toxicology
+          </p>
+        <p class="affiliation">
+            February 14, 2024
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="about-us-setgroup" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="about-us-setgroup">About Us: {SET}<sub>group</sub></h2>
+<div class="incremental">
+<ul class="incremental">
+<li>Spatiotemporal Exposure Mapping <span class="math display">\[ y \sim GP(X\beta, \Sigma) \]</span></li>
+<li>Chemical and Stressor Mixtures Prediction <span class="math display">\[ \frac{[A]}{f_A^{-1}(R)}+\frac{[B]}{f_B^{-1}(R)} = 1
+\]</span></li>
+<li>Mechanistically Informed Risk Assessment <span class="math display">\[  R = f(c|\alpha,\theta, \beta) = \frac{\alpha}{1+\left (  \frac{\theta}{x}\right )^\beta }
+\]</span></li>
+</ul>
+</div>
+</section>
+<section id="about-us-setgroup-1" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="about-us-setgroup-1">About Us: {SET}<sub>group</sub></h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img src="SETgroup-Oct2023.jpg" class="framed img-fluid" style="width: 600px; height: auto;"></p>
+</div><div class="column" style="width:40%;">
+<ul>
+<li><p>Eva Marques</p></li>
+<li><p>Daniel Zilber</p></li>
+<li><p>Ranadeep Daw</p></li>
+<li><p>Mariana Alifa</p></li>
+<li><p>Insang Song</p></li>
+<li><p>Kyle Messier</p></li>
+<li><p>Mitchell Manware (Not Pictured)</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="a-necessary-cascade-for-exogoneous-risk-factors" class="level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-auto-animate="true" data-auto-animate-easing="ease-in-out" data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="a-necessary-cascade-for-exogoneous-risk-factors">A Necessary Cascade for Exogoneous Risk Factors</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>Exogenous Sources</li>
+<li>External Exposure</li>
+<li>Internal Exposure</li>
+<li>Molecular Targets and Events</li>
+<li>Cellular and Tissue Effects</li>
+<li>Individual Outcomes</li>
+<li>Population Outcomes</li>
+</ul>
+</div>
+<p><img src="Exposome-Cascade.png" class="framed absolute" style="width: 400px; height: auto;" data-top="115" data-left="400" width="550"></p>
+</section>
+<section id="getting-two-frameworks-to-work-together" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="getting-two-frameworks-to-work-together">Getting Two Frameworks to Work Together</h2>
+<blockquote class="blockquote">
+<p><u><strong>Aggregate Exposure Pathways</strong></u></p>
+<p>AEP is a comprehensive external analysis of source, media, and transformations</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><u><strong>Adverse Outcome Pathway</strong></u></p>
+<p>AOPs provide a linkage specific biological target, pathway or process by a stressor and an adverse outcome(s) considered relevant to risk assessment</p>
+</blockquote>
+</section>
+<section id="getting-two-frameworks-to-work-together-1" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="getting-two-frameworks-to-work-together-1">Getting Two Frameworks to Work Together</h2>
+<div class="framed">
+<div class="center">
+<p><span class="math display">\[
+\LARGE{GeoTox = AEP + AOP}
+\]</span></p>
+</div>
+</div>
+</section>
+<section id="key-steps-of-geotox" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="key-steps-of-geotox">Key Steps of GeoTox</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TB;
+    A[External Sources] 
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li>A forward, exposure-based approach for mixtures risk modeling</li>
+<li>Exposure modeling provides a <strong><em>geospatial</em></strong> foundation for risk assessment</li>
+</ul>
+</section>
+<section id="key-steps-of-geotox-1" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="key-steps-of-geotox-1">Key Steps of GeoTox</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TB;
+    A[External Sources] --&gt; |Geospatial Modeling| B[External Exposure];
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="key-steps-of-geotox-2" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="key-steps-of-geotox-2">Key Steps of GeoTox</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TB;
+    A[External Sources] --&gt; |Geospatial Modeling| B[External Exposure];
+    B[External Exposure] --&gt; |Behaviorial and Physiological Modeling| C[Internal Exposure];
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="key-steps-of-geotox-3" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="key-steps-of-geotox-3">Key Steps of GeoTox</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TB;
+    A[External Sources] --&gt; |Geospatial Modeling| B[External Exposure];
+    B[External Exposure] --&gt; |Behaviorial and Physiological Modeling| C[Internal Exposure];
+    C[Internal Exposure] --&gt; |PBTK| D[Target Organ Dose];
+    
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="key-steps-of-geotox-4" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="key-steps-of-geotox-4">Key Steps of GeoTox</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TB;
+    A[External Sources] --&gt; |Geospatial Modeling| B[External Exposure];
+    B[External Exposure] --&gt; |Behaviorial and Physiological Modeling| C[Internal Exposure];
+    C[Internal Exposure] --&gt; |PBTK| D[Target Organ Dose];
+    D[Target Organ Dose] --&gt; |IVIVE| E[In vitro Equivalent Concentration];
+   
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="key-steps-of-geotox-5" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="key-steps-of-geotox-5">Key Steps of GeoTox</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TB;
+    A[External Sources] --&gt; |Geospatial Modeling| B[External Exposure];
+    B[External Exposure] --&gt; |Behaviorial and Physiological Modeling| C[Internal Exposure];
+    C[Internal Exposure] --&gt; |PBTK| D[Target Organ Dose];
+    D[Target Organ Dose] --&gt; |IVIVE| E[In vitro Equivalent Concentration];
+    E[In vitro Equivalent Concentration] --&gt; |Mixtures Modeling| F[Concentration Response];
+   
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="geotox-proof-of-concept" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="geotox-proof-of-concept">GeoTox Proof of Concept</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img src="STOTEN-paper.png" class="framed img-fluid" style="width: 500px; height: auto;"> <img src="POY.png" class="absolute img-fluid" style="width: 250px; height: auto;" data-bottom="120px" data-left="310px"></p>
+</div><div class="column" style="width:40%;">
+<p><img src="Eccles_headshot_resized.jpg" class="framed img-fluid" style="width: 200px; height: auto;"> Dr.&nbsp;Kristin Eccles, Former Visiting Fellow in DTT and SET, Now at Health Canada</p>
+</div>
+</div>
+</section>
+<section id="making-geotox-f.a.i.r." class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="making-geotox-f.a.i.r.">Making GeoTox F.A.I.R.</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>Findable: Publicly available via GitHub, CRAN, NIEHS websites</li>
+<li>Accessible: Open-Source, Easy installation</li>
+<li>Interoperable: Integrate with current and future applications</li>
+<li>Reusable: Documentation and reproducible pipelines</li>
+</ul>
+</div>
+</section>
+<section id="geotox-development" class="level2 scrollable smaller" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 class="scrollable smaller anchored" data-background-image="_extensions/blackboard/blackboard.png" data-anchor-id="geotox-development">GeoTox Development</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Currently developing (experimental or not-stable)</li>
+<li>Submitting to CRAN</li>
+<li>Static website hosted via {SET}group website</li>
+<li>Maintained</li>
+<li>Extensible for future development</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reif_david.jpg" class="framed img-fluid figure-img" style="width:35.0%"></p>
+<figcaption>Dr David Reif, Predictive Toxicology Branch, Senior Scientist and Branch Chief</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Skylar_Marvel.jpg" class="framed img-fluid figure-img" style="width:40.0%"></p>
+<figcaption>Dr Skylar Marvel, Predictive Toxicology Branch, Bioinformatic Scientist</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="geotox-simulating-data" class="level2" data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="geotox-simulating-data">GeoTox: Simulating Data</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Age</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="fu">simulate_age</span>(<span class="fu">split</span>(geo_tox_data<span class="sc">$</span>age, <span class="sc">~</span>FIPS), <span class="at">n =</span> MC_iter)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Obesity status</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>obesity <span class="ot">&lt;-</span> <span class="fu">simulate_obesity</span>(geo_tox_data<span class="sc">$</span>obesity, <span class="at">n =</span> MC_iter)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Inhalation rate</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>IR <span class="ot">&lt;-</span> <span class="fu">simulate_inhalation_rate</span>(age)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="geotox-simulating-data-1" class="level2" data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="geotox-simulating-data-1">GeoTox: Simulating Data</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Age</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="fu">simulate_age</span>(<span class="fu">split</span>(geo_tox_data<span class="sc">$</span>age, <span class="sc">~</span>FIPS), <span class="at">n =</span> MC_iter)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Obesity status</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>obesity <span class="ot">&lt;-</span> <span class="fu">simulate_obesity</span>(geo_tox_data<span class="sc">$</span>obesity, <span class="at">n =</span> MC_iter)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Inhalation rate</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>IR <span class="ot">&lt;-</span> <span class="fu">simulate_inhalation_rate</span>(age)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># External exposure concentration</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>C_ext <span class="ot">&lt;-</span> <span class="fu">simulate_exposure</span>(<span class="fu">split</span>(geo_tox_data<span class="sc">$</span>exposure, <span class="sc">~</span>FIPS), <span class="at">n =</span> MC_iter)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample from pre-simulated steady-state plasma concentration data</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>C_ss <span class="ot">&lt;-</span> <span class="fu">sample_Css</span>(geo_tox_data<span class="sc">$</span>simulated_css, age, obesity)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="geotox-core-functions" class="level2" data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="geotox-core-functions">GeoTox: Core Functions</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Internal dose</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>D_int <span class="ot">&lt;-</span> <span class="fu">calc_internal_dose</span>(C_ext, IR, <span class="at">scaling =</span> <span class="dv">1</span> <span class="sc">/</span> <span class="dv">1000</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="geotox-core-functions-1" class="level2" data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="geotox-core-functions-1">GeoTox: Core Functions</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Internal dose</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>D_int <span class="ot">&lt;-</span> <span class="fu">calc_internal_dose</span>(C_ext, IR, <span class="at">scaling =</span> <span class="dv">1</span> <span class="sc">/</span> <span class="dv">1000</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># in vitro concentration</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>C_invitro <span class="ot">&lt;-</span> <span class="fu">calc_invitro_concentration</span>(D_int, C_ss)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="geotox-core-functions-2" class="level2" data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="geotox-core-functions-2">GeoTox: Core Functions</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Internal dose</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>D_int <span class="ot">&lt;-</span> <span class="fu">calc_internal_dose</span>(C_ext, IR, <span class="at">scaling =</span> <span class="dv">1</span> <span class="sc">/</span> <span class="dv">1000</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># in vitro concentration</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>C_invitro <span class="ot">&lt;-</span> <span class="fu">calc_invitro_concentration</span>(D_int, C_ss)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Concentration response</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>resp <span class="ot">&lt;-</span> <span class="fu">calc_concentration_response</span>(C_invitro, hill_2_params)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="geotox-documentation" class="level2" data-code-line-numbers="2" data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-code-line-numbers="2" data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="geotox-documentation">GeoTox: Documentation</h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Internal dose</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>D_int <span class="ot">&lt;-</span> <span class="fu">calc_internal_dose</span>(C_ext, IR, <span class="at">scaling =</span> <span class="dv">1</span> <span class="sc">/</span> <span class="dv">1000</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="geotox-documentation-1" class="level2" data-code-line-numbers="2" data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-code-line-numbers="2" data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="geotox-documentation-1">GeoTox: Documentation</h2>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Internal dose</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>D_int <span class="ot">&lt;-</span> <span class="fu">calc_internal_dose</span>(C_ext, IR, <span class="at">scaling =</span> <span class="dv">1</span> <span class="sc">/</span> <span class="dv">1000</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="calc_internal_dose_doc.png" class="absolute framed img-fluid" style="width: 450px; height: auto;" data-top="150" data-left="300"></p>
+</section>
+<section id="geotox-dose-response" class="level2" data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="geotox-dose-response">GeoTox: Dose-Response</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>hill_2_params <span class="ot">&lt;-</span> <span class="fu">fit_hill</span>(data)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_hill</span>(hill_2_params)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="presentation-01_files/figure-revealjs/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="geotox-dose-response-1" class="level2" data-code-line-numbers="1" data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-code-line-numbers="1" data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="geotox-dose-response-1">GeoTox: Dose-Response</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>hill_3_params <span class="ot">&lt;-</span> <span class="fu">fit_hill</span>(data, <span class="at">fixed_slope =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_hill</span>(hill_3_params)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="presentation-01_files/figure-revealjs/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="geotox-map-visualization" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="geotox-map-visualization">GeoTox: Map Visualization</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>  resp <span class="ot">&lt;-</span> resp_df <span class="sc">%&gt;%</span> <span class="fu">filter</span>(health_measure <span class="sc">==</span> <span class="st">"GCA.Eff"</span>)</span>
+<span id="cb10-2"><a href="#cb10-2"></a>  legend_name <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">"Predicted Response"</span>, <span class="st">"Log2 Fold Change"</span>, <span class="st">"mRNA Expression"</span>,<span class="at">sep =</span> <span class="st">" "</span>)</span>
+<span id="cb10-3"><a href="#cb10-3"></a>  <span class="fu">make_county_heatmap</span>(resp, legend_name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="presentation-01_files/figure-revealjs/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="geotox-under-development" class="level2 scrollable smaller" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 class="scrollable smaller anchored" data-background-image="_extensions/blackboard/blackboard.png" data-anchor-id="geotox-under-development">GeoTox: Under Development</h2>
+<p><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="framed img-fluid" style="width: 300px; height: auto;"></p>
+<ul>
+<li>Individual/Person Level Analysis</li>
+<li>General Grouping or Areal Analysis</li>
+<li>Likely migrating to an object-oriented approach</li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TB;
+
+    style P1 fill:#91bcfd , stroke:#333, stroke-width:2px, rounded:true;
+    style P2 fill:#91bcfd , stroke:#333, stroke-width:2px, rounded:true;
+    style P3 fill:#91bcfd , stroke:#333, stroke-width:2px, rounded:true;
+    style P4 fill:#91bcfd , stroke:#333, stroke-width:2px, rounded:true;
+    style P5 fill:#91bcfd , stroke:#333, stroke-width:2px, rounded:true;
+    style P6 fill:#91bcfd , stroke:#333, stroke-width:2px, rounded:true;
+
+    style G1 fill:#588b3e, stroke:#333, stroke-width:2px, rounded:true;
+    style G2 fill:#588b3e, stroke:#333, stroke-width:2px, rounded:true;
+    style G3 fill:#588b3e, stroke:#333, stroke-width:2px, rounded:true;
+    style G4 fill:#588b3e, stroke:#333, stroke-width:2px, rounded:true;
+    style G5 fill:#588b3e, stroke:#333, stroke-width:2px, rounded:true;
+    style G6 fill:#588b3e, stroke:#333, stroke-width:2px, rounded:true;
+    style G7 fill:#588b3e, stroke:#333, stroke-width:2px, rounded:true;
+
+    P1[Person] --&gt; |Simulate, Sample| P2[Person, External Exposure];
+    G1[Group] --&gt; |Simulate, Sample| G2[Group, External Exposure];
+    P2[Person, External Exposure] --&gt; |Summarize, Simulate, Sample| G2[Group, External Exposure];
+    P2[Person, External Exposure] --&gt; |Calc_Internal_Dose| P3[Person, Internal Exposure];
+    P3[Person, Internal Exposure] --&gt; |Summarize| G3[Group, Internal Exposure];
+    G2[Group, External Exposure] --&gt; |Calc_Internal_Dose| G3[Group, Internal Exposure];
+    P3[Person, Internal Exposure] --&gt; |httk::| P4[Person, Target Organ Dose];
+    G3[Group, Internal Exposure]--&gt; |httk::| G4[Group, Target Organ Dose];
+    P4[Person, Target Organ Dose] --&gt; |summarize| G4[Group, Target Organ Dose];
+    P4[Person, Target Organ Dose] --&gt; |calc_invitro_conc| P5[Person, Invitro Concentration];
+    G4[Group, Target Organ Dose]--&gt; |calc_invitro_conc| G5[Group, Invitro Concentration];
+    P5[Person, Invitro Concentration] --&gt; |summarize| G5[Group, Invitro Concentration];
+    P5[Person, Invitro Concentration] --&gt; |calc_concentration_response| P6[Person, Mixture Response];
+    G5[Group, Invitro Concentration]--&gt; |calc_concentration_response| G6[Group, Mixture Response];
+    P6[Person, Mixture Response]--&gt; |summarize, sample, simulate| G6[Group, Mixture Response];
+    G6[Group, Mixture Response]--&gt; |plot, map| G7[Group, Mixture Response Risk Map];
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="revisiting-the-steps-of-geotox" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="revisiting-the-steps-of-geotox">Revisiting the Steps of GeoTox</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TB;
+    A[External Sources] --&gt; |Geospatial Modeling| B[External Exposure];
+    B[External Exposure] --&gt; |Behaviorial and Physiological Modeling| C[Internal Exposure];
+    C[Internal Exposure] --&gt; |PBTK| D[Target Organ Dose];
+    D[Target Organ Dose] --&gt; |IVIVE| E[In vitro Equivalent Concentration];
+    E[In vitro Equivalent Concentration] --&gt; |Mixtures Modeling| F[Concentration Response];
+   
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="revisiting-the-steps-of-geotox-1" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="revisiting-the-steps-of-geotox-1">Revisiting the Steps of GeoTox</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TB;
+    A[External Sources] --&gt; |Geospatial Modeling| B[External Exposure];
+    B[External Exposure] --&gt; |Behaviorial and Physiological Modeling| C[Internal Exposure];
+    C[Internal Exposure] --&gt; |PBTK| D[Target Organ Dose];
+    D[Target Organ Dose] --&gt; |IVIVE| E[In vitro Equivalent Concentration];
+    E[In vitro Equivalent Concentration] --&gt; |Mixtures Modeling| F[Concentration Response];
+    
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<div data-id="box1" style="background: rgba(39, 128, 227, 0.5); position: absolute; top: calc(95% - 125px); left: calc(50% - 175px); width: 350px; height: 125px; border-radius: 50%;">
+
+</div>
+</section>
+<section id="revisiting-the-steps-of-geotox-2" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="revisiting-the-steps-of-geotox-2">Revisiting the Steps of GeoTox</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TB;
+    A[External Sources] --&gt; |Geospatial Modeling| B[External Exposure];
+    B[External Exposure] --&gt; |Behaviorial and Physiological Modeling| C[Internal Exposure];
+    C[Internal Exposure] --&gt; |PBTK| D[Target Organ Dose];
+    D[Target Organ Dose] --&gt; |IVIVE| E[In vitro Equivalent Concentration];
+    E[In vitro Equivalent Concentration] --&gt; |Independent Action| F[Concentration Response];
+    E[In vitro Equivalent Concentration] --&gt; F[Concentration Response];
+    E[In vitro Equivalent Concentration] --&gt; |Concentration Addition| F[Concentration Response];
+    
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="rgca-motivation" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="rgca-motivation">RGCA Motivation</h2>
+<ul>
+<li><p><strong><em>Infinite Mixture Problem</em></strong>: There are infinitely many possible mixtures and we can’t test them all</p></li>
+<li><p><strong><em>Independent vs Additive</em></strong>: No clear approach for general mixtures</p></li>
+<li><p><strong><em>Something from Nothing</em></strong>: Independently safe chemicals can combine to form a hazardous mixture</p></li>
+</ul>
+</section>
+<section id="rgca-notation" class="level2 scrollable smaller" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 class="scrollable smaller anchored" data-background-image="_extensions/blackboard/blackboard.png" data-anchor-id="rgca-notation">RGCA: Notation</h2>
+<p>We assume a parametric model for interpretability: <span class="math display">\[ r_i(c) =f_i(c|a_i,\theta_i,\beta_i) = \frac{a_i}{1+\left(\frac{\theta_i}{c}\right)^{\beta_i}}\]</span> where:</p>
+<ul>
+<li><span class="math inline">\(r_i\)</span>: toxic effect or response of chemical <span class="math inline">\(i\)</span></li>
+<li><span class="math inline">\(c\)</span>: concentration of a chemical, later indexed by chemical <span class="math inline">\(i\)</span></li>
+<li><span class="math inline">\(a_i\)</span>: sill or maximum effect parameter</li>
+<li><span class="math inline">\(\theta_i\)</span>: dissociation constant or EC50 value</li>
+<li><span class="math inline">\(\beta_i\)</span>: slope parameter</li>
+</ul>
+</section>
+<section id="rgca-common-mixture-models" class="level2 scrollable smaller" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 class="scrollable smaller anchored" data-background-image="_extensions/blackboard/blackboard.png" data-anchor-id="rgca-common-mixture-models">RGCA: Common Mixture Models</h2>
+<ul>
+<li>Concentration Addition, CA (Loewe, Isobole): effective total dose adjusted for potency <span class="math display">\[ \sum_i \frac{c_i}{EC_i(R)} = 1\]</span> Intuition: ``How much <span class="math inline">\(c_2\)</span> do I need to get response <span class="math inline">\(R\)</span> under chem 1 given <span class="math inline">\(c_1\)</span>” <span class="math display">\[EC_1(R) = c_1 + c_2 \frac{EC_1(R)}{EC_2(R)}\]</span></li>
+</ul>
+</section>
+<section id="rgca-partial-agonists" class="level2" data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="rgca-partial-agonists">RGCA: Partial Agonists</h2>
+<p>Partial agonists are the major limitation of traditional CA</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="presentation-01_files/figure-revealjs/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="rgca-partial-agonists-1" class="level2" data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-auto-animate="true" data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="rgca-partial-agonists-1">RGCA: Partial Agonists</h2>
+<p>Partial agonists are the major limitation of traditional CA</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="presentation-01_files/figure-revealjs/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="rgca-partial-agonists-2" class="level2 scrollable smaller" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 class="scrollable smaller anchored" data-background-image="_extensions/blackboard/blackboard.png" data-anchor-id="rgca-partial-agonists-2">RGCA: Partial Agonists</h2>
+<p>GCA (Howard and Webster, 2009) substitutes <span class="math inline">\(f^{-1}_i(R)\)</span> for <span class="math inline">\(EC_i(R)\)</span> and solves for <span class="math inline">\(R\)</span> to balance the equation given <span class="math inline">\(c_i\)</span>’s: <span class="math display">\[\sum_i \frac{c_i}{f_i^{-1}(R)} = 1\]</span></p>
+<ul>
+<li><p>For the Hill model with slope <span class="math inline">\(\beta_i = 1\)</span>, we get a hyperbolic function: <span class="math display">\[ R=f_i(c) = \frac{a_i}{1+\left(\frac{\theta_i}{c}\right)^{\beta_i}} = \frac{c \cdot a_i}{c+ \theta_i}  \]</span> </p></li>
+<li><p>So: when <span class="math inline">\(R&gt;a_1\)</span>, <span class="math inline">\(c&lt;0\)</span>!</p></li>
+<li><p>A large toxic effect of the mixture requires small concentrations of chemical 1.</p></li>
+</ul>
+</section>
+<section id="rgca-partial-agonists-3" class="level2 scrollable smaller" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 class="scrollable smaller anchored" data-background-image="_extensions/blackboard/blackboard.png" data-anchor-id="rgca-partial-agonists-3">RGCA: Partial Agonists</h2>
+<p>The GCA trick can be used with <span class="math inline">\(\beta = 1\)</span> because the inverse is still defined for <span class="math inline">\(R&gt;a\)</span>: <span class="math display">\[f^{-1}(R) = \frac{\theta}{\left(\frac{a}{R}-1\right)^{1/\beta}} = \frac{\theta}{\frac{a}{R}-1} \]</span> </p>
+<p>For most <span class="math inline">\(\beta\)</span>, the inverse at <span class="math inline">\(R&gt;a\)</span> is undefined because it contains a root of a negative value. We propose a series of reflections to have a well-defined inverse</p>
+</section>
+<section id="rgca-piecewise-inverse-function" class="level2 scrollable smaller" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 class="scrollable smaller anchored" data-background-image="_extensions/blackboard/blackboard.png" data-anchor-id="rgca-piecewise-inverse-function">RGCA: Piecewise Inverse Function</h2>
+<div class="columns">
+<div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="DZ-Headshot-Oct2023.jpg" class="framed img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%"></p>
+<figcaption>Daniel Zilber, PhD, Postdoctoral Fellow</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:75%;">
+<p><span class="math display">\[
+\begin{equation} \label{eq:Hill_reflected_inverse}
+f^{-1}(r | \alpha&gt;0, \theta, \beta&gt;0) =
+\begin{cases}
+   \frac{- \theta}{1+\left (\frac{-\alpha}{r} \right)^{1/\beta}} &amp; r \in (-\infty, 0)\\
+\theta \left (\frac{\alpha}{r} -1 \right)^{-1/\beta} &amp; r \in[0, \alpha)\\
+  -2\theta - \theta\left (\frac{\alpha}{2\alpha - r} -1 \right)^{-1/\beta} &amp; r \in (\alpha, 2\alpha)\\
+    -2\theta + \frac{\theta}{1+\left(\frac{\alpha}{r-2\alpha} \right)^{1/\beta}} &amp; r \in (2\alpha, \infty)\\
+\end{cases}
+\end{equation}
+\]</span></p>
+</div>
+</div>
+</section>
+<section id="rgca-piecewise-inverse-function-1" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="rgca-piecewise-inverse-function-1">RGCA: Piecewise Inverse Function</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="RGCA_symmetry_full-DZ.png" class="framed img-fluid quarto-figure quarto-figure-center figure-img" style="width:20.0%"></p>
+</figure>
+</div>
+<ul>
+<li>This inverse provides a wide enough support to satisfy the invertibility requirements of GCA</li>
+</ul>
+</section>
+<section id="rgca-summary" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="rgca-summary">RGCA: Summary</h2>
+<ul>
+<li><p>IA and CA represent two extremes of mixture prediction</p></li>
+<li><p>GCA extends CA to partial agonists but requires a slope of 1</p></li>
+<li><p>We can extend GCA to not require slope 1: RGCA</p></li>
+<li><p>Non-unit slope allows for additional post-hoc analyses like clustering on slope, curve, etc.</p></li>
+<li><p>Daniel Zilber and Kyle P Messier, <em>Reflected Generalized Concentration Addition and Bayesian Hierarchical Models to Improve Chemical Mixture Prediction</em>, <u>PLOS One,</u> In-Press</p></li>
+</ul>
+</section>
+<section id="rgca-future-work" class="level2 scrollable smaller" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 class="scrollable smaller anchored" data-background-image="_extensions/blackboard/blackboard.png" data-anchor-id="rgca-future-work">RGCA: Future Work</h2>
+<p>Both IA and CA are additive: there is no interaction. One approach is to rescale GCA (Jonker et al.&nbsp;2005):</p>
+<p><span class="math display">\[ \sum \frac{c_i}{f_i^{-1}(R)} = \exp{g(Z)}, \quad g(Z) = a \prod z_i \]</span> where the <span class="math inline">\(z_i\)</span> is a toxic unit, <span class="math inline">\(z_i = c_i/f_i^{-1}(a/2)\)</span>.<br>
+</p>
+<p>We considered the following quadratic version, with a matrix <span class="math inline">\(A\)</span> to be specified by QSAR: <span class="math display">\[g(Z) = -\frac{1}{2}z^\top A z\]</span> But it is not clear how to determine <span class="math inline">\(A\)</span> from QSAR. Also, this approach is symmetric: there is no dominant chemical.</p>
+</section>
+<section id="rgca-extensible-software" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="rgca-extensible-software">RGCA: Extensible Software</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="RGCA-pkgdown.png" class="framed img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</section>
+<section id="rgca-extensible-software-1" class="level2" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 data-background-image="_extensions/blackboard/blackboard.png" class="anchored" data-anchor-id="rgca-extensible-software-1">RGCA: Extensible Software</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="RGCA-usage.png" class="framed img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</section>
+<section id="geotox-rgca-integration" class="level2 scrollable smaller" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 class="scrollable smaller anchored" data-background-image="_extensions/blackboard/blackboard.png" data-anchor-id="geotox-rgca-integration">GeoTox + RGCA Integration</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TB;
+    A[External Sources] --&gt; |Geospatial Modeling| B[External Exposure];
+    B[External Exposure] --&gt; |Behaviorial and Physiological Modeling| C[Internal Exposure];
+    C[Internal Exposure] --&gt; |PBTK| D[Target Organ Dose];
+    D[Target Organ Dose] --&gt; |IVIVE| E[In vitro Equivalent Concentration];
+    E[In vitro Equivalent Concentration] --&gt; |Mixtures Modeling| F[Concentration Response];
+    
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<div data-id="box1" style="background: rgba(39, 128, 227, 0.5); position: absolute; top: calc(95% - 175px); left: calc(50% - 175px); width: 350px; height: 125px; border-radius: 50%; margin-top: 50px;">
+<p>RGCA</p>
+</div>
+</section>
+<section id="extensible-geotox" class="level2 scrollable smaller" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 class="scrollable smaller anchored" data-background-image="_extensions/blackboard/blackboard.png" data-anchor-id="extensible-geotox">Extensible GeoTox</h2>
+<ul>
+<li>Looking forward, there are many ways to improve GeoTox mixture risk assessment</li>
+<li>Better handling of <strong><em>time</em></strong></li>
+<li>More and better resolved AOPs!</li>
+</ul>
+</section>
+<section id="geotox-temporal-feedback" class="level2 scrollable smaller" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 class="scrollable smaller anchored" data-background-image="_extensions/blackboard/blackboard.png" data-anchor-id="geotox-temporal-feedback">GeoTox: Temporal Feedback</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TB;
+    A[External Sources] --&gt; |Geospatial Modeling| B[External Exposure];
+    B[External Exposure] --&gt; |Behaviorial and Physiological Modeling| C[Internal Exposure];
+    C[Internal Exposure] --&gt; |PBTK| D[Target Organ Dose];
+    D[Target Organ Dose] --&gt; |IVIVE| E[In vitro Equivalent Concentration];
+    E[In vitro Equivalent Concentration] --&gt; |Mixtures Modeling| F[Concentration Response];
+    F[Concentration Response] --&gt; C[Internal Exposure] ;
+
+    
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="geotox-with-complete-aops" class="level2 scrollable smaller" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 class="scrollable smaller anchored" data-background-image="_extensions/blackboard/blackboard.png" data-anchor-id="geotox-with-complete-aops">GeoTox: With Complete AOPs</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TB;
+    A[External Sources] --&gt; |Geospatial Modeling| B[External Exposure];
+    B[External Exposure] --&gt; |Behaviorial and Physiological Modeling| C[Internal Exposure];
+    C[Internal Exposure] --&gt; |PBTK| D[Target Organ Dose];
+    D[Target Organ Dose] --&gt; |IVIVE| E[In vitro Equivalent Concentration];
+    E[In vitro Equivalent Concentration] --&gt; |Mixtures Modeling| F[Concentration Response];
+    F[Concentration Response] --&gt;|Key Event Relationship| G[Key Event 1];
+    G[Key Event 1] --&gt;|Key Event Relationship| H[Key Event 2];
+    H[Key Event 2] --&gt;|Key Event Relationship| I[Adverse Outcome];
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="multiple-assays-informing-an-aop" class="level2 scrollable smaller" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 class="scrollable smaller anchored" data-background-image="_extensions/blackboard/blackboard.png" data-anchor-id="multiple-assays-informing-an-aop">Multiple Assays Informing an AOP</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TB;
+    A[External Sources] --&gt; |Geospatial Modeling| B[External Exposure];
+    B[External Exposure] --&gt; |Behaviorial and Physiological Modeling| C[Internal Exposure];
+    C[Internal Exposure] --&gt; |PBTK| D[Target Organ Dose];
+    D[Target Organ Dose] --&gt; |IVIVE| E[In vitro Equivalent Concentration];
+    E[In vitro Equivalent Concentration] --&gt; |Mixtures Modeling| F[Concentration Response];
+    F[Concentration Response] --&gt;|Key Event Relationship| G[Key Event 1A];
+    F[Concentration Response] --&gt;|Key Event Relationship| H[Key Event 1B];
+    F[Concentration Response] --&gt;|Key Event Relationship| I[Key Event 1C];
+    G[Key Event 1A] --&gt;|Key Event Relationship| J[Key Event 2];
+    H[Key Event 1B] --&gt;|Key Event Relationship| J[Key Event 2];
+    I[Key Event 1C] --&gt;|Key Event Relationship| J[Key Event 2];
+    J[Key Event 2] --&gt;|Key Event Relationship| K[Adverse Outcome];
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="set-summary" class="level2 scrollable smaller" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 class="scrollable smaller anchored" data-background-image="_extensions/blackboard/blackboard.png" data-anchor-id="set-summary">{SET} Summary</h2>
+<ul>
+<li>GeoTox and RGCA code are currently experimental</li>
+<li>Publishing versions 1.0.0. to SET Github and CRAN ASAP</li>
+<li>Many other documented, test-driven, and extensible packages from the SET group on air pollution exposures across the US, download/process GIS environmental data, and scalable GIS operations</li>
+<li>Follow <strong><em>Spatiotemporal-Exposures-and-Toxicology</em></strong> on GitHub</li>
+<li>We are fostering a community around best-practices for software in geospatial exposure assessment, risk assessment, and computational toxicology</li>
+<li>email: kyle.messier@nih.gov</li>
+</ul>
+</section>
+<section id="acknowledgements" class="level2 scrollable smaller" data-background-image="_extensions/blackboard/blackboard.png">
+<h2 class="scrollable smaller anchored" data-background-image="_extensions/blackboard/blackboard.png" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<div class="columns">
+<div class="column" style="width:34%;">
+<div class="quarto-figure quarto-figure-center" style="width: 80%; height: auto;">
+<figure class="figure">
+<p><img src="SETgroup-Oct2023.jpg" class="framed img-fluid figure-img"></p>
+<figcaption>SET group in October 2023: Eva Marques, Daniel Zilber, Ranadeep Daw, Mariana Alifa Kassien, Insang Song</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:33%;">
+<ul>
+<li>Mitchell Manware</li>
+<li>Skylar Marvel</li>
+<li>Kristin Eccles</li>
+<li>Agnes Karamus</li>
+<li>Nicole Kleinstreuer</li>
+<li>Fred Parham</li>
+<li>Cynthia Rider</li>
+<li>Melissa Lowe</li>
+<li>Taylor Potter</li>
+</ul>
+</div><div class="column" style="width:33%;">
+<ul>
+<li>John Wambaugh</li>
+<li>Mike DeVito</li>
+<li>Andy Shapiro</li>
+<li>Julia Rager</li>
+<li>Alison Motsinger-Reif</li>
+<li>David Reif</li>
+<li>Aubrey Miller</li>
+<li>Charles Schmitt</li>
+<li>Trisha Castranio</li>
+<li>Ann Liu</li>
+<li>Richard Kwok</li>
+</ul>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+
+<script>
+  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+  // slide changes (different for each slide format).
+  (function () {
+    // dispatch for htmlwidgets
+    function fireSlideEnter() {
+      const event = window.document.createEvent("Event");
+      event.initEvent("slideenter", true, true);
+      window.document.dispatchEvent(event);
+    }
+
+    function fireSlideChanged(previousSlide, currentSlide) {
+      fireSlideEnter();
+
+      // dispatch for shiny
+      if (window.jQuery) {
+        if (previousSlide) {
+          window.jQuery(previousSlide).trigger("hidden");
+        }
+        if (currentSlide) {
+          window.jQuery(currentSlide).trigger("shown");
+        }
+      }
+    }
+
+    // hookup for slidy
+    if (window.w3c_slidy) {
+      window.w3c_slidy.add_observer(function (slide_num) {
+        // slide_num starts at position 1
+        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+      });
+    }
+
+  })();
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
