@@ -29,7 +29,7 @@ Current fellows, alphabetically by last name:
 
 ## [Insang Song](https://sigmafelix.wixsite.com/mysite/ "Postdoctoral Fellow") {#IS}
 
-![Dr. Insang Song is spatial scientist interested in the impact of socioenvironmental nexus on human health. He has a BA and MS in Geography from Seoul National University in Korea and PhD in Geography from the University of Oregon. His current research projects include developing scalable GIS software for climate and health, hybrid air pollution modeling, and mental health impacts from climate related exposures.](images/IS-Headshot-Oct2023.jpg){width="20%"}
+![Dr. Insang Song is spatial scientist interested in the impact of socioenvironmental nexus on human health. He has a BA and MS in Geography from Seoul National University in Korea and PhD in Geography from the University of Oregon. His current research projects include developing scalable GIS software for climate and health, hybrid air pollution modeling, and mental health impacts from climate related exposures.](images/IS-Headshot-Oct2023.jpg){width="20.1%"}
 
 ## Daniel Zilber {#DZ}
 
