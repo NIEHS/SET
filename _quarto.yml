@@ -40,10 +40,6 @@ website:
             href: https://niehs.github.io/GeoTox/              
           - text: "prestoGP"
             href: https://niehs.github.io/PrestoGP/
-#     - text: "Publications"
-#       menu: 
-#          - text: "2024"
-#            href: publications/2024.html
       - href: presentations.qmd 
         text: Presentations
       - about.qmd
