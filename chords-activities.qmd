@@ -1,0 +1,37 @@
+---
+title: "CHORDS and CAFE Coordinating"
+subtitle: "SET group activities"
+author: "Kyle P Messier, PhD"
+institute:  "National Institute of Environmental Health Sciences - Division of Translational Toxicology - Predictive Toxicology Branch"
+format: beamer
+theme: "Singapore"
+toc: false
+toc-depth: 1
+header-includes: 
+- \titlegraphic{\includegraphics[width=3cm]{presentations/20240214_SOT_ISES_Webinar/set-logo.jpg}}
+- \setbeamertemplate{frametitle continuation}[from second]
+---
+
+## Packages
+
+1. [amadeus](https://github.com/NIEHS/amadeus)
+2. [beethoven](https://github.com/NIEHS/beethoven) 
+3. [chopin](https://github.com/NIEHS/chopin)
+
+Each package is being developed as a peer-reviewed manuscript
+
+## Vignettes
+
+### Developed and Ready for Final Review
+1. Introduction to Spatial Analysis for Environmental Data in R
+2. NASA EarthData Download 
+
+
+## Vignettes
+
+### Discussed and Ready for Development
+
+1. Unit and Integration Testing for Environmental Health Analysis
+2. Manipulating spatial and spatiotemporal data in R using sf, sftime, terra, and stars
+3. Intermediate Spatial Analysis for Environmental Data in R
+4. Spatial and Spatiotemporal Cross-Validation

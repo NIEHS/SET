@@ -1,0 +1,26 @@
+[
+  {
+    "listing": "/software.html",
+    "items": [
+      "/about.html",
+      "/presentations/20240223_CEHD_Workshop/20240223_CEHD_Workshop.html",
+      "/presentations/20240214_SOT_ISES_Webinar/KPM_SOT_ISES_Webinar_20240214.html",
+      "/presentations/20240311_SOT_Meeting_Talk/sot_ej_talk_kpm.pdf",
+      "/presentations/20240222_UNC_ESE_Guest_Lecture/20240222_UNC_ESE_Guest_Lecture.html",
+      "/people.html",
+      "/presentations/20240214_SOT_ISES_Webinar/template.html",
+      "/teaching.html",
+      "/index.html"
+    ]
+  },
+  {
+    "listing": "/presentations.html",
+    "items": [
+      "/presentations/20240223_CEHD_Workshop/20240223_CEHD_Workshop.html",
+      "/presentations/20240214_SOT_ISES_Webinar/KPM_SOT_ISES_Webinar_20240214.html",
+      "/presentations/20240311_SOT_Meeting_Talk/sot_ej_talk_kpm.pdf",
+      "/presentations/20240222_UNC_ESE_Guest_Lecture/20240222_UNC_ESE_Guest_Lecture.html",
+      "/presentations/20240214_SOT_ISES_Webinar/template.html"
+    ]
+  }
+]

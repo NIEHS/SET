@@ -30,29 +30,25 @@ website:
         menu: 
           - text: "Software Overview"
             href: software.html
+          - text: "amadeus"
+            href: https://niehs.github.io/amadeus/            
           - text: "beethoven"
-            href: https://kyle-messier.github.io/beethoven/
+            href: https://niehs.github.io/beethoven/
           - text: "chopin"
-            href: https://kyle-messier.github.io/chopin/
+            href: https://niehs.github.io/chopin/
           - text: "GeoTox" 
             href: https://niehs.github.io/GeoTox/              
           - text: "prestoGP"
-            href: https://kyle-messier.github.io/PrestoGP/
-      - text: "Publications"
-        menu: 
-          - text: "2024"
-            href: publications/2024.html
-      - text: "Presentations"
-        menu: 
-          - text: "NIMHD-2024-01-09"
-            href: presentations/nimhd-2024-01-09.pdf
-          - text: "SOT-ISES-Webinar-2024-02-14"
-            href: presentations/20240214_SOT_ISES_Webinar/KPM_SOT_ISES_Webinar_20240214.html
-          - text: "UNC-ENVR-500-Lecture-2024-02-22"
-            href: presentations/20240222_UNC_ESE_Guest_Lecture/20240222_UNC_ESE_Guest_Lecture.html
-          - text: "RENCI-Workshop-2024-02-23"
-            href: presentations/20240223_CEHD_Workshop/20240223_CEHD_Workshop.html   
+            href: https://niehs.github.io/PrestoGP/
+#     - text: "Publications"
+#       menu: 
+#          - text: "2024"
+#            href: publications/2024.html
+      - href: presentations.qmd 
+        text: Presentations
       - about.qmd
+      - href: syllabus.qmd
+        text: Syllabus        
     logo: images/setlogo.jpg
 
 format:
