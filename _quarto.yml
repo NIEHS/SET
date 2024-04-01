@@ -50,7 +50,6 @@ website:
 format:
   html:
     theme: minty
-    css: styles.css
     toc: true
 
 editor: visual
