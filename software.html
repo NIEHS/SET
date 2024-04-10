@@ -97,7 +97,6 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -189,6 +188,10 @@ window.Quarto = {
  <span class="dropdown-text">GeoTox</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="https://niehs.github.io/RGCA/">
+ <span class="dropdown-text">RGCA</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="https://niehs.github.io/PrestoGP/">
  <span class="dropdown-text">prestoGP</span></a>
   </li>  
@@ -255,11 +258,12 @@ window.Quarto = {
 
 <p>The following is a list of software and tools that we have developed or contributed to.</p>
 <ol type="1">
-<li><a href="https://niehs.github.io/amadeus/">amadeus</a></li>
-<li><a href="https://niehs.github.io/beethoven/">beethoven</a></li>
-<li><a href="https://niehs.github.io/chopin/">chopin</a></li>
-<li><a href="https://niehs.github.io/GeoTox">GeoTox</a></li>
-<li><a href="https://niehs.github.io/PrestoGP/">PrestoGP</a></li>
+<li><a href="https://niehs.github.io/amadeus/"><code>amadeus</code></a>: <strong>A</strong> <strong>Ma</strong>chine for <strong>D</strong>ata, <strong>E</strong>nvironments, and <strong>U</strong>ser <strong>S</strong>etup for common environmental and climate health datasets is an R package developed to improve and expedite users’ access to large, publicly available geospatial datasets. The functions in amadeus allow users to download and import cleaned geospatial data directly in R, useful for automated run scripts, analysis pipelines, and reproducible science in general. <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></li>
+<li><a href="https://niehs.github.io/beethoven/"><code>beethoven</code></a>: <strong>B</strong>uilding an <strong>E</strong>xtensible, R<strong>e</strong>producible, <strong>T</strong>est-driven, <strong>H</strong>armonized, <strong>O</strong>pen-source, <strong>V</strong>ersioned, <strong>En</strong>semble model for air quality is an R package developed to facilitate the development of ensemble models for air quality. The package provides a framework for building, testing, and deploying ensemble models for air quality, with a focus on reproducibility and open-source code. <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></li>
+<li><a href="https://niehs.github.io/chopin/"><code>chopin</code></a>: Computation for <strong>C</strong>limate and <strong>H</strong>ealth research <strong>O</strong>n <strong>P</strong>arallelized <strong>In</strong>frastructure automates parallelization in spatial operations with chopin functions as well as sf/terra functions. With GDAL-compatible files and database tables, chopin functions help to calculate spatial variables from vector and raster data with no external software requirements. <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></li>
+<li><a href="https://niehs.github.io/GeoTox"><code>GeoTox</code></a> is an R package that formalizes the GeoTox, or source-to-outcome, modeling framework with an S3 object-oriented approach. It faciliates the caclulation and visualization of single and multiple chemical risk at an individual (i.e.&nbsp;point) and group (i.e.&nbsp;areal) level.<a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></li>
+<li><a href="https://niehs.github.io/RGCA"><code>RGCA</code></a> implements Reflected Generalized Concentration Addition: A geometric, piecewise inverse function for 3+ parameter sigmoidal (e.g.&nbsp;hill) models used in chemical mixture concentration-response modeling <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></li>
+<li><a href="https://niehs.github.io/PrestoGP/"><code>PrestoGP</code></a> is an R package for scalable penalized regression on spatio-temporal outcomes using Gaussian processes. The package is designed to handle big data and is useful for large-scale geospatial exposure assessment and geophysical modeling. PrestoGP expands the methods in Messier and Katzfuss (2020) to include multivariate space-time outcomes, censored outcomes, and scalability via the General Vecchia Approximation. <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></li>
 </ol>
 <p>We are focused on developing and promoting software and computational best-practices such as test-driven-development (<a href="https://en.wikipedia.org/wiki/Test-driven_development">TDD</a>) and open-source code for the environmental health sciences. To this end, we have protocols in place to ensure that our code is well-documented, tested, and reproducible. Below are some of the key practices we follow:</p>
 <section id="unit-and-integration-testing" class="level3">

@@ -37,7 +37,9 @@ website:
           - text: "chopin"
             href: https://niehs.github.io/chopin/
           - text: "GeoTox" 
-            href: https://niehs.github.io/GeoTox/              
+            href: https://niehs.github.io/GeoTox/   
+          - text: "RGCA" 
+            href: https://niehs.github.io/RGCA/               
           - text: "prestoGP"
             href: https://niehs.github.io/PrestoGP/
       - href: presentations.qmd 
