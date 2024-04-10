@@ -374,5 +374,11 @@ graph TB;
 -   Skylar Marvel
 -   Nicole Kleinstreuer
 -   Julia Rager
+
+**Funding:**
+
+- NIEHS ZIA ES103368-02
+
+- Patient Centered Outcome Research Trust Fund (PCOR-TF) 
 :::
 :::

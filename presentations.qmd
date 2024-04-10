@@ -11,13 +11,16 @@ date-format: long
 
 ### 2023
 
-1. [Ichan School of Medicine, Department of Environmental Medicine and Public Health Grand Rounds Seminar, 2023-11-08](presentations/MSSM_GrandRounds/KPM_MSSM.pdf)
+1.  [Ichan School of Medicine, Department of Environmental Medicine and Public Health Grand Rounds Seminar, 2023-11-08](presentations/MSSM_GrandRounds/KPM_MSSM.pdf)
 
 ### 2024
-1. [National Institute on Minority Health and Health Disparities, Division of Intramural Research Seminar Series, 2024-01-09](presentations/nimhd-2024-01-09.pdf)
 
-2. [National Cancer Institute, Geospatial Analysis Working Group Seminar, 2024-01-12](presentations/NCI_GAWG_20240111/NCI_GAWG_20240111.pdf)
+1.  [National Institute on Minority Health and Health Disparities, Division of Intramural Research Seminar Series, 2024-01-09](presentations/nimhd-2024-01-09.pdf)
 
-3. [UNC Chapel Hill, Environmental Science and Engineering Guest Lecture, 2024-02-22](presentations/20240222_UNC_ESE_Guest_Lecture/20240222_UNC_ESE_Guest_Lecture.html)
+2.  [National Cancer Institute, Geospatial Analysis Working Group Seminar, 2024-01-12](presentations/NCI_GAWG_20240111/NCI_GAWG_20240111.pdf)
 
-4. [Exposure on Time: Deploying exposure modelins in a timely manner, Clinical and Environmental Health Data Workshop, 2024-02-23](presentations/20240223_CEHD_Workshop/20240223_CEHD_Workshop.html)
+3.  [UNC Chapel Hill, Environmental Science and Engineering Guest Lecture, 2024-02-22](presentations/20240222_UNC_ESE_Guest_Lecture/20240222_UNC_ESE_Guest_Lecture.html)
+
+4.  [Exposure on Time: Deploying exposure modelins in a timely manner, Clinical and Environmental Health Data Workshop, 2024-02-23](presentations/20240223_CEHD_Workshop/20240223_CEHD_Workshop.html)
+
+5.  [Geospatial Methodologies in Toxicology: Linking exposure, toxicity, and disease profiles to identify U.S. regions at elevated health risks, Society of Toxicology Annual Meeting and ToxExpo, 2024-03-11](presentations/20240311_SOT_Meeting_Talk/sot_ej_talk_kpm.pdf)
