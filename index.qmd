@@ -7,7 +7,7 @@ toc: false
 
 #### ***Geospatial Exposure:*** Spatiotemporal exposure mapping of environmental and climate variables (e.g. chemical mixtures, social, behaviorial, environmental, and climate factors)
 
-#### ***GeoTox:*** Often referred to as **source-to-outcome** modeling, GeoTox is the integration of geospatial exposure with non-animal toxicological data such as high-through *in vitro* screen assays to develop mechanistically-informed risk maps
+#### ***GeoTox:*** Otherwise known as **source-to-outcome** modeling, GeoTox is the integration of geospatial exposures, toxicokinetic modeling, and non-animal toxicological data such as high-through *in vitro* screen assays to develop mechanistically-informed risk maps
 
 #### ***Software:*** Developing and promoting software and computational best-practices such as test-driven-development ([TDD](https://en.wikipedia.org/wiki/Test-driven_development)) and open-source code for the environmental health sciences
 
