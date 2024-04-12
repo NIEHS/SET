@@ -26,7 +26,7 @@ website:
             href: people.html#MM
           - text: "Former Members"
             href: people.html#FormerMembers
-      - href: publications.qmd 
+      - href: Publications.qmd 
         text: Publications            
       - text: "Software"
         menu: 
