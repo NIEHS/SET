@@ -26,7 +26,7 @@ website:
             href: people.html#MM
           - text: "Former Members"
             href: people.html#FormerMembers
-      - href: Publications.qmd 
+      - href: https://pubmed.ncbi.nlm.nih.gov/?term=Kyle+P+Messier&sort=date&format=abstract 
         text: Publications            
       - text: "Software"
         menu: 
