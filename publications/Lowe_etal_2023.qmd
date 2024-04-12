@@ -1,7 +1,7 @@
 ---
 title: "The skin is no barrier to mixtures: Air pollutant mixtures and reported psoriasis or eczema in the Personalized Environment and Genes Study (PEGS)"
 type: "article"
-author: "Lowe, Melissa E and Akhtari, Farida S and Potter, Taylor A and Fargo, David C and Schmitt, Charles P and Schurman, Shepherd H and Eccles, Kristin M and Motsinger-Reif, Alison and Hall, Janet E and Messier, Kyle P"
+author: "Melissa E Lowe, Farida S Akhtari, Taylor A Potter, David C Fargo, Charles P Schmitt, Shepherd H Schurman, Kristin M Eccles, Alison Motsinger-Reif, Janet E Hall, Kyle P Messier"
 year: "2023"
 publication: "Journal of Exposure Science & Environmental Epidemiology"
 preprint: ""
@@ -17,7 +17,7 @@ categories:
 
 ## Citation
 
-> Zilber, D., & Messier, K. (2024). Reflected generalized concentration addition and Bayesian hierarchical models to improve chemical mixture prediction. Plos one, 19(3), e0298687.
+> Lowe, M. E., Akhtari, F. S., Potter, T. A., Fargo, D. C., Schmitt, C. P., Schurman, S. H., ... & Messier, K. P. (2023). The skin is no barrier to mixtures: Air pollutant mixtures and reported psoriasis or eczema in the Personalized Environment and Genes Study (PEGS). Journal of Exposure Science & Environmental Epidemiology, 33(3), 474-481.
 
 ## Abstract
 

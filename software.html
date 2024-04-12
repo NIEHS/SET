@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>{SET}grp - Software</title>
+<title>{SET}grp -</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -162,6 +162,10 @@ window.Quarto = {
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./Publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-software" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Software</span>
@@ -225,46 +229,79 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#unit-and-integration-testing" id="toc-unit-and-integration-testing" class="nav-link active" data-scroll-target="#unit-and-integration-testing">Unit and Integration Testing</a></li>
+  <li><a href="#software" id="toc-software" class="nav-link active" data-scroll-target="#software">Software</a></li>
+  <li><a href="#software-development-practices" id="toc-software-development-practices" class="nav-link" data-scroll-target="#software-development-practices">Software Development Practices</a>
+  <ul class="collapse">
+  <li><a href="#unit-and-integration-testing" id="toc-unit-and-integration-testing" class="nav-link" data-scroll-target="#unit-and-integration-testing">Unit and Integration Testing</a></li>
   <li><a href="#git-github" id="toc-git-github" class="nav-link" data-scroll-target="#git-github">Git + GitHub</a></li>
   <li><a href="#processes-to-test-or-check" id="toc-processes-to-test-or-check" class="nav-link" data-scroll-target="#processes-to-test-or-check">Processes to test or check</a></li>
   <li><a href="#test-drive-development" id="toc-test-drive-development" class="nav-link" data-scroll-target="#test-drive-development">Test Drive Development</a></li>
   <li><a href="#test-driven-development-tdd--key-steps" id="toc-test-driven-development-tdd--key-steps" class="nav-link" data-scroll-target="#test-driven-development-tdd--key-steps">Test Driven Development (TDD)- Key Steps</a></li>
   <li><a href="#targets-andor-snakemake-pipelines" id="toc-targets-andor-snakemake-pipelines" class="nav-link" data-scroll-target="#targets-andor-snakemake-pipelines">_targets and/or snakemake pipelines</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Software</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
+<section id="software" class="level2">
+<h2 class="anchored" data-anchor-id="software">Software</h2>
 <p>The following is a list of software and tools that we have developed or contributed to.</p>
-<ol type="1">
-<li><a href="https://niehs.github.io/amadeus/"><code>amadeus</code></a>: <strong>A</strong> <strong>Ma</strong>chine for <strong>D</strong>ata, <strong>E</strong>nvironments, and <strong>U</strong>ser <strong>S</strong>etup for common environmental and climate health datasets is an R package developed to improve and expedite users’ access to large, publicly available geospatial datasets. The functions in amadeus allow users to download and import cleaned geospatial data directly in R, useful for automated run scripts, analysis pipelines, and reproducible science in general. <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></li>
-<li><a href="https://niehs.github.io/beethoven/"><code>beethoven</code></a>: <strong>B</strong>uilding an <strong>E</strong>xtensible, R<strong>e</strong>producible, <strong>T</strong>est-driven, <strong>H</strong>armonized, <strong>O</strong>pen-source, <strong>V</strong>ersioned, <strong>En</strong>semble model for air quality is an R package developed to facilitate the development of ensemble models for air quality. The package provides a framework for building, testing, and deploying ensemble models for air quality, with a focus on reproducibility and open-source code. <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></li>
-<li><a href="https://niehs.github.io/chopin/"><code>chopin</code></a>: Computation for <strong>C</strong>limate and <strong>H</strong>ealth research <strong>O</strong>n <strong>P</strong>arallelized <strong>In</strong>frastructure automates parallelization in spatial operations with chopin functions as well as sf/terra functions. With GDAL-compatible files and database tables, chopin functions help to calculate spatial variables from vector and raster data with no external software requirements. <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></li>
-<li><a href="https://niehs.github.io/GeoTox"><code>GeoTox</code></a> is an R package that formalizes the GeoTox, or source-to-outcome, modeling framework with an S3 object-oriented approach. It faciliates the caclulation and visualization of single and multiple chemical risk at an individual (i.e.&nbsp;point) and group (i.e.&nbsp;areal) level.<a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></li>
-<li><a href="https://niehs.github.io/RGCA"><code>RGCA</code></a> implements Reflected Generalized Concentration Addition: A geometric, piecewise inverse function for 3+ parameter sigmoidal (e.g.&nbsp;hill) models used in chemical mixture concentration-response modeling <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></li>
-<li><a href="https://niehs.github.io/PrestoGP/"><code>PrestoGP</code></a> is an R package for scalable penalized regression on spatio-temporal outcomes using Gaussian processes. The package is designed to handle big data and is useful for large-scale geospatial exposure assessment and geophysical modeling. PrestoGP expands the methods in Messier and Katzfuss (2020) to include multivariate space-time outcomes, censored outcomes, and scalability via the General Vecchia Approximation. <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></li>
-</ol>
+<table class="table">
+<thead>
+<tr class="header">
+<th>No.</th>
+<th>Package</th>
+<th>Description</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.</td>
+<td><a href="https://niehs.github.io/amadeus/"><code>amadeus</code></a></td>
+<td><strong>A</strong> <strong>Ma</strong>chine for <strong>D</strong>ata, <strong>E</strong>nvironments, and <strong>U</strong>ser <strong>S</strong>etup for common environmental and climate health datasets is an R package developed to improve and expedite users’ access to large, publicly available geospatial datasets.</td>
+<td><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></td>
+</tr>
+<tr class="even">
+<td>2.</td>
+<td><a href="https://niehs.github.io/beethoven/"><code>beethoven</code></a></td>
+<td><strong>B</strong>uilding an <strong>E</strong>xtensible, R<strong>e</strong>producible, <strong>T</strong>est-driven, <strong>H</strong>armonized, <strong>O</strong>pen-source, <strong>V</strong>ersioned, <strong>En</strong>semble model for air quality is an R package developed to facilitate the development of ensemble models for air quality.</td>
+<td><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></td>
+</tr>
+<tr class="odd">
+<td>3.</td>
+<td><a href="https://niehs.github.io/chopin/"><code>chopin</code></a></td>
+<td>Computation for <strong>C</strong>limate and <strong>H</strong>ealth research <strong>O</strong>n <strong>P</strong>arallelized <strong>In</strong>frastructure automates parallelization in spatial operations with chopin functions as well as sf/terra functions.</td>
+<td><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></td>
+</tr>
+<tr class="even">
+<td>4.</td>
+<td><a href="https://niehs.github.io/GeoTox"><code>GeoTox</code></a></td>
+<td>GeoTox, or source-to-outcome, modeling framework with an S3 object-oriented approach. Facilitates the calculation and visualization of single and multiple chemical risk at individual and group levels.</td>
+<td><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></td>
+</tr>
+<tr class="odd">
+<td>5.</td>
+<td><a href="https://niehs.github.io/RGCA"><code>RGCA</code></a></td>
+<td>Implements Reflected Generalized Concentration Addition: A geometric, piecewise inverse function for 3+ parameter sigmoidal models used in chemical mixture concentration-response modeling.</td>
+<td><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></td>
+</tr>
+<tr class="even">
+<td>6.</td>
+<td><a href="https://niehs.github.io/PrestoGP/"><code>PrestoGP</code></a></td>
+<td>Scalable <strong>p</strong>enalized <strong>re</strong>gression on <strong>s</strong>patio-<strong>t</strong>emporal <strong>o</strong>utcomes using <strong>G</strong>aussian <strong>p</strong>rocesses. Designed for big data, large-scale geospatial exposure assessment, and geophysical modeling.</td>
+<td><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" class="img-fluid" alt="Lifecycle: experimental"></a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="software-development-practices" class="level2">
+<h2 class="anchored" data-anchor-id="software-development-practices">Software Development Practices</h2>
 <p>We are focused on developing and promoting software and computational best-practices such as test-driven-development (<a href="https://en.wikipedia.org/wiki/Test-driven_development">TDD</a>) and open-source code for the environmental health sciences. To this end, we have protocols in place to ensure that our code is well-documented, tested, and reproducible. Below are some of the key practices we follow:</p>
 <section id="unit-and-integration-testing" class="level3">
 <h3 class="anchored" data-anchor-id="unit-and-integration-testing">Unit and Integration Testing</h3>
@@ -360,6 +397,7 @@ window.Quarto = {
 </ol>
 
 
+</section>
 </section>
 </section>
 
