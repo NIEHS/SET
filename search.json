@@ -789,5 +789,82 @@
     "title": "Exposure on Time:",
     "section": "Let’s hop over to the GitHub repository",
     "text": "Let’s hop over to the GitHub repository"
+  },
+  {
+    "objectID": "publications/Zilber_Messier_2024.html",
+    "href": "publications/Zilber_Messier_2024.html",
+    "title": "Reflected generalized concentration addition and Bayesian hierarchical models to improve chemical mixture prediction",
+    "section": "",
+    "text": "Zilber, D., & Messier, K. (2024). Reflected generalized concentration addition and Bayesian hierarchical models to improve chemical mixture prediction. Plos one, 19(3), e0298687."
+  },
+  {
+    "objectID": "publications/Zilber_Messier_2024.html#citation-apa-7",
+    "href": "publications/Zilber_Messier_2024.html#citation-apa-7",
+    "title": "Reflected generalized concentration addition and Bayesian hierarchical models to improve chemical mixture prediction",
+    "section": "",
+    "text": "Zilber, D., & Messier, K. (2024). Reflected generalized concentration addition and Bayesian hierarchical models to improve chemical mixture prediction. Plos one, 19(3), e0298687."
+  },
+  {
+    "objectID": "publications/Zilber_Messier_2024.html#abstract",
+    "href": "publications/Zilber_Messier_2024.html#abstract",
+    "title": "Reflected generalized concentration addition and Bayesian hierarchical models to improve chemical mixture prediction",
+    "section": "Abstract",
+    "text": "Abstract\nEnvironmental toxicants overwhelmingly occur together as mixtures. The variety of possible chemical interactions makes it difficult to predict the danger of the mixture. In this work, we propose the novel Reflected Generalized Concentration Addition (RGCA), a piece-wise, geometric technique for sigmoidal dose-responsed inverse functions that extends the use of generalized concentration addition (GCA) for 3+ parameter models. Since experimental tests of all relevant mixtures is costly and intractable, we rely only on the individual chemical dose responses. Additionally, RGCA enhances the classical two-step model for the cumulative effects of mixtures, which assumes a combination of GCA and independent action (IA). We explore how various clustering methods can dramatically improve predictions. We compare our technique to the IA, CA, and GCA models and show in a simulation study that the two-step approach performs well under a variety of true models. We then apply our method to a challenging data set of individual chemical and mixture responses where the target is an androgen receptor (Tox21 AR-luc). Our results show significantly improved predictions for larger mixtures. Our work complements ongoing efforts to predict environmental exposure to various chemicals and offers a starting point for combining different exposure predictions to quantify a total risk to health."
+  },
+  {
+    "objectID": "Publications.html",
+    "href": "Publications.html",
+    "title": "{SET}grp",
+    "section": "",
+    "text": "Home\n    Publications\n  \n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n         \n          Publication\n        \n         \n          Year\n        \n     \n  \n    \n      \n      \n    \n\n\n\n  \n    Associations between Flood Risk and United States Census Tract-Level Health Outcomes\n    Alvin Sheng, Brian J Reich, & Kyle P Messier\n    American Journal of Epidemiology\n    (2024)\n    \n      Details\n    \n    \n    \n    \n  \n\n  \n    Reflected generalized concentration addition and Bayesian hierarchical models to improve chemical mixture prediction\n    Daniel Zilber & Kyle P Messier\n    PLOS One\n    (2024)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n  \n\n  \n    The skin is no barrier to mixtures: Air pollutant mixtures and reported psoriasis or eczema in the Personalized Environment and Genes Study (PEGS)\n    Lowe, Melissa E and Akhtari, Farida S and Potter, Taylor A and Fargo, David C and Schmitt, Charles P and Schurman, Shepherd H and Eccles, Kristin M and Motsinger-Reif, Alison and Hall, Janet E and Messier, Kyle P\n    Journal of Exposure Science & Environmental Epidemiology\n    (2023)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n  \n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications/Zilber_Messier_2024.html#citation",
+    "href": "publications/Zilber_Messier_2024.html#citation",
+    "title": "Reflected generalized concentration addition and Bayesian hierarchical models to improve chemical mixture prediction",
+    "section": "",
+    "text": "Zilber, D., & Messier, K. (2024). Reflected generalized concentration addition and Bayesian hierarchical models to improve chemical mixture prediction. Plos one, 19(3), e0298687."
+  },
+  {
+    "objectID": "publications/Sheng_etal_2024.html",
+    "href": "publications/Sheng_etal_2024.html",
+    "title": "Associations between Flood Risk and United States Census Tract-Level Health Outcomes",
+    "section": "",
+    "text": "Human-induced climate change has led to more frequent and severe flooding throughout the globe. We examined the association between flood risk and the prevalence of coronary heart disease, high blood pressure, asthma, and poor mental health in the United States, while taking into account different levels of social vulnerability. We aggregated flood risk variables from First Street Foundation by census tract and used principal component analysis to derive a set of five interpretable flood risk factors. The dependent variables were census-tract level disease prevalences generated by the Centers for Disease Control and Prevention. Bayesian spatial conditional autoregressive models were fit on this data to quantify the relationship between flood risk and health outcomes under different stratifications of social vulnerability. We showed that three flood risk principal components had small but significant associations with each of the health outcomes, across the different stratifications of social vulnerability. Our analysis gives the first United States-wide estimates of the associated effects of flood risk on specific health outcomes. We also show that social vulnerability is an important moderator of the relationship between flood risk and health outcomes. Our approach can be extended to other ecological studies that examine the health impacts of climate hazards."
+  },
+  {
+    "objectID": "publications/Sheng_etal_2024.html#abstract",
+    "href": "publications/Sheng_etal_2024.html#abstract",
+    "title": "Associations between Flood Risk and United States Census Tract-Level Health Outcomes",
+    "section": "",
+    "text": "Human-induced climate change has led to more frequent and severe flooding throughout the globe. We examined the association between flood risk and the prevalence of coronary heart disease, high blood pressure, asthma, and poor mental health in the United States, while taking into account different levels of social vulnerability. We aggregated flood risk variables from First Street Foundation by census tract and used principal component analysis to derive a set of five interpretable flood risk factors. The dependent variables were census-tract level disease prevalences generated by the Centers for Disease Control and Prevention. Bayesian spatial conditional autoregressive models were fit on this data to quantify the relationship between flood risk and health outcomes under different stratifications of social vulnerability. We showed that three flood risk principal components had small but significant associations with each of the health outcomes, across the different stratifications of social vulnerability. Our analysis gives the first United States-wide estimates of the associated effects of flood risk on specific health outcomes. We also show that social vulnerability is an important moderator of the relationship between flood risk and health outcomes. Our approach can be extended to other ecological studies that examine the health impacts of climate hazards."
+  },
+  {
+    "objectID": "publications/Lowe_etal_2023.html",
+    "href": "publications/Lowe_etal_2023.html",
+    "title": "The skin is no barrier to mixtures: Air pollutant mixtures and reported psoriasis or eczema in the Personalized Environment and Genes Study (PEGS)",
+    "section": "",
+    "text": "Zilber, D., & Messier, K. (2024). Reflected generalized concentration addition and Bayesian hierarchical models to improve chemical mixture prediction. Plos one, 19(3), e0298687."
+  },
+  {
+    "objectID": "publications/Lowe_etal_2023.html#citation",
+    "href": "publications/Lowe_etal_2023.html#citation",
+    "title": "The skin is no barrier to mixtures: Air pollutant mixtures and reported psoriasis or eczema in the Personalized Environment and Genes Study (PEGS)",
+    "section": "",
+    "text": "Zilber, D., & Messier, K. (2024). Reflected generalized concentration addition and Bayesian hierarchical models to improve chemical mixture prediction. Plos one, 19(3), e0298687."
+  },
+  {
+    "objectID": "publications/Lowe_etal_2023.html#abstract",
+    "href": "publications/Lowe_etal_2023.html#abstract",
+    "title": "The skin is no barrier to mixtures: Air pollutant mixtures and reported psoriasis or eczema in the Personalized Environment and Genes Study (PEGS)",
+    "section": "Abstract",
+    "text": "Abstract\n\nBackground\nAutoimmune (AI) diseases appear to be a product of genetic predisposition and environmental triggers. Disruption of the skin barrier causes exacerbation of psoriasis/eczema. Oxidative stress is a mechanistic pathway for pathogenesis of the disease and is also a primary mechanism for the detrimental effects of air pollution.\n\n\nMethods\nWe evaluated the association between autoimmune skin diseases (psoriasis or eczema) and air pollutant mixtures in 9060 subjects from the Personalized Environment and Genes Study (PEGS) cohort. Pollutant exposure data on six criteria air pollutants are publicly available from the Center for Air, Climate, and Energy Solutions and the Atmospheric Composition Analysis Group. For increased spatial resolution, we included spatially cumulative exposure to volatile organic compounds from sites in the United States Environmental Protection Agency Toxic Release Inventory and the density of major roads within a 5 km radius of a participant’s address from the United States Geological Survey. We applied logistic regression with quantile g-computation, adjusting for age, sex, diagnosis with an autoimmune disease in family or self, and smoking history to evaluate the relationship between self-reported diagnosis of an AI skin condition and air pollution mixtures.\n\n\nResults\nOnly one air pollution variable, sulfate, was significant individually (OR = 1.06, p = 3.99E−2); however, the conditional odds ratio for the combined mixture components of PM2.5 (black carbon, sulfate, sea salt, and soil), CO, SO2, benzene, toluene, and ethylbenzene is 1.10 (p-value = 5.4E−3).\n\n\nSignificance\nWhile the etiology of autoimmune skin disorders is not clear, this study provides evidence that air pollutants are associated with an increased prevalence of these disorders. The results provide further evidence of potential health impacts of air pollution exposures on life-altering diseases."
+  },
+  {
+    "objectID": "publications/Lowe_etal_2023.html#significance-and-impact-statement",
+    "href": "publications/Lowe_etal_2023.html#significance-and-impact-statement",
+    "title": "The skin is no barrier to mixtures: Air pollutant mixtures and reported psoriasis or eczema in the Personalized Environment and Genes Study (PEGS)",
+    "section": "Significance and impact statement",
+    "text": "Significance and impact statement\nThe impact of air pollution on non-pulmonary and cardiovascular diseases is understudied and under-reported. We find that air pollution significantly increased the odds of psoriasis or eczema in our cohort and the magnitude is comparable to the risk associated with smoking exposure. Autoimmune diseases like psoriasis and eczema are likely impacted by air pollution, particularly complex mixtures and our study underscores the importance of quantifying air pollution-associated risks in autoimmune disease."
   }
 ]

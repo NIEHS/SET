@@ -22,5 +22,13 @@
       "/presentations/20240222_UNC_ESE_Guest_Lecture/20240222_UNC_ESE_Guest_Lecture.html",
       "/presentations/20240214_SOT_ISES_Webinar/template.html"
     ]
+  },
+  {
+    "listing": "/Publications.html",
+    "items": [
+      "/publications/Sheng_etal_2024.html",
+      "/publications/Zilber_Messier_2024.html",
+      "/publications/Lowe_etal_2023.html"
+    ]
   }
 ]

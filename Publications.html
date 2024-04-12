@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>{SET}grp - {SET} group</title>
+<title>Publications</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,11 +68,69 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-articles .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-website','listing-format','listing-editor','listing-language','listing-title','listing-type','listing-author','listing-year','listing-publication','listing-preprint','listing-doi','listing-pmcid','listing-materials','listing-toc','listing-categories','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-publication","listing-year"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-articles'] = new List('listing-articles', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -91,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -195,49 +255,104 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="air pollution">air pollution <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bayesian">bayesian <span class="quarto-category-count">(2)</span></div><div class="category" data-category="epidemiology">epidemiology <span class="quarto-category-count">(2)</span></div><div class="category" data-category="mixtures">mixtures <span class="quarto-category-count">(3)</span></div><div class="category" data-category="toxicology">toxicology <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">{SET} group</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Publications</li>
+  </ol>
+</nav>
+<div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-articles-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-articles'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+         <option value="listing-publication" data-direction="asc">
+          Publication
+        </option>
+         <option value="listing-year" data-direction="asc">
+          Year
+        </option>
+     </select>
   </div>
-  
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<ul class="pub-list list">
 
+  <li data-index="0" data-categories="mixtures,epidemiology,bayesian" data-listing-file-modified-sort="1712891683546" data-listing-reading-time-sort="2" data-listing-word-count-sort="202">
+    <span class="listing-title lead">Associations between Flood Risk and United States Census Tract-Level Health Outcomes</span><br>
+    <span class="listing-author">Alvin Sheng, Brian J Reich, &amp; Kyle P Messier</span><br>
+    <span class="listing-publication fst-italic ">American Journal of Epidemiology</span>
+    <span class="listing-year">(2024)</span><br>
+    <a href="./publications/Sheng_etal_2024.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    
+    
+  </li>
 
-</header>
+  <li data-index="1" data-categories="mixtures,toxicology,bayesian" data-listing-file-modified-sort="1712891702976" data-listing-reading-time-sort="2" data-listing-word-count-sort="226">
+    <span class="listing-title lead">Reflected generalized concentration addition and Bayesian hierarchical models to improve chemical mixture prediction</span><br>
+    <span class="listing-author">Daniel Zilber &amp; Kyle P Messier</span><br>
+    <span class="listing-publication fst-italic ">PLOS One</span>
+    <span class="listing-year">(2024)</span><br>
+    <a href="./publications/Zilber_Messier_2024.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1371/journal.pone.0298687" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+  </li>
 
+  <li data-index="2" data-categories="mixtures,epidemiology,air pollution" data-listing-file-modified-sort="1712891696627" data-listing-reading-time-sort="2" data-listing-word-count-sort="364">
+    <span class="listing-title lead">The skin is no barrier to mixtures: Air pollutant mixtures and reported psoriasis or eczema in the Personalized Environment and Genes Study (PEGS)</span><br>
+    <span class="listing-author">Lowe, Melissa E and Akhtari, Farida S and Potter, Taylor A and Fargo, David C and Schmitt, Charles P and Schurman, Shepherd H and Eccles, Kristin M and Motsinger-Reif, Alison and Hall, Janet E and Messier, Kyle P</span><br>
+    <span class="listing-publication fst-italic ">Journal of Exposure Science &amp; Environmental Epidemiology</span>
+    <span class="listing-year">(2023)</span><br>
+    <a href="./publications/Lowe_etal_2023.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1038/s41370-022-00502-0" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+  </li>
 
-<section id="the-spatiotemporal-exposures-and-toxicology-group-i.e.-set-group-has-a-broad-interest-in-geospatial-exposomics-and-risk-mapping.-key-areas-of-research-include" class="level2">
-<h2 class="anchored" data-anchor-id="the-spatiotemporal-exposures-and-toxicology-group-i.e.-set-group-has-a-broad-interest-in-geospatial-exposomics-and-risk-mapping.-key-areas-of-research-include">The Spatiotemporal Exposures and Toxicology group, i.e.&nbsp;{SET} group, has a broad interest in geospatial <a href="https://factor.niehs.nih.gov/2022/9/feature/2-feature-exposomics-research">exposomics</a> and risk mapping. Key areas of research include:</h2>
-<section id="geospatial-exposure-spatiotemporal-exposure-mapping-of-environmental-and-climate-variables-e.g.-chemical-mixtures-social-behaviorial-environmental-and-climate-factors" class="level4">
-<h4 class="anchored" data-anchor-id="geospatial-exposure-spatiotemporal-exposure-mapping-of-environmental-and-climate-variables-e.g.-chemical-mixtures-social-behaviorial-environmental-and-climate-factors"><strong><em>Geospatial Exposure:</em></strong> Spatiotemporal exposure mapping of environmental and climate variables (e.g.&nbsp;chemical mixtures, social, behaviorial, environmental, and climate factors)</h4>
-</section>
-<section id="geotox-otherwise-known-as-source-to-outcome-modeling-geotox-is-the-integration-of-geospatial-exposures-toxicokinetic-modeling-and-non-animal-toxicological-data-such-as-high-through-in-vitro-screen-assays-to-develop-mechanistically-informed-risk-maps" class="level4">
-<h4 class="anchored" data-anchor-id="geotox-otherwise-known-as-source-to-outcome-modeling-geotox-is-the-integration-of-geospatial-exposures-toxicokinetic-modeling-and-non-animal-toxicological-data-such-as-high-through-in-vitro-screen-assays-to-develop-mechanistically-informed-risk-maps"><strong><em>GeoTox:</em></strong> Otherwise known as <strong>source-to-outcome</strong> modeling, GeoTox is the integration of geospatial exposures, toxicokinetic modeling, and non-animal toxicological data such as high-through <em>in vitro</em> screen assays to develop mechanistically-informed risk maps</h4>
-</section>
-<section id="software-developing-and-promoting-software-and-computational-best-practices-such-as-test-driven-development-tdd-and-open-source-code-for-the-environmental-health-sciences" class="level4">
-<h4 class="anchored" data-anchor-id="software-developing-and-promoting-software-and-computational-best-practices-such-as-test-driven-development-tdd-and-open-source-code-for-the-environmental-health-sciences"><strong><em>Software:</em></strong> Developing and promoting software and computational best-practices such as test-driven-development (<a href="https://en.wikipedia.org/wiki/Test-driven_development">TDD</a>) and open-source code for the environmental health sciences</h4>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/setlogo.jpg" class="img-fluid figure-img" style="width:45.0%"></p>
-<figcaption>Spatiotemporal Exposures and Toxicology group -&gt; {SET} group</figcaption>
-</figure>
+</ul>
+
+<div class="listing-no-matching d-none">
+No matching items
+</div>
 </div>
 
 
-</section>
-</section>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
