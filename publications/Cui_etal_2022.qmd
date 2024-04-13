@@ -1,0 +1,25 @@
+---
+title: "Integrating Multiscale Geospatial Environmental Data into Large Population Health Studies: Challenges and Opportunities"
+type: "article"
+author: "Yuxia Cui, Kristin M Eccles, Richard K Kwok, Bonnie R Joubert, Kyle P Messier, David M Balshaw"
+year: "2023"
+publication: "Toxics"
+preprint: ""
+doi: "https://doi.org/10.3390/toxics10070403"
+pmc: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9316943"
+pmid: "35878308"
+toc: false
+categories:
+  - epidemiology
+  - geospatial
+  - exposomics
+---
+
+## Citation
+
+> Cui Y, Eccles KM, Kwok RK, Joubert BR, Messier KP, Balshaw DM. Integrating Multiscale Geospatial Environmental Data into Large Population Health Studies: Challenges and Opportunities. Toxics. 2022 Jul 20;10(7):403. doi: 10.3390/toxics10070403. PMID: 35878308; PMCID: PMC9316943.
+
+## Abstract
+
+Quantifying the exposome is key to understanding how the environment impacts human health and disease. However, accurately, and cost-effectively quantifying exposure in large population health studies remains a major challenge. Geospatial technologies offer one mechanism to integrate high-dimensional environmental data into epidemiology studies, but can present several challenges. In June 2021, the National Institute of Environmental Health Sciences (NIEHS) held a workshop bringing together experts in exposure science, geospatial technologies, data science and population health to address the need for integrating multiscale geospatial environmental data into large population health studies. The primary objectives of the workshop were to highlight recent applications of geospatial technologies to examine the relationships between environmental exposures and health outcomes; identify research gaps and discuss future directions for exposure modeling, data integration and data analysis strategies; and facilitate communications and collaborations across geospatial and population health experts. This commentary provides a high-level overview of the scientific topics covered by the workshop and themes that emerged as areas for future work, including reducing measurement errors and uncertainty in exposure estimates, and improving data accessibility, data interoperability, and computational approaches for more effective multiscale and multi-source data integration, along with potential solutions.
+

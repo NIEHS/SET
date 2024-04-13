@@ -1,0 +1,53 @@
+---
+title: "PubMed Article Replication"
+output:
+  quarto::pdf_document:
+    latex_engine: xelatex
+---
+
+```{r setup, include=FALSE}
+library(rvest)
+library(quarto)
+library(tidyverse)
+```
+
+
+```{r}
+
+# Fetch the webpage content
+url <- "https://pubmed.ncbi.nlm.nih.gov/36460922/"
+page <- read_html(url)
+
+# Extract article title
+title <- page %>%
+  html_nodes(".heading-title") %>%
+  html_text() %>%
+  str_trim()
+
+# Extract article abstract
+abstract <- page %>%
+  html_nodes(".abstract-content") %>%
+  html_text() %>%
+  str_trim()
+
+# Extract article authors
+authors <- page %>%
+  html_nodes(".authors-list") %>%
+  html_text() %>%
+  str_trim()
+
+# Extract article journal and publication date
+journal_date <- page %>%
+  html_nodes(".journal-actions") %>%
+  html_text() %>%
+  str_trim()
+
+# Print the extracted content
+cat(paste("### Title:\n\n", title, "\n\n"))
+cat(paste("### Authors:\n\n", authors, "\n\n"))
+cat(paste("### Journal and Publication Date:\n\n", journal_date, "\n\n"))
+cat(paste("### Abstract:\n\n", abstract, "\n\n"))
+
+```
+
+```{r}

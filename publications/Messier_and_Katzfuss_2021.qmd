@@ -1,0 +1,28 @@
+---
+title: "Scalable penalized spatiotemporal land-use regression for ground-level nitrogen dioxide"
+type: "article"
+author: "Kyle P Messier & Matthias Katzfuss"
+year: "2022"
+publication: "Annals of Applied Statistics"
+preprint: ""
+doi: "https://doi.org/10.1214/20-aoas1422"
+pmc: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8774268"
+pmid: "35069963"
+toc: false
+categories:
+  - geospatial
+  - spatitotemporal
+  - air pollution
+---
+
+## Citation 
+
+> Messier KP, Katzfuss M. Scalable penalized spatiotemporal land-use regression for ground-level nitrogen dioxide. Ann Appl Stat. 2021 Jun;15(2):688-710. doi: 10.1214/20-aoas1422. Epub 2021 Jul 12. PMID: 35069963; PMCID: PMC8774268.
+
+## Abstract
+
+Nitrogen dioxide (NO2) is a primary constituent of traffic-related air pollution and has well established harmful environmental and human-health impacts. Knowledge of the spatiotemporal distribution of NO2 is critical for exposure and risk assessment. A common approach for assessing air pollution exposure is linear regression involving spatially referenced covariates, known as land-use regression (LUR). We develop a scalable approach for simultaneous variable selection and estimation of LUR models with spatiotemporally correlated errors, by combining a general-Vecchia Gaussian-process approximation with a penalty on the LUR coefficients. In comparisons to existing methods using simulated data, our approach resulted in higher model-selection specificity and sensitivity and in better prediction in terms of calibration and sharpness, for a wide range of relevant settings. In our spatiotemporal analysis of daily, US-wide, ground-level NO2 data, our approach was more accurate, and produced a sparser and more interpretable model. Our daily predictions elucidate spatiotemporal patterns of NO2 concentrations across the United States, including significant variations between cities and intra-urban variation. Thus, our predictions will be useful for epidemiological and risk-assessment studies seeking daily, national-scale predictions, and they can be used in acute-outcome health-risk assessments.
+
+
+
+

@@ -6,7 +6,7 @@ year: "2024"
 publication: "PLOS One"
 preprint: ""
 doi: "https://doi.org/10.1371/journal.pone.0298687"
-pmcid: ""
+pmc: ""
 materials: ""
 toc: false
 categories:

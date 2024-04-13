@@ -26,10 +26,14 @@
   {
     "listing": "/Publications.html",
     "items": [
-      "/publications/Eccles_etal_2023.html",
       "/publications/Sheng_etal_2024.html",
       "/publications/Zilber_Messier_2024.html",
-      "/publications/Lowe_etal_2023.html"
+      "/publications/Eccles_etal_2023.html",
+      "/publications/Cui_etal_2022.html",
+      "/publications/Lowe_etal_2023.html",
+      "/publications/Lipner_etal_2022.html",
+      "/publications/Jahnke_etal_2022.html",
+      "/publications/Messier_and_Katzfuss_2021.html"
     ]
   }
 ]

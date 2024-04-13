@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Daniel Zilber &amp; Kyle P Messier">
 
-<title>{SET}grp - Reflected generalized concentration addition and Bayesian hierarchical models to improve chemical mixture prediction</title>
+<title>{SET}grp - PubMed Article Replication</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,25 +20,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,17 +104,17 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/setlogo.jpg" alt="" class="navbar-logo">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/setlogo.jpg" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">{SET}grp</span>
     </a>
   </div>
@@ -92,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -101,41 +134,41 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-people">    
         <li>
-    <a class="dropdown-item" href="../people.html#KPM">
+    <a class="dropdown-item" href="./people.html#KPM">
  <span class="dropdown-text">Kyle P Messier</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../people.html#MAK">
+    <a class="dropdown-item" href="./people.html#MAK">
  <span class="dropdown-text">Mariana Alifa</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../people.html#RD">
+    <a class="dropdown-item" href="./people.html#RD">
  <span class="dropdown-text">Ranadeep Daw</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../people.html#ESM">
+    <a class="dropdown-item" href="./people.html#ESM">
  <span class="dropdown-text">Eva Marques</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../people.html#IS">
+    <a class="dropdown-item" href="./people.html#IS">
  <span class="dropdown-text">Insang Song</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../people.html#DZ">
+    <a class="dropdown-item" href="./people.html#DZ">
  <span class="dropdown-text">Daniel Zilber</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../people.html#MM">
+    <a class="dropdown-item" href="./people.html#MM">
  <span class="dropdown-text">Mitchell Manware</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../people.html#FormerMembers">
+    <a class="dropdown-item" href="./people.html#FormerMembers">
  <span class="dropdown-text">Former Members</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../Publications.html"> 
+    <a class="nav-link" href="https://pubmed.ncbi.nlm.nih.gov/?term=Kyle+P+Messier&amp;sort=date&amp;format=abstract"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -144,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-software">    
         <li>
-    <a class="dropdown-item" href="../software.html">
+    <a class="dropdown-item" href="./software.html">
  <span class="dropdown-text">Software Overview</span></a>
   </li>  
         <li>
@@ -174,15 +207,15 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../presentations.html"> 
+    <a class="nav-link" href="./presentations.html"> 
 <span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../syllabus.html"> 
+    <a class="nav-link" href="./syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
 </ul>
@@ -196,41 +229,24 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Reflected generalized concentration addition and Bayesian hierarchical models to improve chemical mixture prediction</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">mixtures</div>
-    <div class="quarto-category">toxicology</div>
-    <div class="quarto-category">bayesian</div>
-  </div>
-  </div>
+<h1 class="title">PubMed Article Replication</h1>
+</div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Daniel Zilber &amp; Kyle P Messier </p>
-          </div>
-  </div>
     
   
     
-    <div>
-    <div class="quarto-title-meta-heading">Doi</div>
-    <div class="quarto-title-meta-contents">
-      <p class="doi">
-        <a href="https://doi.org/https://doi.org/10.1371/journal.pone.0298687">https://doi.org/10.1371/journal.pone.0298687</a>
-      </p>
-    </div>
-  </div>
   </div>
   
 
@@ -238,18 +254,220 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="citation" class="level2">
-<h2 class="anchored" data-anchor-id="citation">Citation</h2>
-<blockquote class="blockquote">
-<p>Zilber, D., &amp; Messier, K. (2024). Reflected generalized concentration addition and Bayesian hierarchical models to improve chemical mixture prediction. Plos one, 19(3), e0298687.</p>
-</blockquote>
-</section>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>Environmental toxicants overwhelmingly occur together as mixtures. The variety of possible chemical interactions makes it difficult to predict the danger of the mixture. In this work, we propose the novel Reflected Generalized Concentration Addition (RGCA), a piece-wise, geometric technique for sigmoidal dose-responsed inverse functions that extends the use of generalized concentration addition (GCA) for 3+ parameter models. Since experimental tests of all relevant mixtures is costly and intractable, we rely only on the individual chemical dose responses. Additionally, RGCA enhances the classical two-step model for the cumulative effects of mixtures, which assumes a combination of GCA and independent action (IA). We explore how various clustering methods can dramatically improve predictions. We compare our technique to the IA, CA, and GCA models and show in a simulation study that the two-step approach performs well under a variety of true models. We then apply our method to a challenging data set of individual chemical and mixture responses where the target is an androgen receptor (Tox21 AR-luc). Our results show significantly improved predictions for larger mixtures. Our work complements ongoing efforts to predict environmental exposure to various chemicals and offers a starting point for combining different exposure predictions to quantify a total risk to health.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fetch the webpage content</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>url <span class="ot">&lt;-</span> <span class="st">"https://pubmed.ncbi.nlm.nih.gov/36460922/"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>page <span class="ot">&lt;-</span> <span class="fu">read_html</span>(url)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract article title</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>title <span class="ot">&lt;-</span> page <span class="sc">%&gt;%</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_nodes</span>(<span class="st">".heading-title"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_text</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_trim</span>()</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract article abstract</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>abstract <span class="ot">&lt;-</span> page <span class="sc">%&gt;%</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_nodes</span>(<span class="st">".abstract-content"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_text</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_trim</span>()</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract article authors</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>authors <span class="ot">&lt;-</span> page <span class="sc">%&gt;%</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_nodes</span>(<span class="st">".authors-list"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_text</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_trim</span>()</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract article journal and publication date</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>journal_date <span class="ot">&lt;-</span> page <span class="sc">%&gt;%</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_nodes</span>(<span class="st">".journal-actions"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_text</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_trim</span>()</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the extracted content</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">paste</span>(<span class="st">"### Title:</span><span class="sc">\n\n</span><span class="st">"</span>, title, <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>### Title:
+
+ The skin is no barrier to mixtures: Air pollutant mixtures and reported psoriasis or eczema in the Personalized Environment and Genes Study (PEGS) 
+
+ ### Title:
+
+ The skin is no barrier to mixtures: Air pollutant mixtures and reported psoriasis or eczema in the Personalized Environment and Genes Study (PEGS) </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">paste</span>(<span class="st">"### Authors:</span><span class="sc">\n\n</span><span class="st">"</span>, authors, <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>### Authors:
+
+ Melissa E Lowe&nbsp;
+                1
+              &nbsp;
+                2
+              ,&nbsp;Farida S Akhtari&nbsp;
+                3
+              ,&nbsp;Taylor A Potter&nbsp;
+                4
+              ,&nbsp;David C Fargo&nbsp;
+                4
+              ,&nbsp;Charles P Schmitt&nbsp;
+                5
+              ,&nbsp;Shepherd H Schurman&nbsp;
+                6
+              &nbsp;
+                7
+              ,&nbsp;Kristin M Eccles&nbsp;
+                4
+              ,&nbsp;Alison Motsinger-Reif&nbsp;
+                3
+              ,&nbsp;Janet E Hall&nbsp;
+                6
+              ,&nbsp;Kyle P Messier&nbsp;
+                4
+              &nbsp;
+                6
+              &nbsp;
+                3
+              &nbsp;
+                8 
+
+ ### Authors:
+
+ Melissa E Lowe&nbsp;et al. 
+
+ ### Authors:
+
+ Melissa E Lowe&nbsp;
+                1
+              &nbsp;
+                2
+              ,&nbsp;Farida S Akhtari&nbsp;
+                3
+              ,&nbsp;Taylor A Potter&nbsp;
+                4
+              ,&nbsp;David C Fargo&nbsp;
+                4
+              ,&nbsp;Charles P Schmitt&nbsp;
+                5
+              ,&nbsp;Shepherd H Schurman&nbsp;
+                6
+              &nbsp;
+                7
+              ,&nbsp;Kristin M Eccles&nbsp;
+                4
+              ,&nbsp;Alison Motsinger-Reif&nbsp;
+                3
+              ,&nbsp;Janet E Hall&nbsp;
+                6
+              ,&nbsp;Kyle P Messier&nbsp;
+                4
+              &nbsp;
+                6
+              &nbsp;
+                3
+              &nbsp;
+                8 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">paste</span>(<span class="st">"### Journal and Publication Date:</span><span class="sc">\n\n</span><span class="st">"</span>, journal_date, <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>### Journal and Publication Date:
+
+ J Expo Sci Environ Epidemiol
+    Actions
+              Search in PubMed
+            
+              Search in NLM Catalog
+            
+              Add to Search 
+
+ ### Journal and Publication Date:
+
+ J Expo Sci Environ Epidemiol
+    Actions
+              Search in PubMed
+            
+              Search in NLM Catalog
+            
+              Add to Search </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">paste</span>(<span class="st">"### Abstract:</span><span class="sc">\n\n</span><span class="st">"</span>, abstract, <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>### Abstract:
+
+ Background:
+        
+      
+      Autoimmune (AI) diseases appear to be a product of genetic predisposition and environmental triggers. Disruption of the skin barrier causes exacerbation of psoriasis/eczema. Oxidative stress is a mechanistic pathway for pathogenesis of the disease and is also a primary mechanism for the detrimental effects of air pollution.
+    
+  
+
+  
+
+              
+                
 
 
-</section>
+  
+    
+      
+        
+          Methods:
+        
+      
+      We evaluated the association between autoimmune skin diseases (psoriasis or eczema) and air pollutant mixtures in 9060 subjects from the Personalized Environment and Genes Study (PEGS) cohort. Pollutant exposure data on six criteria air pollutants are publicly available from the Center for Air, Climate, and Energy Solutions and the Atmospheric Composition Analysis Group. For increased spatial resolution, we included spatially cumulative exposure to volatile organic compounds from sites in the United States Environmental Protection Agency Toxic Release Inventory and the density of major roads within a 5 km radius of a participant's address from the United States Geological Survey. We applied logistic regression with quantile g-computation, adjusting for age, sex, diagnosis with an autoimmune disease in family or self, and smoking history to evaluate the relationship between self-reported diagnosis of an AI skin condition and air pollution mixtures.
+    
+  
+
+  
+
+              
+                
+
+
+  
+    
+      
+        
+          Results:
+        
+      
+      Only one air pollution variable, sulfate, was significant individually (OR = 1.06, p = 3.99E-2); however, the conditional odds ratio for the combined mixture components of PM2.5 (black carbon, sulfate, sea salt, and soil), CO, SO2, benzene, toluene, and ethylbenzene is 1.10 (p-value = 5.4E-3).
+    
+  
+
+  
+
+              
+                
+
+
+  
+    
+      
+        
+          Significance:
+        
+      
+      While the etiology of autoimmune skin disorders is not clear, this study provides evidence that air pollutants are associated with an increased prevalence of these disorders. The results provide further evidence of potential health impacts of air pollution exposures on life-altering diseases.
+    
+  
+
+  
+
+              
+                
+
+
+  
+    
+      
+        
+          Significance and impact statement:
+        
+      
+      The impact of air pollution on non-pulmonary and cardiovascular diseases is understudied and under-reported. We find that air pollution significantly increased the odds of psoriasis or eczema in our cohort and the magnitude is comparable to the risk associated with smoking exposure. Autoimmune diseases like psoriasis and eczema are likely impacted by air pollution, particularly complex mixtures and our study underscores the importance of quantifying air pollution-associated risks in autoimmune disease. </code></pre>
+</div>
+</div>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

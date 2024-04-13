@@ -1,0 +1,28 @@
+---
+title: "Vanadium in groundwater aquifers increases the risk of MAC pulmonary infection in O'ahu, Hawai'i."
+type: "article"
+author: "Ettie M Lipner, Joshua P French, Stephend Nelson, Joseph O Falkinham III, Rachel A Mercaldo, Rebekah A Blakney, Yihe G Daida, Timothy B Frankland, Kyle P Messier, Jennifer R Honda, Stacey Honda, D. Rebecca Prevots"
+year: "2023"
+publication: "Environmental Epidemiology"
+preprint: ""
+doi: "https://doi.org/10.1097/EE9.0000000000000220"
+pmc: "PMC9555944"
+pmid: "36249270"
+toc: false
+categories:
+  - epidemiology
+  - NTM
+  - geospatial
+---
+
+## Citation 
+
+> Lipner EM, French JP, Nelson S, Falkinham Iii JO, Mercaldo RA, Blakney RA, Daida YG, Frankland TB, Messier KP, Honda JR, Honda S, Prevots DR. Vanadium in groundwater aquifers increases the risk of MAC pulmonary infection in O'ahu, Hawai'i. Environ Epidemiol. 2022 Sep 2;6(5):e220. doi: 10.1097/EE9.0000000000000220. PMID: 36249270; PMCID: PMC9555944.
+
+## Abstract
+
+Hawai'i has the highest prevalence of nontuberculous mycobacterial (NTM) pulmonary disease in the United States. Previous studies indicate that certain trace metals in surface water increase the risk of NTM infection. OBJECTIVE: To identify whether trace metals influence the risk of NTM infection in O'ahu, Hawai'i. METHODS: A population-based ecologic cohort study was conducted using NTM infection incidence data from patients enrolled at Kaiser Permanente Hawai'i during 2005-2019. We obtained sociodemographic, microbiologic, and geocoded residential data for all Kaiser Permanente Hawai'i beneficiaries. To estimate the risk of NTM pulmonary infection from exposure to groundwater constituents, we obtained groundwater data from three data sources: (1) Water Quality Portal; (2) the Hawai'i Department of Health; and (3) Brigham Young University, Department of Geological Science faculty. Data were aggregated by an aquifer and were associated with the corresponding beneficiary aquifer of residence. We used Poisson regression models with backward elimination to generate models for NTM infection risk as a function of groundwater constituents. We modeled two outcomes: Mycobacterium avium complex (MAC) species and Mycobacterium abscessus group species. RESULTS: For every 1-unit increase in the log concentration of vanadium in groundwater at the aquifer level, infection risk increased by 22% among MAC patients. We did not observe significant associations between water-quality constituents and infection risk among M. abscessus patients. CONCLUSIONS: Concentrations of vanadium in groundwater were associated with MAC pulmonary infection in O'ahu, Hawai'i. These findings provide evidence that naturally occurring trace metals influence the presence of NTM in water sources that supply municipal water systems.
+
+## Free Full Text
+
+[PubMed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9555944/)

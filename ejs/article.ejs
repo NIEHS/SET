@@ -25,8 +25,14 @@
       <i class="bi bi-file-earmark-zip"></i> Materials
     </a>
     <% } %>
+    <% if (item.pmc) { %>
+    <a href="<%- item.pmc %>" class="btn btn-info" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-file-earmark-pdf"></i> PMC
+    </a>
+    <% } %>
   </li>
 <% } %>
 </ul>
+
 
 ```

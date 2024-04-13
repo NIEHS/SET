@@ -6,7 +6,7 @@ year: "2023"
 publication: "Journal of Exposure Science & Environmental Epidemiology"
 preprint: ""
 doi: "https://doi.org/10.1038/s41370-022-00502-0"
-pmcid: ""
+pmc: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10234803"
 materials: ""
 toc: false
 categories:
@@ -17,7 +17,7 @@ categories:
 
 ## Citation
 
-> Lowe, M. E., Akhtari, F. S., Potter, T. A., Fargo, D. C., Schmitt, C. P., Schurman, S. H., ... & Messier, K. P. (2023). The skin is no barrier to mixtures: Air pollutant mixtures and reported psoriasis or eczema in the Personalized Environment and Genes Study (PEGS). Journal of Exposure Science & Environmental Epidemiology, 33(3), 474-481.
+> Lowe ME, Akhtari FS, Potter TA, Fargo DC, Schmitt CP, Schurman SH, Eccles KM, Motsinger-Reif A, Hall JE, Messier KP. The skin is no barrier to mixtures: Air pollutant mixtures and reported psoriasis or eczema in the Personalized Environment and Genes Study (PEGS). J Expo Sci Environ Epidemiol. 2023 May;33(3):474-481. doi: 10.1038/s41370-022-00502-0. Epub 2022 Dec 2. PMID: 36460922; PMCID: PMC10234803.
 
 ## Abstract
 

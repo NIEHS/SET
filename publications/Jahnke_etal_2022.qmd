@@ -1,0 +1,27 @@
+---
+title: "Ambient air pollution exposure assessments in fertility studies: A systematic review and guide for reproductive epidemiologists"
+type: "article"
+author: "Johanna R Jahnke, Kyle P Messier, Melissa Lowe, Anne Marie Jukic"
+year: "2022"
+publication: "Current Epidemiology Reports"
+preprint: ""
+doi: "https://doi.org/10.1007/s40471-022-00290-z"
+pmc: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9229606"
+pmid: "35754929"
+toc: false
+categories:
+  - epidemiology
+  - geospatial
+  - air pollution
+---
+
+## Citation 
+
+> Jahnke JR, Messier KP, Lowe M, Jukic AM. Ambient air pollution exposure assessments in fertility studies: A systematic review and guide for reproductive epidemiologists. Curr Epidemiol Rep. 2022 Jun;9(2):87-107. doi: 10.1007/s40471-022-00290-z. Epub 2022 May 13. PMID: 35754929; PMCID: PMC9229606.
+
+## Abstract
+
+Quantifying the exposome is key to understanding how the environment impacts human health and disease. However, accurately, and cost-effectively quantifying exposure in large population health studies remains a major challenge. Geospatial technologies offer one mechanism to integrate high-dimensional environmental data into epidemiology studies, but can present several challenges. In June 2021, the National Institute of Environmental Health Sciences (NIEHS) held a workshop bringing together experts in exposure science, geospatial technologies, data science and population health to address the need for integrating multiscale geospatial environmental data into large population health studies. The primary objectives of the workshop were to highlight recent applications of geospatial technologies to examine the relationships between environmental exposures and health outcomes; identify research gaps and discuss future directions for exposure modeling, data integration and data analysis strategies; and facilitate communications and collaborations across geospatial and population health experts. This commentary provides a high-level overview of the scientific topics covered by the workshop and themes that emerged as areas for future work, including reducing measurement errors and uncertainty in exposure estimates, and improving data accessibility, data interoperability, and computational approaches for more effective multiscale and multi-source data integration, along with potential solutions.
+
+
+

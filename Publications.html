@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-editor','listing-language','listing-title','listing-type','listing-author','listing-year','listing-publication','listing-preprint','listing-doi','listing-pmcid','listing-materials','listing-toc','listing-categories','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-editor','listing-language','listing-title','listing-type','listing-author','listing-year','listing-publication','listing-preprint','listing-doi','listing-pmc','listing-pmid','listing-toc','listing-categories','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-materials',{ data: ['index'] },{ data: ['categories'] }],
       
       searchColumns: ["listing-title","listing-author","listing-publication","listing-year"],
     };
@@ -194,7 +194,7 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="https://pubmed.ncbi.nlm.nih.gov/?term=Kyle+P+Messier&amp;sort=date&amp;format=abstract"> 
+    <a class="nav-link active" href="./Publications.html" aria-current="page"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -256,7 +256,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="GeoTox">GeoTox <span class="quarto-category-count">(1)</span></div><div class="category" data-category="air pollution">air pollution <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bayesian">bayesian <span class="quarto-category-count">(2)</span></div><div class="category" data-category="epidemiology">epidemiology <span class="quarto-category-count">(2)</span></div><div class="category" data-category="geospatial">geospatial <span class="quarto-category-count">(1)</span></div><div class="category" data-category="mixtures">mixtures <span class="quarto-category-count">(4)</span></div><div class="category" data-category="toxicology">toxicology <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="GeoTox">GeoTox <span class="quarto-category-count">(1)</span></div><div class="category" data-category="NTM">NTM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="air pollution">air pollution <span class="quarto-category-count">(3)</span></div><div class="category" data-category="bayesian">bayesian <span class="quarto-category-count">(2)</span></div><div class="category" data-category="climate">climate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="epidemiology">epidemiology <span class="quarto-category-count">(5)</span></div><div class="category" data-category="exposomics">exposomics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="geospatial">geospatial <span class="quarto-category-count">(5)</span></div><div class="category" data-category="mixtures">mixtures <span class="quarto-category-count">(4)</span></div><div class="category" data-category="spatitotemporal">spatitotemporal <span class="quarto-category-count">(1)</span></div><div class="category" data-category="toxicology">toxicology <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -297,23 +297,10 @@ window.Quarto = {
 </div>
 <ul class="pub-list list">
 
-  <li data-index="0" data-categories="mixtures,toxicology,GeoTox,geospatial" data-listing-file-modified-sort="1712937755521" data-listing-reading-time-sort="2" data-listing-word-count-sort="251">
+  <li data-index="0" data-categories="mixtures,epidemiology,bayesian,climate" data-listing-file-modified-sort="1713027178652" data-listing-reading-time-sort="1" data-listing-word-count-sort="200">
     <span class="listing-title lead">Associations between Flood Risk and United States Census Tract-Level Health Outcomes</span><br>
     <span class="listing-author">Alvin Sheng, Brian J Reich, &amp; Kyle P Messier</span><br>
-    <span class="listing-publication fst-italic ">Science of the Total Environment</span>
-    <span class="listing-year">(2024)</span><br>
-    <a href="./publications/Eccles_etal_2023.html" class="btn btn-primary">
-      Details
-    </a>
-    
-    
-    
-  </li>
-
-  <li data-index="1" data-categories="mixtures,epidemiology,bayesian" data-listing-file-modified-sort="1712891683546" data-listing-reading-time-sort="2" data-listing-word-count-sort="202">
-    <span class="listing-title lead">Associations between Flood Risk and United States Census Tract-Level Health Outcomes</span><br>
-    <span class="listing-author">Alvin Sheng, Brian J Reich, &amp; Kyle P Messier</span><br>
-    <span class="listing-publication fst-italic ">American Journal of Epidemiology</span>
+    <span class="listing-publication fst-italic ">American Journal of Epidemiology (In Press)</span>
     <span class="listing-year">(2024)</span><br>
     <a href="./publications/Sheng_etal_2024.html" class="btn btn-primary">
       Details
@@ -321,9 +308,10 @@ window.Quarto = {
     
     
     
+    
   </li>
 
-  <li data-index="2" data-categories="mixtures,toxicology,bayesian" data-listing-file-modified-sort="1712926627839" data-listing-reading-time-sort="2" data-listing-word-count-sort="226">
+  <li data-index="1" data-categories="mixtures,toxicology,bayesian" data-listing-file-modified-sort="1713027018740" data-listing-reading-time-sort="2" data-listing-word-count-sort="226">
     <span class="listing-title lead">Reflected generalized concentration addition and Bayesian hierarchical models to improve chemical mixture prediction</span><br>
     <span class="listing-author">Daniel Zilber &amp; Kyle P Messier</span><br>
     <span class="listing-publication fst-italic ">PLOS One</span>
@@ -338,9 +326,54 @@ window.Quarto = {
     
     
     
+    
   </li>
 
-  <li data-index="3" data-categories="mixtures,epidemiology,air pollution" data-listing-file-modified-sort="1712926691942" data-listing-reading-time-sort="2" data-listing-word-count-sort="397">
+  <li data-index="2" data-categories="mixtures,toxicology,GeoTox,geospatial" data-listing-file-modified-sort="1713026756565" data-listing-reading-time-sort="2" data-listing-word-count-sort="334">
+    <span class="listing-title lead">A geospatial modeling approach to quantifying the risk of exposure to environmental chemical mixtures via a common molecular target.</span><br>
+    <span class="listing-author">Kristin M. Eccles, Agnes L. Karmaus, Nicole C. Kleinstreuer, Fred Parham, Cynthia V. Rider, John F. Wambaugh, Kyle P. Messier</span><br>
+    <span class="listing-publication fst-italic ">Science of the Total Environment</span>
+    <span class="listing-year">(2023)</span><br>
+    <a href="./publications/Eccles_etal_2023.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1016/j.scitotenv.2022.158905" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9979101" class="btn btn-info" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-file-earmark-pdf"></i> PMC
+    </a>
+    
+  </li>
+
+  <li data-index="3" data-categories="epidemiology,geospatial,exposomics" data-listing-file-modified-sort="1713027156100" data-listing-reading-time-sort="2" data-listing-word-count-sort="230">
+    <span class="listing-title lead">Integrating Multiscale Geospatial Environmental Data into Large Population Health Studies: Challenges and Opportunities</span><br>
+    <span class="listing-author">Yuxia Cui, Kristin M Eccles, Richard K Kwok, Bonnie R Joubert, Kyle P Messier, David M Balshaw</span><br>
+    <span class="listing-publication fst-italic ">Toxics</span>
+    <span class="listing-year">(2023)</span><br>
+    <a href="./publications/Cui_etal_2022.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.3390/toxics10070403" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9316943" class="btn btn-info" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-file-earmark-pdf"></i> PMC
+    </a>
+    
+  </li>
+
+  <li data-index="4" data-categories="mixtures,epidemiology,air pollution" data-listing-file-modified-sort="1713026849873" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
     <span class="listing-title lead">The skin is no barrier to mixtures: Air pollutant mixtures and reported psoriasis or eczema in the Personalized Environment and Genes Study (PEGS)</span><br>
     <span class="listing-author">Melissa E Lowe, Farida S Akhtari, Taylor A Potter, David C Fargo, Charles P Schmitt, Shepherd H Schurman, Kristin M Eccles, Alison Motsinger-Reif, Janet E Hall, Kyle P Messier</span><br>
     <span class="listing-publication fst-italic ">Journal of Exposure Science &amp; Environmental Epidemiology</span>
@@ -354,6 +387,77 @@ window.Quarto = {
     </a>
     
     
+    
+    
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10234803" class="btn btn-info" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-file-earmark-pdf"></i> PMC
+    </a>
+    
+  </li>
+
+  <li data-index="5" data-categories="epidemiology,NTM,geospatial" data-listing-file-modified-sort="1713024042476" data-listing-reading-time-sort="2" data-listing-word-count-sort="306">
+    <span class="listing-title lead">Vanadium in groundwater aquifers increases the risk of MAC pulmonary infection in O'ahu, Hawai'i.</span><br>
+    <span class="listing-author">Ettie M Lipner, Joshua P French, Stephend Nelson, Joseph O Falkinham III, Rachel A Mercaldo, Rebekah A Blakney, Yihe G Daida, Timothy B Frankland, Kyle P Messier, Jennifer R Honda, Stacey Honda, D. Rebecca Prevots</span><br>
+    <span class="listing-publication fst-italic ">Environmental Epidemiology</span>
+    <span class="listing-year">(2023)</span><br>
+    <a href="./publications/Lipner_etal_2022.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1097/EE9.0000000000000220" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+    <a href="PMC9555944" class="btn btn-info" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-file-earmark-pdf"></i> PMC
+    </a>
+    
+  </li>
+
+  <li data-index="6" data-categories="epidemiology,geospatial,air pollution" data-listing-file-modified-sort="1713027214153" data-listing-reading-time-sort="2" data-listing-word-count-sort="234">
+    <span class="listing-title lead">Ambient air pollution exposure assessments in fertility studies: A systematic review and guide for reproductive epidemiologists</span><br>
+    <span class="listing-author">Johanna R Jahnke, Kyle P Messier, Melissa Lowe, Anne Marie Jukic</span><br>
+    <span class="listing-publication fst-italic ">Current Epidemiology Reports</span>
+    <span class="listing-year">(2022)</span><br>
+    <a href="./publications/Jahnke_etal_2022.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1007/s40471-022-00290-z" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9229606" class="btn btn-info" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-file-earmark-pdf"></i> PMC
+    </a>
+    
+  </li>
+
+  <li data-index="7" data-categories="geospatial,spatitotemporal,air pollution" data-listing-file-modified-sort="1713027585672" data-listing-reading-time-sort="2" data-listing-word-count-sort="216">
+    <span class="listing-title lead">Scalable penalized spatiotemporal land-use regression for ground-level nitrogen dioxide</span><br>
+    <span class="listing-author">Kyle P Messier &amp; Matthias Katzfuss</span><br>
+    <span class="listing-publication fst-italic ">Annals of Applied Statistics</span>
+    <span class="listing-year">(2022)</span><br>
+    <a href="./publications/Messier_and_Katzfuss_2021.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1214/20-aoas1422" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8774268" class="btn btn-info" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-file-earmark-pdf"></i> PMC
+    </a>
     
   </li>
 
