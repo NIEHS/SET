@@ -11,7 +11,7 @@ pmid: "35069963"
 toc: false
 categories:
   - geospatial
-  - spatitotemporal
+  - gaussian processes
   - air pollution
 ---
 

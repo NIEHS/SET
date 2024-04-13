@@ -6,16 +6,16 @@ year: "2023"
 publication: "Environmental Epidemiology"
 preprint: ""
 doi: "https://doi.org/10.1097/EE9.0000000000000220"
-pmc: "PMC9555944"
+pmc: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9555944"
 pmid: "36249270"
 toc: false
 categories:
   - epidemiology
-  - NTM
+  - mycobacteria
   - geospatial
 ---
 
-## Citation 
+## Citation
 
 > Lipner EM, French JP, Nelson S, Falkinham Iii JO, Mercaldo RA, Blakney RA, Daida YG, Frankland TB, Messier KP, Honda JR, Honda S, Prevots DR. Vanadium in groundwater aquifers increases the risk of MAC pulmonary infection in O'ahu, Hawai'i. Environ Epidemiol. 2022 Sep 2;6(5):e220. doi: 10.1097/EE9.0000000000000220. PMID: 36249270; PMCID: PMC9555944.
 

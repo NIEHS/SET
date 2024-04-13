@@ -12,8 +12,8 @@ toc: false
 categories:
   - mixtures
   - toxicology
-  - GeoTox
   - geospatial
+  - geotox
 ---
 
 ## Citation
