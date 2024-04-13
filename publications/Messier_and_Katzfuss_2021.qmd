@@ -2,7 +2,7 @@
 title: "Scalable penalized spatiotemporal land-use regression for ground-level nitrogen dioxide"
 type: "article"
 author: "Kyle P Messier & Matthias Katzfuss"
-year: "2022"
+year: "2021"
 publication: "Annals of Applied Statistics"
 preprint: ""
 doi: "https://doi.org/10.1214/20-aoas1422"
