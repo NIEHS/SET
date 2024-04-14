@@ -1,0 +1,24 @@
+---
+title: "Mapping Air Pollution with Google Street View Cars: Efficient Approaches with Mobile Monitoring and Land Use Regression"
+type: "article"
+author: "Kyle P. Messier, Sarah E. Chambliss, Shahzad Gani, Ramon Alvarez, Michael Brauer, Jonathan J. Choi, Steven P. Hamburg, Jules Kerckhoffs, Brian LaFranchi, Melissa M. Lunden, Julian D. Marshall, Christopher J. Portier, Ananya Roy, Adam A. Szpiro, Roel C. H. Vermeulen and Joshua S. Apte"
+year: "2018"
+publication: "Environmental Science & Technology"
+preprint: ""
+doi: "https://doi.org/10.1021/acs.est.8b03395"
+pmc: ""
+pmid: "30354135"
+toc: false
+categories:
+  - exposure
+  - air pollution
+  - geospatial
+---
+
+## Citation
+
+> Messier KP, Chambliss SE, Gani S, Alvarez R, Brauer M, Choi JJ, Hamburg SP, Kerckhoffs J, LaFranchi B, Lunden MM, Marshall JD, Portier CJ, Roy A, Szpiro AA, Vermeulen RCH, Apte JS. Mapping Air Pollution with Google Street View Cars: Efficient Approaches with Mobile Monitoring and Land Use Regression. Environ Sci Technol. 2018 Nov 6;52(21):12563-12572. doi: 10.1021/acs.est.8b03395. Epub 2018 Oct 24. PMID: 30354135.
+
+## Abstract
+
+Air pollution measurements collected through systematic mobile monitoring campaigns can provide outdoor concentration data at high spatial resolution. We explore approaches to minimize data requirements for mapping a city’s air quality using mobile monitors with “data-only” versus predictive modeling approaches. We equipped two Google Street View cars with 1-Hz instruments to collect nitric oxide (NO) and black carbon (BC) measurements in Oakland, CA. We explore two strategies for efficiently mapping spatial air quality patterns through Monte Carlo analyses. First, we explore a “data-only” approach where we attempt to minimize the number of repeated visits needed to reliably estimate concentrations for all roads. Second, we combine our data with a land use regression-kriging (LUR-K) model to predict at unobserved locations; here, measurements from only a subset of roads or repeat visits are considered. Although LUR-K models did not capture the full variability of on-road concentrations, models trained with minimal data consistently captured important covariates and general spatial air pollution trends, with cross-validation $R^2$ for log-transformed NO and BC of 0.65 and 0.43. Data-only mapping performed poorly with few (1–2) repeated drives but obtained better cross-validation $R^2$ than the LUR-K approach within 4 to 8 repeated drive days per road segment.

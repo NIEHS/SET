@@ -1,0 +1,25 @@
+---
+title: "Fine-scale spatiotemporal air pollution analysis using mobile monitors on Google Street View vehicles"
+type: "article"
+author: "Yawen Guan, Margaret C Johnson, Matthias Katzfuss, Elizabeth Mannshardt, Kyle P Messier, Brian J Reich, and Joon Jin Song"
+year: "2020"
+publication: "Journal of the American Statistical Association: Applications and Case Studies"
+preprint: ""
+doi: "https://doi.org/10.1080/01621459.2019.1665526"
+pmc: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7953849"
+pmid: "33716356"
+toc: false
+categories:
+  - geospatial
+  - air pollution
+  - gaussian processes
+---
+
+## Citation
+
+> Guan Y, Johnson MC, Katzfuss M, Mannshardt E, Messier KP, Reich BJ, Song JJ. Fine-scale spatiotemporal air pollution analysis using mobile monitors on Google Street View vehicles. J Am Stat Assoc. 2020;115(531):1111-1124. doi: 10.1080/01621459.2019.1665526. Epub 2019 Oct 9. PMID: 33716356; PMCID: PMC7953849
+
+## Abstract
+
+People are increasingly concerned with understanding their personal environment, including possible exposure to harmful air pollutants. In order to make informed decisions on their day-to-day activities, they are interested in real-time information on a localized scale. Publicly available, fine-scale, high-quality air pollution measurements acquired using mobile monitors represent a paradigm shift in measurement technologies. A methodological framework utilizing these increasingly fine-scale measurements to provide real-time air pollution maps and short-term air quality forecasts on a fine-resolution spatial scale could prove to be instrumental in increasing public awareness and understanding. The Google Street View study provides a unique source of data with spatial and temporal complexities, with the potential to provide information about commuter exposure and hot spots within city streets with high traffic. We develop a computationally efficient spatiotemporal model for these data and use the model to make short-term forecasts and high-resolution maps of current air pollution levels. We also show via an experiment that mobile networks can provide more nuanced information than an equally-sized fixed-location network. This modeling framework has important real-world implications in understanding citizens’ personal environments, as data production and real-time availability continue to be driven by the ongoing development and improvement of mobile measurement technologies.
+

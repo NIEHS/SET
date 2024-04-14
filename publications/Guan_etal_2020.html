@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kristin M. Eccles, Agnes L. Karmaus, Nicole C. Kleinstreuer, Fred Parham, Cynthia V. Rider, John F. Wambaugh, Kyle P. Messier">
+<meta name="author" content="Yawen Guan, Margaret C Johnson, Matthias Katzfuss, Elizabeth Mannshardt, Kyle P Messier, Brian J Reich, and Joon Jin Song">
 
-<title>{SET}grp - A geospatial modeling approach to quantifying the risk of exposure to environmental chemical mixtures via a common molecular target.</title>
+<title>{SET}grp - Fine-scale spatiotemporal air pollution analysis using mobile monitors on Google Street View vehicles</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -202,12 +202,11 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">A geospatial modeling approach to quantifying the risk of exposure to environmental chemical mixtures via a common molecular target.</h1>
+<h1 class="title">Fine-scale spatiotemporal air pollution analysis using mobile monitors on Google Street View vehicles</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">mixtures</div>
-    <div class="quarto-category">toxicology</div>
     <div class="quarto-category">geospatial</div>
-    <div class="quarto-category">geotox</div>
+    <div class="quarto-category">air pollution</div>
+    <div class="quarto-category">gaussian processes</div>
   </div>
   </div>
 
@@ -218,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Kristin M. Eccles, Agnes L. Karmaus, Nicole C. Kleinstreuer, Fred Parham, Cynthia V. Rider, John F. Wambaugh, Kyle P. Messier </p>
+             <p>Yawen Guan, Margaret C Johnson, Matthias Katzfuss, Elizabeth Mannshardt, Kyle P Messier, Brian J Reich, and Joon Jin Song </p>
           </div>
   </div>
     
@@ -228,7 +227,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-title-meta-heading">Doi</div>
     <div class="quarto-title-meta-contents">
       <p class="doi">
-        <a href="https://doi.org/https://doi.org/10.1016/j.scitotenv.2022.158905">https://doi.org/10.1016/j.scitotenv.2022.158905</a>
+        <a href="https://doi.org/https://doi.org/10.1080/01621459.2019.1665526">https://doi.org/10.1080/01621459.2019.1665526</a>
       </p>
     </div>
   </div>
@@ -242,12 +241,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
 <blockquote class="blockquote">
-<p>Eccles KM, Karmaus AL, Kleinstreuer NC, Parham F, Rider CV, Wambaugh JF, Messier KP. A geospatial modeling approach to quantifying the risk of exposure to environmental chemical mixtures via a common molecular target. Sci Total Environ. 2023 Jan 10;855:158905. doi: 10.1016/j.scitotenv.2022.158905. Epub 2022 Sep 21. PMID: 36152849; PMCID: PMC9979101.</p>
+<p>Guan Y, Johnson MC, Katzfuss M, Mannshardt E, Messier KP, Reich BJ, Song JJ. Fine-scale spatiotemporal air pollution analysis using mobile monitors on Google Street View vehicles. J Am Stat Assoc. 2020;115(531):1111-1124. doi: 10.1080/01621459.2019.1665526. Epub 2019 Oct 9. PMID: 33716356; PMCID: PMC7953849</p>
 </blockquote>
 </section>
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>In the real world, individuals are exposed to chemicals from sources that vary over space and time. However, traditional risk assessments based on in vivo animal studies typically use a chemical-by-chemical approach and apical disease endpoints. New approach methodologies (NAMs) in toxicology, such as in vitro high-throughput (HTS) assays generated in Tox21 and ToxCast, can more readily provide mechanistic chemical hazard information for chemicals with no existing data than in vivo methods. In this paper, we establish a workflow to assess the joint action of 41 modeled ambient chemical exposures in the air from the USA-wide National Air Toxics Assessment by integrating human exposures with hazard data from curated HTS (cHTS) assays to identify counties where exposure to the local chemical mixture may perturb a common biological target. We exemplify this proof-of-concept using CYP1A1 mRNA up-regulation. We first estimate internal exposure and then convert the inhaled concentration to a steady state plasma concentration using physiologically based toxicokinetic modeling parameterized with county-specific information on ages and body weights. We then use the estimated blood plasma concentration and the concentration-response curve from the in vitro cHTS assay to determine the chemical-specific effects of the mixture components. Three mixture modeling methods were used to estimate the joint effect from exposure to the chemical mixture on the activity levels, which were geospatially mapped. Finally, a Monte Carlo uncertainty analysis was performed to quantify the influence of each parameter on the combined effects. This workflow demonstrates how NAMs can be used to predict early-stage biological perturbations that can lead to adverse health outcomes that result from exposure to chemical mixtures. As a result, this work will advance mixture risk assessment and other early events in the effects of chemicals.</p>
+<p>People are increasingly concerned with understanding their personal environment, including possible exposure to harmful air pollutants. In order to make informed decisions on their day-to-day activities, they are interested in real-time information on a localized scale. Publicly available, fine-scale, high-quality air pollution measurements acquired using mobile monitors represent a paradigm shift in measurement technologies. A methodological framework utilizing these increasingly fine-scale measurements to provide real-time air pollution maps and short-term air quality forecasts on a fine-resolution spatial scale could prove to be instrumental in increasing public awareness and understanding. The Google Street View study provides a unique source of data with spatial and temporal complexities, with the potential to provide information about commuter exposure and hot spots within city streets with high traffic. We develop a computationally efficient spatiotemporal model for these data and use the model to make short-term forecasts and high-resolution maps of current air pollution levels. We also show via an experiment that mobile networks can provide more nuanced information than an equally-sized fixed-location network. This modeling framework has important real-world implications in understanding citizens’ personal environments, as data production and real-time availability continue to be driven by the ongoing development and improvement of mobile measurement technologies.</p>
 
 
 </section>

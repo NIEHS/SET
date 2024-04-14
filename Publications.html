@@ -79,7 +79,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-project','listing-website','listing-format','listing-editor','listing-language','listing-title','listing-type','listing-author','listing-year','listing-publication','listing-preprint','listing-doi','listing-pmc','listing-pmid','listing-toc','listing-categories','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-materials',{ data: ['index'] },{ data: ['categories'] }],
-      
+      page: 10,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-title","listing-author","listing-publication","listing-year"],
     };
 
@@ -256,7 +257,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="air pollution">air pollution <span class="quarto-category-count">(3)</span></div><div class="category" data-category="bayesian">bayesian <span class="quarto-category-count">(2)</span></div><div class="category" data-category="climate">climate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="epidemiology">epidemiology <span class="quarto-category-count">(5)</span></div><div class="category" data-category="exposomics">exposomics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="gaussian processes">gaussian processes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="geospatial">geospatial <span class="quarto-category-count">(5)</span></div><div class="category" data-category="geotox">geotox <span class="quarto-category-count">(1)</span></div><div class="category" data-category="mixtures">mixtures <span class="quarto-category-count">(4)</span></div><div class="category" data-category="mycobacteria">mycobacteria <span class="quarto-category-count">(1)</span></div><div class="category" data-category="toxicology">toxicology <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(17)</span></div><div class="category" data-category="air pollution">air pollution <span class="quarto-category-count">(9)</span></div><div class="category" data-category="bayesian">bayesian <span class="quarto-category-count">(2)</span></div><div class="category" data-category="climate">climate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="environmental justice">environmental justice <span class="quarto-category-count">(2)</span></div><div class="category" data-category="epidemiology">epidemiology <span class="quarto-category-count">(9)</span></div><div class="category" data-category="exposomics">exposomics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="exposure">exposure <span class="quarto-category-count">(1)</span></div><div class="category" data-category="gaussian processes">gaussian processes <span class="quarto-category-count">(2)</span></div><div class="category" data-category="geospatial">geospatial <span class="quarto-category-count">(12)</span></div><div class="category" data-category="geotox">geotox <span class="quarto-category-count">(1)</span></div><div class="category" data-category="groundwater">groundwater <span class="quarto-category-count">(1)</span></div><div class="category" data-category="mixtures">mixtures <span class="quarto-category-count">(4)</span></div><div class="category" data-category="mycobacteria">mycobacteria <span class="quarto-category-count">(3)</span></div><div class="category" data-category="toxicology">toxicology <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -297,7 +298,7 @@ window.Quarto = {
 </div>
 <ul class="pub-list list">
 
-  <li data-index="0" data-categories="mixtures,epidemiology,bayesian,climate" data-listing-file-modified-sort="1713027178652" data-listing-reading-time-sort="1" data-listing-word-count-sort="200">
+  <li data-index="0" data-categories="mixtures,epidemiology,bayesian,climate,environmental justice" data-listing-file-modified-sort="1713095709517" data-listing-reading-time-sort="1" data-listing-word-count-sort="200">
     <span class="listing-title lead">Associations between Flood Risk and United States Census Tract-Level Health Outcomes</span><br>
     <span class="listing-author">Alvin Sheng, Brian J Reich, &amp; Kyle P Messier</span><br>
     <span class="listing-publication fst-italic ">American Journal of Epidemiology (In Press)</span>
@@ -439,7 +440,51 @@ window.Quarto = {
     
   </li>
 
-  <li data-index="7" data-categories="geospatial,gaussian processes,air pollution" data-listing-file-modified-sort="1713028650644" data-listing-reading-time-sort="2" data-listing-word-count-sort="216">
+  <li data-index="7" data-categories="mycobacteria,geospatial,epidemiology" data-listing-file-modified-sort="1713097872691" data-listing-reading-time-sort="2" data-listing-word-count-sort="305">
+    <span class="listing-title lead">Environmental risk factors associated with pulmonary isolation of nontuberculous mycobacteria, a population-based study in the southeastern United States</span><br>
+    <span class="listing-author">Stephanie DeFlorio-Barker, Andrey Egorov, Genee S. Smith, Mark S. Murphy, Jason E. Stout, Andrew J. Ghio, Edward E. Hudgens, Kyle P. Messier, Jean-Marie Maillard, and Elizabeth D. Hilborn</span><br>
+    <span class="listing-publication fst-italic ">Science of The Total Environment</span>
+    <span class="listing-year">(2021)</span><br>
+    <a href="./publications/DeFlorio-Baker_etal_2021.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1016/j.scitotenv.2020.144552" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8317204" class="btn btn-info" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-file-earmark-pdf"></i> PMC
+    </a>
+    
+  </li>
+
+  <li data-index="8" data-categories="air pollution,environmental justice" data-listing-file-modified-sort="1713095662572" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
+    <span class="listing-title lead">Local- and regional-scale racial and ethnic disparities in air pollution determined by long-term mobile monitoring</span><br>
+    <span class="listing-author">Sarah E. Chambliss, Carlos P.R. Pinon, Kyle P. Messier, Brian LaFranchi, Crystal Romeo Upperman, Melissa M. Lunden, Allen L. Robinson, Julian D. Marshall, and Joshua S. Apte</span><br>
+    <span class="listing-publication fst-italic ">Proceedings of the National Academy of Sciences</span>
+    <span class="listing-year">(2021)</span><br>
+    <a href="./publications/Chambliss_etal_2021.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1073/pnas.2109249118" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8449331" class="btn btn-info" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-file-earmark-pdf"></i> PMC
+    </a>
+    
+  </li>
+
+  <li data-index="9" data-categories="geospatial,gaussian processes,air pollution" data-listing-file-modified-sort="1713028650644" data-listing-reading-time-sort="2" data-listing-word-count-sort="216">
     <span class="listing-title lead">Scalable penalized spatiotemporal land-use regression for ground-level nitrogen dioxide</span><br>
     <span class="listing-author">Kyle P Messier &amp; Matthias Katzfuss</span><br>
     <span class="listing-publication fst-italic ">Annals of Applied Statistics</span>
@@ -461,11 +506,156 @@ window.Quarto = {
     
   </li>
 
+  <li data-index="10" data-categories="geospatial,air pollution" data-listing-file-modified-sort="1713098360594" data-listing-reading-time-sort="2" data-listing-word-count-sort="254">
+    <span class="listing-title lead">Comparison of Mobile and Fixed-Site Black Carbon Measurements for High- Resolution Urban Pollution Mapping</span><br>
+    <span class="listing-author">Sarah E. Chambliss, Chelsea V. Preble, Julien J. Caubel, Troy Cados, Kyle P. Messier, Ramón A. Alvarez, Brian LaFranchi, Melissa Lunden, Julian D. Marshall, Adam A. Szpiro, Thomas W. Kirchstetter and Joshua S. Apte</span><br>
+    <span class="listing-publication fst-italic ">Environmental Science &amp; Technology</span>
+    <span class="listing-year">(2020)</span><br>
+    <a href="./publications/Chambliss_etal_2020.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1021/acs.est.0c01409" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+  </li>
+
+  <li data-index="11" data-categories="geospatial,air pollution,gaussian processes" data-listing-file-modified-sort="1713098952698" data-listing-reading-time-sort="2" data-listing-word-count-sort="243">
+    <span class="listing-title lead">Fine-scale spatiotemporal air pollution analysis using mobile monitors on Google Street View vehicles</span><br>
+    <span class="listing-author">Yawen Guan, Margaret C Johnson, Matthias Katzfuss, Elizabeth Mannshardt, Kyle P Messier, Brian J Reich, and Joon Jin Song</span><br>
+    <span class="listing-publication fst-italic ">Journal of the American Statistical Association: Applications and Case Studies</span>
+    <span class="listing-year">(2020)</span><br>
+    <a href="./publications/Guan_etal_2020.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1080/01621459.2019.1665526" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7953849" class="btn btn-info" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-file-earmark-pdf"></i> PMC
+    </a>
+    
+  </li>
+
+  <li data-index="12" data-categories="epidemiology,mycobacteria" data-listing-file-modified-sort="1713108918602" data-listing-reading-time-sort="2" data-listing-word-count-sort="327">
+    <span class="listing-title lead">Application of diagnostic criteria for non- tuberculous mycobacterial disease to a case series of mycobacterial-positive isolates</span><br>
+    <span class="listing-author">Andrew J. Ghio, Genee S. Smith, Stephanie DeFlorio-Barker, Kyle P. Messier, Edward Hudgens, Mark S. Murphy, Jean-Marie Maillard, Jason E. Stout, Elizabeth D. Hilborn</span><br>
+    <span class="listing-publication fst-italic ">Journal of Clincal Tuberculosis and Other Mycobacterial Diseases</span>
+    <span class="listing-year">(2019)</span><br>
+    <a href="./publications/Ghio_etal_2019.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1016/j.jctube.2019.100133" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6904831" class="btn btn-info" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-file-earmark-pdf"></i> PMC
+    </a>
+    
+  </li>
+
+  <li data-index="13" data-categories="epidemiology,groundwater,geospatial" data-listing-file-modified-sort="1713114447349" data-listing-reading-time-sort="2" data-listing-word-count-sort="260">
+    <span class="listing-title lead">Modeling groundwater nitrate exposure in private wells of North Carolina for the Agricultural Health Study</span><br>
+    <span class="listing-author">Kyle P Messier, David C Wheeler, Abigail R Flory, Rena R Jone, Deven Patel, Bernard T Nolan, &amp; Mary M Ward</span><br>
+    <span class="listing-publication fst-italic ">Science of the Total Environment</span>
+    <span class="listing-year">(2019)</span><br>
+    <a href="./publications/Messier_etal_2019.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1016/j.scitotenv.2018.11.022" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6581064" class="btn btn-info" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-file-earmark-pdf"></i> PMC
+    </a>
+    
+  </li>
+
+  <li data-index="14" data-categories="epidemiology,air pollution,geospatial" data-listing-file-modified-sort="1713113302746" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
+    <span class="listing-title lead">Long-Term Exposure to Ultrafine Particles and Incidence of Cardiovascular and Cerebrovascular Disease in a Prospective Study of a Dutch Cohort</span><br>
+    <span class="listing-author">George S. Downward, Erik J.H.M. van Nunen, Jules Kerckhoffs, Paolo Vineis, Bert Brunekreef, Jolanda M.A. Boer, Kyle P. Messier, Ananya Roy, W. Monique M. Verschuren, Yvonne T. van der Schouw, Ivonne Sluijs, John Gulliver, Gerard Hoek, and Roel Vermeulen</span><br>
+    <span class="listing-publication fst-italic ">Environmental Health Perspectives</span>
+    <span class="listing-year">(2018)</span><br>
+    <a href="./publications/Downward_etal_2018.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1289/EHP3047" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6371648" class="btn btn-info" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-file-earmark-pdf"></i> PMC
+    </a>
+    
+  </li>
+
+  <li data-index="15" data-categories="exposure,air pollution,geospatial" data-listing-file-modified-sort="1713114960585" data-listing-reading-time-sort="2" data-listing-word-count-sort="263">
+    <span class="listing-title lead">Mapping Air Pollution with Google Street View Cars: Efficient Approaches with Mobile Monitoring and Land Use Regression</span><br>
+    <span class="listing-author">Kyle P. Messier, Sarah E. Chambliss, Shahzad Gani, Ramon Alvarez, Michael Brauer, Jonathan J. Choi, Steven P. Hamburg, Jules Kerckhoffs, Brian LaFranchi, Melissa M. Lunden, Julian D. Marshall, Christopher J. Portier, Ananya Roy, Adam A. Szpiro, Roel C. H. Vermeulen and Joshua S. Apte</span><br>
+    <span class="listing-publication fst-italic ">Environmental Science &amp; Technology</span>
+    <span class="listing-year">(2018)</span><br>
+    <a href="./publications/Messier_etal_2018.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1021/acs.est.8b03395" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+  </li>
+
+  <li data-index="16" data-categories="geospatial,air pollution" data-listing-file-modified-sort="1713099192566" data-listing-reading-time-sort="2" data-listing-word-count-sort="247">
+    <span class="listing-title lead">High-Resolution Air Pollution Mapping with Google Street View Cars: Exploiting Big Data</span><br>
+    <span class="listing-author">Joshua S. Apte, Kyle P. Messier, Shahzad Gani, Michael Brauer, Thomas W. Kirchstetter, Melissa M. Lunden, Julian D. Marshall, Christopher J. Portier, Roel C.H. Vermeulen and Steven P. Hamburg</span><br>
+    <span class="listing-publication fst-italic ">Environmental Science &amp; Technology</span>
+    <span class="listing-year">(2017)</span><br>
+    <a href="./publications/Apte_etal_2017.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1021/acs.est.7b00891" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+  </li>
+
 </ul>
 
 <div class="listing-no-matching d-none">
 No matching items
 </div>
+<nav id="articles-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 
 

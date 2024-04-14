@@ -1,0 +1,26 @@
+---
+title: "Local- and regional-scale racial and ethnic disparities in air pollution determined by long-term mobile monitoring"
+type: "article"
+author: "Sarah E. Chambliss, Carlos P.R. Pinon, Kyle P. Messier, Brian LaFranchi, Crystal Romeo Upperman, Melissa M. Lunden, Allen L. Robinson, Julian D. Marshall, and Joshua S. Apte"
+year: "2021"
+publication: "Proceedings of the National Academy of Sciences"
+preprint: ""
+doi: "https://doi.org/10.1073/pnas.2109249118"
+pmc: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8449331"
+pmid: "34493674"
+toc: false
+categories:
+  - air pollution
+  - environmental justice
+---
+
+## Citation 
+
+> Chambliss SE, Pinon CPR, Messier KP, LaFranchi B, Upperman CR, Lunden MM, Robinson AL, Marshall JD, Apte JS. Local- and regional-scale racial and ethnic disparities in air pollution determined by long-term mobile monitoring. Proc Natl Acad Sci U S A. 2021 Sep 14;118(37):e2109249118. doi: 10.1073/pnas.2109249118. PMID: 34493674; PMCID: PMC8449331
+
+## Abstract
+
+It is known, to researchers and heavily impacted communities, that people of color face a higher average burden of air pollution. It was unknown whether racial/ethnic disparities were caused by spatial heterogeneities at the level of city blocks, neighborhoods, or urban regions. Our approach leverages a unique set of highly local observations, covering every city block of 13 cities and urban districts that are home to 450,000 people. We find that even for pollutants with steep localized gradients, differences in average outdoor concentrations among racial/ethnic groups are driven by regional variability. However, localized peaks indicate opportunities to reduce extremes within groups. The methods and findings of this study can inform strategies to reduce disparities in urban air pollution exposure.
+
+
+

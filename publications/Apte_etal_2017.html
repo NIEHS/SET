@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kristin M. Eccles, Agnes L. Karmaus, Nicole C. Kleinstreuer, Fred Parham, Cynthia V. Rider, John F. Wambaugh, Kyle P. Messier">
+<meta name="author" content="Joshua S. Apte, Kyle P. Messier, Shahzad Gani, Michael Brauer, Thomas W. Kirchstetter, Melissa M. Lunden, Julian D. Marshall, Christopher J. Portier, Roel C.H. Vermeulen and Steven P. Hamburg">
 
-<title>{SET}grp - A geospatial modeling approach to quantifying the risk of exposure to environmental chemical mixtures via a common molecular target.</title>
+<title>{SET}grp - High-Resolution Air Pollution Mapping with Google Street View Cars: Exploiting Big Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -202,12 +202,10 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">A geospatial modeling approach to quantifying the risk of exposure to environmental chemical mixtures via a common molecular target.</h1>
+<h1 class="title">High-Resolution Air Pollution Mapping with Google Street View Cars: Exploiting Big Data</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">mixtures</div>
-    <div class="quarto-category">toxicology</div>
     <div class="quarto-category">geospatial</div>
-    <div class="quarto-category">geotox</div>
+    <div class="quarto-category">air pollution</div>
   </div>
   </div>
 
@@ -218,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Kristin M. Eccles, Agnes L. Karmaus, Nicole C. Kleinstreuer, Fred Parham, Cynthia V. Rider, John F. Wambaugh, Kyle P. Messier </p>
+             <p>Joshua S. Apte, Kyle P. Messier, Shahzad Gani, Michael Brauer, Thomas W. Kirchstetter, Melissa M. Lunden, Julian D. Marshall, Christopher J. Portier, Roel C.H. Vermeulen and Steven P. Hamburg </p>
           </div>
   </div>
     
@@ -228,7 +226,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-title-meta-heading">Doi</div>
     <div class="quarto-title-meta-contents">
       <p class="doi">
-        <a href="https://doi.org/https://doi.org/10.1016/j.scitotenv.2022.158905">https://doi.org/10.1016/j.scitotenv.2022.158905</a>
+        <a href="https://doi.org/https://doi.org/10.1021/acs.est.7b00891">https://doi.org/10.1021/acs.est.7b00891</a>
       </p>
     </div>
   </div>
@@ -242,12 +240,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
 <blockquote class="blockquote">
-<p>Eccles KM, Karmaus AL, Kleinstreuer NC, Parham F, Rider CV, Wambaugh JF, Messier KP. A geospatial modeling approach to quantifying the risk of exposure to environmental chemical mixtures via a common molecular target. Sci Total Environ. 2023 Jan 10;855:158905. doi: 10.1016/j.scitotenv.2022.158905. Epub 2022 Sep 21. PMID: 36152849; PMCID: PMC9979101.</p>
+<p>Apte JS, Messier KP, Gani S, Brauer M, Kirchstetter TW, Lunden MM, Marshall JD, Portier CJ, Vermeulen RCH, Hamburg SP. High-Resolution Air Pollution Mapping with Google Street View Cars: Exploiting Big Data. Environ Sci Technol. 2017 Jun 20;51(12):6999-7008. doi: 10.1021/acs.est.7b00891. Epub 2017 Jun 5. PMID: 28578585.</p>
 </blockquote>
 </section>
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>In the real world, individuals are exposed to chemicals from sources that vary over space and time. However, traditional risk assessments based on in vivo animal studies typically use a chemical-by-chemical approach and apical disease endpoints. New approach methodologies (NAMs) in toxicology, such as in vitro high-throughput (HTS) assays generated in Tox21 and ToxCast, can more readily provide mechanistic chemical hazard information for chemicals with no existing data than in vivo methods. In this paper, we establish a workflow to assess the joint action of 41 modeled ambient chemical exposures in the air from the USA-wide National Air Toxics Assessment by integrating human exposures with hazard data from curated HTS (cHTS) assays to identify counties where exposure to the local chemical mixture may perturb a common biological target. We exemplify this proof-of-concept using CYP1A1 mRNA up-regulation. We first estimate internal exposure and then convert the inhaled concentration to a steady state plasma concentration using physiologically based toxicokinetic modeling parameterized with county-specific information on ages and body weights. We then use the estimated blood plasma concentration and the concentration-response curve from the in vitro cHTS assay to determine the chemical-specific effects of the mixture components. Three mixture modeling methods were used to estimate the joint effect from exposure to the chemical mixture on the activity levels, which were geospatially mapped. Finally, a Monte Carlo uncertainty analysis was performed to quantify the influence of each parameter on the combined effects. This workflow demonstrates how NAMs can be used to predict early-stage biological perturbations that can lead to adverse health outcomes that result from exposure to chemical mixtures. As a result, this work will advance mixture risk assessment and other early events in the effects of chemicals.</p>
+<p>Air pollution affects billions of people worldwide, yet ambient pollution measurements are limited for much of the world. Urban air pollution concentrations vary sharply over short distances (≪1 km) owing to unevenly distributed emission sources, dilution, and physicochemical transformations. Accordingly, even where present, conventional fixed-site pollution monitoring methods lack the spatial resolution needed to characterize heterogeneous human exposures and localized pollution hotspots. Here, we demonstrate a measurement approach to reveal urban air pollution patterns at 4–5 orders of magnitude greater spatial precision than possible with current central-site ambient monitoring. We equipped Google Street View vehicles with a fast-response pollution measurement platform and repeatedly sampled every street in a 30-km2 area of Oakland, CA, developing the largest urban air quality data set of its type. Resulting maps of annual daytime NO, NO2, and black carbon at 30 m-scale reveal stable, persistent pollution patterns with surprisingly sharp small-scale variability attributable to local sources, up to 5–8× within individual city blocks. Since local variation in air quality profoundly impacts public health and environmental equity, our results have important implications for how air pollution is measured and managed. If validated elsewhere, this readily scalable measurement approach could address major air quality data gaps worldwide.</p>
 
 
 </section>

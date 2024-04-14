@@ -1,0 +1,25 @@
+---
+title: "Application of diagnostic criteria for non- tuberculous mycobacterial disease to a case series of mycobacterial-positive isolates"
+type: "article"
+author: "Andrew J. Ghio, Genee S. Smith, Stephanie DeFlorio-Barker, Kyle P. Messier, Edward Hudgens, Mark S. Murphy, Jean-Marie Maillard, Jason E. Stout, Elizabeth D. Hilborn"
+year: "2019"
+publication: "Journal of Clincal Tuberculosis and Other Mycobacterial Diseases"
+preprint: ""
+doi: "https://doi.org/10.1016/j.jctube.2019.100133"
+pmc: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6904831"
+pmid: "31867444"
+toc: false
+categories:
+  - epidemiology
+  - mycobacteria
+---
+
+## Citation
+
+> Ghio AJ, Smith GS, DeFlorio-Barker S, Messier KP, Hudgens E, Murphy MS, Maillard JM, Stout JE, Hilborn ED. Application of diagnostic criteria for non- tuberculous mycobacterial disease to a case series of mycobacterial-positive isolates. J Clin Tuberc Other Mycobact Dis. 2019 Nov 16;17:100133. doi: 10.1016/j.jctube.2019.100133. PMID: 31867444; PMCID: PMC6904831.
+
+## Abstract
+
+The American Thoracic Society (ATS) and Infectious Diseases Society of America (IDSA) have provided guidelines to assist in the accurate diagnosis of lung disease caused by nontuberculous mycobacteria (NTM). These microbiologic, radiographic, and clinical criteria are considered equally important and all must be met to make the diagnosis of NTM lung disease. To assess the significance of the three criteria, each was evaluated for its contribution to the diagnosis of NTM lung disease in a case series. Laboratory reports of any specimen positive for NTM isolation were collected between January 1, 2006 and December 31, 2010 at a university medical center. Medical records were reviewed in detail using a standardized form. The total number of patients with a culture from any site positive for NTM was 297 while the number from respiratory specimens during the same period was 232 (78%). Samples from two of these patients also yielded M. tuberculosis complex and were excluded. While 128 of the remaining 230 patients (55.7%) in the cohort met the microbiologic criterion for diagnosis of NTM lung disease, 151 (65.6%) and 189 (78.3%) met the radiologic and clinical criteria respectively. Only 78 patients (33.9%) met all three criteria provided by the ATS/IDSA for diagnosis of NTM lung disease. This evaluation reaffirms that defining NTM lung disease using either one or two of the criteria provided by the 2007 ATS/IDSA guidelines may significantly overestimate the number of cases of NTM lung disease. Based on the experience of defining NTM lung disease in this case series, recommendations for modification of the ATS/IDSA guidelines are provided which include expansion of both radiologic patterns and the list of symptoms associated with NTM lung disease.
+
+

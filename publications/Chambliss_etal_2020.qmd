@@ -1,0 +1,26 @@
+---
+title: "Comparison of Mobile and Fixed-Site Black Carbon Measurements for High- Resolution Urban Pollution Mapping"
+type: "article"
+author: "Sarah E. Chambliss, Chelsea V. Preble, Julien J. Caubel, Troy Cados, Kyle P. Messier, Ramón A. Alvarez, Brian LaFranchi, Melissa Lunden, Julian D. Marshall, Adam A. Szpiro, Thomas W. Kirchstetter and Joshua S. Apte"
+year: "2020"
+publication: "Environmental Science & Technology"
+preprint: ""
+doi: "https://doi.org/10.1021/acs.est.0c01409"
+pmc: ""
+pmid: "32525662."
+toc: false
+categories:
+  - geospatial
+  - air pollution
+---
+
+## Citation 
+
+> Chambliss SE, Preble CV, Caubel JJ, Cados T, Messier KP, Alvarez RA, LaFranchi B, Lunden M, Marshall JD, Szpiro AA, Kirchstetter TW, Apte JS. Comparison of Mobile and Fixed-Site Black Carbon Measurements for High- Resolution Urban Pollution Mapping. Environ Sci Technol. 2020 Jul 7;54(13):7848-7857. doi: 10.1021/acs.est.0c01409. Epub 2020 Jun 24. PMID: 32525662.
+
+## Abstract
+
+Urban concentrations of black carbon (BC) and other primary pollutants vary on small spatial scales (<100m). Mobile air pollution measurements can provide information on fine-scale spatial variation, thereby informing exposure assessment and mitigation efforts. However, the temporal sparsity of these measurements presents a challenge for estimating representative long-term concentrations. We evaluate the capabilities of mobile monitoring in the represention of time-stable spatial patterns by comparing against a large set of continuous fixed-site measurements from a sampling campaign in West Oakland, California. Custom-built, low-cost aerosol black carbon detectors (ABCDs) provided 100 days of continuous measurements at 97 near-road and 3 background fixed sites during summer 2017; two concurrently operated mobile laboratories collected over 300 h of in-motion measurements using a photoacoustic extinctiometer. The spatial coverage from mobile monitoring reveals patterns missed by the fixed-site network. Time-integrated measurements from mobile lab visits to fixed-site monitors reveal modest correlation (spatial R2 = 0.51) with medians of full daytime fixed-site measurements. Aggregation of mobile monitoring data in space and time can mitigate high levels of uncertainty associated with measurements at precise locations or points in time. However, concentrations estimated by mobile monitoring show a loss of spatial fidelity at spatial aggregations greater than 100 m.
+
+
+

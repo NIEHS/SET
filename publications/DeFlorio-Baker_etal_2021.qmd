@@ -1,0 +1,28 @@
+---
+title: "Environmental risk factors associated with pulmonary isolation of nontuberculous mycobacteria, a population-based study in the southeastern United States"
+type: "article"
+author: "Stephanie DeFlorio-Barker, Andrey Egorov, Genee S. Smith, Mark S. Murphy, Jason E. Stout, Andrew J. Ghio, Edward E. Hudgens, Kyle P. Messier, Jean-Marie Maillard, and Elizabeth D. Hilborn"
+year: "2021"
+publication: "Science of The Total Environment"
+preprint: ""
+doi: "https://doi.org/10.1016/j.scitotenv.2020.144552"
+pmc: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8317204"
+pmid: "33383509"
+toc: false
+categories:
+  - mycobacteria
+  - geospatial
+  - epidemiology
+---
+
+## Citation 
+
+> DeFlorio-Barker S, Egorov A, Smith GS, Murphy MS, Stout JE, Ghio AJ, Hudgens EE, Messier KP, Maillard JM, Hilborn ED. Environmental risk factors associated with pulmonary isolation of nontuberculous mycobacteria, a population-based study in the southeastern United States. Sci Total Environ. 2021 Apr 1;763:144552. doi: 10.1016/j.scitotenv.2020.144552. Epub 2020 Dec 18. PMID: 33383509; PMCID: PMC8317204.
+
+## Abstract
+
+The prevalence of pulmonary nontuberculous mycobacteria (NTM) disease is increasing in the United States. Associations were evaluated among residents of central North Carolina between pulmonary isolation of NTM and environmental risk factors including: surface water, drinking water source, urbanicity, and exposures to soils favorable to NTM growth. Reports of pulmonary NTM isolation from patients residing in three counties in central North Carolina during 2006 – 2010 were collected from clinical laboratories and from the State Laboratory of Public Health. This analysis was restricted to patients residing in single family homes with a valid residential street address and conducted at the census block level (n=13,495 blocks). Negative binomial regression models with thin-plate spline smoothing function of geographic coordinates were applied to assess effects of census block-level environmental characteristics on pulmonary NTM isolation count. Patients (n = 507) resided in 473 (3.4%) blocks within the study area. Blocks with >20% hydric soils had 26.8% (95% Confidence Interval (CI): 1.8%, 58.0%), p=0.03, higher adjusted mean patient counts compared to blocks with ≤20% hydric soil, while blocks with >50% acidic soil had 24.8% (−2.4%, 59.6%), p=0.08 greater mean patient count compared to blocks with ≤50% acidic soil. Isolation rates varied by county after adjusting for covariates. The effects of using disinfected public water supplies vs. private wells, and of various measures of urbanicity were not significantly associated with NTM. Our results suggest that proximity to certain soil types (hydric and acidic) could be a risk factor for pulmonary NTM isolation in central North Carolina.
+
+
+
+

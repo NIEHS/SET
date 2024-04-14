@@ -1,0 +1,24 @@
+---
+title: "Modeling groundwater nitrate exposure in private wells of North Carolina for the Agricultural Health Study"
+type: "article"
+author: "Kyle P Messier, David C Wheeler, Abigail R Flory, Rena R Jone, Deven Patel, Bernard T Nolan, & Mary M Ward"
+year: "2019"
+publication: "Science of the Total Environment"
+preprint: ""
+doi: "https://doi.org/10.1016/j.scitotenv.2018.11.022"
+pmc: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6581064"
+pmid: "30476830"
+toc: false
+categories:
+  - epidemiology
+  - groundwater
+  - geospatial
+---
+
+## Citation
+
+> Messier KP, Wheeler DC, Flory AR, Jones RR, Patel D, Nolan BT, Ward MH. Modeling groundwater nitrate exposure in private wells of North Carolina for the Agricultural Health Study. Sci Total Environ. 2019 Mar 10;655:512-519. doi: 10.1016/j.scitotenv.2018.11.022. Epub 2018 Nov 5. PMID: 30476830; PMCID: PMC6581064.
+
+## Abstract
+
+Unregulated private wells in the United States are susceptible to many groundwater contaminants. Ingestion of nitrate, the most common anthropogenic private well contaminant in the United States, can lead to the endogenous formation of N-nitroso-compounds, which are known human carcinogens. In this study, we expand upon previous efforts to model private well groundwater nitrate concentration in North Carolina by developing multiple machine learning models and testing against out-of-sample prediction. Our purpose was to develop exposure estimates in unmonitored areas for use in the Agricultural Health Study (AHS) cohort. Using approximately 22,000 private well nitrate measurements in North Carolina, we trained and tested continuous models including a censored maximum likelihood-based linear model, random forest, gradient boosted machine, support vector machine, neural networks, and kriging. Continuous nitrate models had low predictive performance (R2 < 0.33), so multiple random forest classification models were also trained and tested. The final classification approach predicted <1 mg/L, 1-5 mg/L, and ≥5 mg/L using a random forest model with 58 variables and maximizing the Cohen's kappa statistic. The final model had an overall accuracy of 0.75 and high specificity for the higher two categories and high sensitivity for the lowest category. The results will be used for the categorical prediction of private well nitrate for AHS cohort participants that reside in North Carolina.

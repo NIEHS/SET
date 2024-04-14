@@ -1,0 +1,25 @@
+---
+title: "High-Resolution Air Pollution Mapping with Google Street View Cars: Exploiting Big Data"
+type: "article"
+author: "Joshua S. Apte, Kyle P. Messier, Shahzad Gani, Michael Brauer, Thomas W. Kirchstetter, Melissa M. Lunden, Julian D. Marshall, Christopher J. Portier, Roel C.H. Vermeulen and Steven P. Hamburg"
+year: "2017"
+publication: "Environmental Science & Technology"
+preprint: ""
+doi: "https://doi.org/10.1021/acs.est.7b00891"
+pmc: ""
+pmid: "28578585"
+toc: false
+categories:
+  - geospatial
+  - air pollution
+---
+
+## Citation
+
+> Apte JS, Messier KP, Gani S, Brauer M, Kirchstetter TW, Lunden MM, Marshall JD, Portier CJ, Vermeulen RCH, Hamburg SP. High-Resolution Air Pollution Mapping with Google Street View Cars: Exploiting Big Data. Environ Sci Technol. 2017 Jun 20;51(12):6999-7008. doi: 10.1021/acs.est.7b00891. Epub 2017 Jun 5. PMID: 28578585.
+
+## Abstract
+
+Air pollution affects billions of people worldwide, yet ambient pollution measurements are limited for much of the world. Urban air pollution concentrations vary sharply over short distances (≪1 km) owing to unevenly distributed emission sources, dilution, and physicochemical transformations. Accordingly, even where present, conventional fixed-site pollution monitoring methods lack the spatial resolution needed to characterize heterogeneous human exposures and localized pollution hotspots. Here, we demonstrate a measurement approach to reveal urban air pollution patterns at 4–5 orders of magnitude greater spatial precision than possible with current central-site ambient monitoring. We equipped Google Street View vehicles with a fast-response pollution measurement platform and repeatedly sampled every street in a 30-km2 area of Oakland, CA, developing the largest urban air quality data set of its type. Resulting maps of annual daytime NO, NO2, and black carbon at 30 m-scale reveal stable, persistent pollution patterns with surprisingly sharp small-scale variability attributable to local sources, up to 5–8× within individual city blocks. Since local variation in air quality profoundly impacts public health and environmental equity, our results have important implications for how air pollution is measured and managed. If validated elsewhere, this readily scalable measurement approach could address major air quality data gaps worldwide.
+
+
