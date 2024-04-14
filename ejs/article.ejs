@@ -1,5 +1,13 @@
 
 ```{=html}
+<!-- Styles to limit the width of the author section -->
+<style>
+  .listing-author {
+    max-width: 300px; /* Set a maximum width for the author section */
+    word-wrap: break-word; /* Allow text to wrap to the next line */
+  }
+</style>
+
 <ul class="pub-list list">
 <% for (const item of items) { %>
   <li <%= metadataAttrs(item) %>>
@@ -33,6 +41,7 @@
   </li>
 <% } %>
 </ul>
+
 
 
 ```
