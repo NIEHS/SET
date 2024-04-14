@@ -11,7 +11,7 @@ date-format: long
 
 ## Welcome to the Spatiotemporal Exposures and Toxicology group
 
-Welcome to the Spatiotemporal Exposures and Toxicology group (a.k.a. SET group). As an investigator, it is my job to ensure you have the resources and support you need to succeed in your research. This syllabus is a living document that outlines the expectations and resources available to you as a member of the group. Please make suggestions for improvements and additions to this document through GitHub pull requests.
+Welcome to the Spatiotemporal Exposures and Toxicology group (a.k.a. SET group). This is a document intended for current and prospective members of the Spatiotemporal Exposures and Toxicology (SET) group at the National Institute of Environmental Health Sciences (NIEHS). As an investigator, it is my job to ensure you have the resources and support you need to succeed in your research. This syllabus is a living document that outlines the expectations and resources available to you as a member of the group. Please make suggestions for improvements and additions to this document through GitHub pull requests.
 
 Sincerely,
 
