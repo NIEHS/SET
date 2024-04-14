@@ -78,9 +78,8 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-editor','listing-language','listing-title','listing-type','listing-author','listing-year','listing-publication','listing-preprint','listing-doi','listing-pmc','listing-pmid','listing-toc','listing-categories','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-materials',{ data: ['index'] },{ data: ['categories'] }],
-      page: 10,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      valueNames: ['listing-project','listing-website','listing-format','listing-editor','listing-language','listing-title','listing-type','listing-author','listing-year','listing-publication','listing-preprint','listing-doi','listing-pmc','listing-pmid','listing-toc','listing-categories','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-materials',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
       searchColumns: ["listing-title","listing-author","listing-publication","listing-year"],
     };
 
@@ -257,7 +256,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(17)</span></div><div class="category" data-category="air pollution">air pollution <span class="quarto-category-count">(9)</span></div><div class="category" data-category="bayesian">bayesian <span class="quarto-category-count">(2)</span></div><div class="category" data-category="climate">climate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="environmental justice">environmental justice <span class="quarto-category-count">(2)</span></div><div class="category" data-category="epidemiology">epidemiology <span class="quarto-category-count">(9)</span></div><div class="category" data-category="exposomics">exposomics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="exposure">exposure <span class="quarto-category-count">(1)</span></div><div class="category" data-category="gaussian processes">gaussian processes <span class="quarto-category-count">(2)</span></div><div class="category" data-category="geospatial">geospatial <span class="quarto-category-count">(12)</span></div><div class="category" data-category="geotox">geotox <span class="quarto-category-count">(1)</span></div><div class="category" data-category="groundwater">groundwater <span class="quarto-category-count">(1)</span></div><div class="category" data-category="mixtures">mixtures <span class="quarto-category-count">(4)</span></div><div class="category" data-category="mycobacteria">mycobacteria <span class="quarto-category-count">(3)</span></div><div class="category" data-category="toxicology">toxicology <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(19)</span></div><div class="category" data-category="air pollution">air pollution <span class="quarto-category-count">(9)</span></div><div class="category" data-category="bayesian">bayesian <span class="quarto-category-count">(2)</span></div><div class="category" data-category="climate">climate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="environmental justice">environmental justice <span class="quarto-category-count">(2)</span></div><div class="category" data-category="epidemiology">epidemiology <span class="quarto-category-count">(10)</span></div><div class="category" data-category="exposomics">exposomics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="exposure">exposure <span class="quarto-category-count">(2)</span></div><div class="category" data-category="gaussian processes">gaussian processes <span class="quarto-category-count">(2)</span></div><div class="category" data-category="geospatial">geospatial <span class="quarto-category-count">(14)</span></div><div class="category" data-category="geotox">geotox <span class="quarto-category-count">(1)</span></div><div class="category" data-category="groundwater">groundwater <span class="quarto-category-count">(1)</span></div><div class="category" data-category="mixtures">mixtures <span class="quarto-category-count">(4)</span></div><div class="category" data-category="mycobacteria">mycobacteria <span class="quarto-category-count">(3)</span></div><div class="category" data-category="surface water">surface water <span class="quarto-category-count">(2)</span></div><div class="category" data-category="toxicology">toxicology <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -272,25 +271,6 @@ window.Quarto = {
 </nav>
 <div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
 <div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-articles-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-articles'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-         <option value="listing-publication" data-direction="asc">
-          Publication
-        </option>
-         <option value="listing-year" data-direction="asc">
-          Year
-        </option>
-     </select>
-  </div>
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
       <input type="text" class="search form-control" placeholder="Filter">
@@ -598,7 +578,25 @@ window.Quarto = {
     
   </li>
 
-  <li data-index="14" data-categories="epidemiology,air pollution,geospatial" data-listing-file-modified-sort="1713115303027" data-listing-reading-time-sort="2" data-listing-word-count-sort="371">
+  <li data-index="14" data-categories="exposure,surface water,geospatial" data-listing-file-modified-sort="1713116684744" data-listing-reading-time-sort="2" data-listing-word-count-sort="239">
+    <span class="listing-title lead">Geostatistical Prediction of Microbial Water Quality Throughout a Stream Network Using Meteorology, Land Cover, and Spatiotemporal Autocorrelation</span><br>
+    <span class="listing-author">David A. Holcomb, Kyle P. Messier, Marc L. Serre, Jakob G. Rowny, and Jill R. Stewart</span><br>
+    <span class="listing-publication fst-italic ">Environmental Science &amp; Technology</span>
+    <span class="listing-year">(2018)</span><br>
+    <a href="./publications/Holcomb_etal_2018.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1021/acs.est.8b01178" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+  </li>
+
+  <li data-index="15" data-categories="epidemiology,air pollution,geospatial" data-listing-file-modified-sort="1713115303027" data-listing-reading-time-sort="2" data-listing-word-count-sort="371">
     <span class="listing-title lead">Long-Term Exposure to Ultrafine Particles and Incidence of Cardiovascular and Cerebrovascular Disease in a Prospective Study of a Dutch Cohort</span><br>
     <span class="listing-author">George S. Downward, Erik J.H.M. van Nunen, Jules Kerckhoffs, Paolo Vineis, Bert Brunekreef, Jolanda M.A. Boer, Kyle P. Messier, Ananya Roy, W. Monique M. Verschuren, Yvonne T. van der Schouw, Ivonne Sluijs, John Gulliver, Gerard Hoek, and Roel Vermeulen</span><br>
     <span class="listing-publication fst-italic ">Environmental Health Perspectives</span>
@@ -620,7 +618,7 @@ window.Quarto = {
     
   </li>
 
-  <li data-index="15" data-categories="exposure,air pollution,geospatial" data-listing-file-modified-sort="1713114960585" data-listing-reading-time-sort="2" data-listing-word-count-sort="263">
+  <li data-index="16" data-categories="exposure,air pollution,geospatial" data-listing-file-modified-sort="1713114960585" data-listing-reading-time-sort="2" data-listing-word-count-sort="263">
     <span class="listing-title lead">Mapping Air Pollution with Google Street View Cars: Efficient Approaches with Mobile Monitoring and Land Use Regression</span><br>
     <span class="listing-author">Kyle P. Messier, Sarah E. Chambliss, Shahzad Gani, Ramon Alvarez, Michael Brauer, Jonathan J. Choi, Steven P. Hamburg, Jules Kerckhoffs, Brian LaFranchi, Melissa M. Lunden, Julian D. Marshall, Christopher J. Portier, Ananya Roy, Adam A. Szpiro, Roel C. H. Vermeulen and Joshua S. Apte</span><br>
     <span class="listing-publication fst-italic ">Environmental Science &amp; Technology</span>
@@ -638,7 +636,29 @@ window.Quarto = {
     
   </li>
 
-  <li data-index="16" data-categories="geospatial,air pollution" data-listing-file-modified-sort="1713099192566" data-listing-reading-time-sort="2" data-listing-word-count-sort="247">
+  <li data-index="17" data-categories="epidemiology,surface water,geospatial" data-listing-file-modified-sort="1713121143693" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+    <span class="listing-title lead">Extreme precipitation and emergency room visits for influenza in Massachusetts: a case- crossover analysis</span><br>
+    <span class="listing-author">Genee S. Smith, Kyle P. Messier, James L. Crooks, Timothy J. Wade, Cynthia J. Lin, &amp; Elizabeth D. Hilborn</span><br>
+    <span class="listing-publication fst-italic ">Environmental Health</span>
+    <span class="listing-year">(2017)</span><br>
+    <a href="./publications/Smith_etal_2017.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1186/s12940-017-0312-7" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5645981" class="btn btn-info" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-file-earmark-pdf"></i> PMC
+    </a>
+    
+  </li>
+
+  <li data-index="18" data-categories="geospatial,air pollution" data-listing-file-modified-sort="1713099192566" data-listing-reading-time-sort="2" data-listing-word-count-sort="247">
     <span class="listing-title lead">High-Resolution Air Pollution Mapping with Google Street View Cars: Exploiting Big Data</span><br>
     <span class="listing-author">Joshua S. Apte, Kyle P. Messier, Shahzad Gani, Michael Brauer, Thomas W. Kirchstetter, Melissa M. Lunden, Julian D. Marshall, Christopher J. Portier, Roel C.H. Vermeulen and Steven P. Hamburg</span><br>
     <span class="listing-publication fst-italic ">Environmental Science &amp; Technology</span>
@@ -661,9 +681,6 @@ window.Quarto = {
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-<nav id="articles-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
 </div>
 
 

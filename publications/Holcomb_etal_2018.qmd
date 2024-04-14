@@ -1,0 +1,25 @@
+---
+title: "Geostatistical Prediction of Microbial Water Quality Throughout a Stream Network Using Meteorology, Land Cover, and Spatiotemporal Autocorrelation"
+type: "article"
+author: "David A. Holcomb, Kyle P. Messier, Marc L. Serre, Jakob G. Rowny, and Jill R. Stewart"
+year: "2018"
+publication: "Environmental Science & Technology"
+preprint: ""
+doi: "https://doi.org/10.1021/acs.est.8b01178"
+pmc: ""
+pmid: "29886747"
+toc: false
+categories:
+  - exposure
+  - surface water
+  - geospatial
+---
+
+## Citation
+
+> Holcomb DA, Messier KP, Serre ML, Rowny JG, Stewart JR. Geostatistical Prediction of Microbial Water Quality Throughout a Stream Network Using Meteorology, Land Cover, and Spatiotemporal Autocorrelation. Environ Sci Technol. 2018 Jul 17;52(14):7775-7784. doi: 10.1021/acs.est.8b01178. Epub 2018 Jun 25. PMID: 29886747
+
+## Abstract
+
+Predictive modeling is promising as an inexpensive tool to assess water quality. We developed geostatistical predictive models of microbial water quality that empirically modeled spatiotemporal autocorrelation in measured fecal coliform (FC) bacteria concentrations to improve prediction. We compared five geostatistical models featuring different autocorrelation structures, fit to 676 observations from 19 locations in North Carolina’s Jordan Lake watershed using meteorological and land cover predictor variables. Though stream distance metrics (with and without flow-weighting) failed to improve prediction over the Euclidean distance metric, incorporating temporal autocorrelation substantially improved prediction over the space-only models. We predicted FC throughout the stream network daily for one year, designating locations “impaired”, “unimpaired”, or “unassessed” if the probability of exceeding the state standard was ≥90%, ≤10%, or >10% but <90%, respectively. We could assign impairment status to more of the stream network on days any FC were measured, suggesting frequent sample-based monitoring remains necessary, though implementing spatiotemporal predictive models may reduce the number of concurrent sampling locations required to adequately assess water quality. Together, these results suggest that prioritizing sampling at different times and conditions using geographically sparse monitoring networks is adequate to build robust and informative geostatistical models of water quality impairment.
+

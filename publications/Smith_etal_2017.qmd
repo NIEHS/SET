@@ -1,0 +1,38 @@
+---
+title: "Extreme precipitation and emergency room visits for influenza in Massachusetts: a case- crossover analysis"
+type: "article"
+author: "Genee S. Smith, Kyle P. Messier, James L. Crooks, Timothy J. Wade, Cynthia J. Lin, & Elizabeth D. Hilborn"
+year: "2017"
+publication: "Environmental Health"
+preprint: ""
+doi: "https://doi.org/10.1186/s12940-017-0312-7"
+pmc: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5645981"
+pmid: "29041975"
+toc: false
+categories:
+  - epidemiology
+  - surface water
+  - geospatial
+---
+
+## Citation
+
+> Smith GS, Messier KP, Crooks JL, Wade TJ, Lin CJ, Hilborn ED. Extreme precipitation and emergency room visits for influenza in Massachusetts: a case- crossover analysis. Environ Health. 2017 Oct 17;16(1):108. doi: 10.1186/s12940-017-0312-7. PMID: 29041975; PMCID: PMC5645981
+
+## Abstract
+
+#### Background
+
+Influenza peaks during the wintertime in temperate regions and during the annual rainy season in tropical regions – however reasons for the observed differences in disease ecology are poorly understood. We hypothesize that episodes of extreme precipitation also result in increased influenza in the Northeastern United States, but this association is not readily apparent, as no defined ‘rainy season’ occurs. Our objective was to evaluate the association between extreme precipitation (≥ 99th percentile) events and risk of emergency room (ER) visit for influenza in Massachusetts during 2002–2008.
+
+#### Methods
+
+A case-crossover analysis of extreme precipitation events and influenza ER visits was conducted using hospital administrative data including patient town of residence, date of visit, age, sex, and associated diagnostic codes. Daily precipitation estimates were generated for each town based upon data from the National Oceanic and Atmospheric Administration. Odds ratio (OR) and 95% confidence intervals (CI) for associations between extreme precipitation and ER visits for influenza were estimated using conditional logistic regression.
+
+#### Results
+
+Extreme precipitation events were associated with an OR = 1.23 (95%CI: 1.16, 1.30) for ER visits for influenza at lag days 0–6. There was significant effect modification by race, with the strongest association observed among Blacks (OR = 1.48 (1.30, 1.68)).
+
+#### Conclusions
+
+We observed a positive association between extreme precipitation events and ER visits for influenza, particularly among Blacks. Our results suggest that influenza is associated with extreme precipitation in a temperate area; this association could be a result of disease ecology, behavioral changes such as indoor crowding, or both. Extreme precipitation events are expected to increase in the Northeastern United States as climate change progresses. Additional research exploring the basis of this association can inform potential interventions for extreme weather events and influenza transmission.
