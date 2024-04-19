@@ -79,7 +79,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-project','listing-website','listing-format','listing-editor','listing-language','listing-title','listing-type','listing-author','listing-year','listing-publication','listing-preprint','listing-doi','listing-pmc','listing-pmid','listing-toc','listing-categories','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-materials',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
+      page: 10,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-title","listing-author","listing-publication","listing-year"],
     };
 
@@ -256,7 +257,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(19)</span></div><div class="category" data-category="air pollution">air pollution <span class="quarto-category-count">(9)</span></div><div class="category" data-category="bayesian">bayesian <span class="quarto-category-count">(2)</span></div><div class="category" data-category="climate">climate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="environmental justice">environmental justice <span class="quarto-category-count">(2)</span></div><div class="category" data-category="epidemiology">epidemiology <span class="quarto-category-count">(10)</span></div><div class="category" data-category="exposomics">exposomics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="exposure">exposure <span class="quarto-category-count">(2)</span></div><div class="category" data-category="gaussian processes">gaussian processes <span class="quarto-category-count">(2)</span></div><div class="category" data-category="geospatial">geospatial <span class="quarto-category-count">(14)</span></div><div class="category" data-category="geotox">geotox <span class="quarto-category-count">(1)</span></div><div class="category" data-category="groundwater">groundwater <span class="quarto-category-count">(1)</span></div><div class="category" data-category="mixtures">mixtures <span class="quarto-category-count">(4)</span></div><div class="category" data-category="mycobacteria">mycobacteria <span class="quarto-category-count">(3)</span></div><div class="category" data-category="surface water">surface water <span class="quarto-category-count">(2)</span></div><div class="category" data-category="toxicology">toxicology <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(21)</span></div><div class="category" data-category="air pollution">air pollution <span class="quarto-category-count">(10)</span></div><div class="category" data-category="bayesian">bayesian <span class="quarto-category-count">(2)</span></div><div class="category" data-category="climate">climate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="environmental justice">environmental justice <span class="quarto-category-count">(2)</span></div><div class="category" data-category="epidemiology">epidemiology <span class="quarto-category-count">(11)</span></div><div class="category" data-category="exposomics">exposomics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="exposure">exposure <span class="quarto-category-count">(2)</span></div><div class="category" data-category="gaussian processes">gaussian processes <span class="quarto-category-count">(2)</span></div><div class="category" data-category="geospatial">geospatial <span class="quarto-category-count">(16)</span></div><div class="category" data-category="geotox">geotox <span class="quarto-category-count">(1)</span></div><div class="category" data-category="groundwater">groundwater <span class="quarto-category-count">(2)</span></div><div class="category" data-category="mixtures">mixtures <span class="quarto-category-count">(4)</span></div><div class="category" data-category="mycobacteria">mycobacteria <span class="quarto-category-count">(3)</span></div><div class="category" data-category="radon">radon <span class="quarto-category-count">(1)</span></div><div class="category" data-category="surface water">surface water <span class="quarto-category-count">(2)</span></div><div class="category" data-category="toxicology">toxicology <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -676,11 +677,54 @@ window.Quarto = {
     
   </li>
 
+  <li data-index="19" data-categories="radon,groundwater,epidemiology,geospatial" data-listing-file-modified-sort="1713556891034" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
+    <span class="listing-title lead">Lung and stomach cancer associations with groundwater radon in North Carolina, USA</span><br>
+    <span class="listing-author">Kyle P Messier &amp; Marc L Serre</span><br>
+    <span class="listing-publication fst-italic ">International Journal of Epidemiology</span>
+    <span class="listing-year">(2017)</span><br>
+    <a href="./publications/Messier_etal_2017.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1093/ije/dyw128" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5837655." class="btn btn-info" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-file-earmark-pdf"></i> PMC
+    </a>
+    
+  </li>
+
+  <li data-index="20" data-categories="air pollution,geospatial" data-listing-file-modified-sort="1713556857783" data-listing-reading-time-sort="2" data-listing-word-count-sort="244">
+    <span class="listing-title lead">Comparison of Ultrafine Particle and Black Carbon Concentration Predictions from a Mobile and Short-Term Stationary Land-Use Regression Model</span><br>
+    <span class="listing-author">Jules Kerckhoffs, Gerard Hoek, Kyle P. Messier, Bert Brunekreef, Kees Meliefste, Jochem O. Klompmaker and Roel Vermeulen</span><br>
+    <span class="listing-publication fst-italic ">Environmental Science &amp; Technology</span>
+    <span class="listing-year">(2016)</span><br>
+    <a href="./publications/Kerckhoffs_etal_2016.html" class="btn btn-primary">
+      Details
+    </a>
+    
+    <a href="https://doi.org/10.1021/acs.est.6b03476" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      DOI
+    </a>
+    
+    
+    
+    
+  </li>
+
 </ul>
 
 <div class="listing-no-matching d-none">
 No matching items
 </div>
+<nav id="articles-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 
 

@@ -10,7 +10,7 @@ listing:
       - "year desc"
       - "title"
     filter-ui: [title,author,publication,year]
-    page-size: 50
+    page-size: 10
     field-display-names: 
       publication: "Publication"
       year: "Year"

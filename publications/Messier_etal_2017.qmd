@@ -1,0 +1,39 @@
+---
+title: "Lung and stomach cancer associations with groundwater radon in North Carolina, USA"
+type: "article"
+author: "Kyle P Messier & Marc L Serre"
+year: "2017"
+publication: "International Journal of Epidemiology"
+preprint: ""
+doi: "https://doi.org/10.1093/ije/dyw128"
+pmc: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5837655."
+pmid: "27809494."
+toc: false
+categories:
+  - radon
+  - groundwater
+  - epidemiology
+  - geospatial
+---
+
+## Citation
+
+>  Messier KP, Serre ML. Lung and stomach cancer associations with groundwater radon in North Carolina, USA. Int J Epidemiol. 2017 Apr 1;46(2):676-685. doi: 10.1093/ije/dyw128. PMID: 27639278; PMCID: PMC5837655.
+
+## Abstract
+
+#### Background
+
+The risk of indoor air radon for lung cancer is well studied, but the risks of groundwater radon for both lung and stomach cancer are much less studied, and with mixed results.
+
+#### Methods
+
+Geomasked and geocoded stomach and lung cancer cases in North Carolina from 1999 to 2009 were obtained from the North Carolina Central Cancer Registry. Models for the association with groundwater radon and multiple confounders were implemented at two scales: (i) an ecological model estimating cancer incidence rates at the census tract level; and (ii) a case-only logistic model estimating the odds that individual cancer cases are members of local cancer clusters.
+
+#### Results
+
+For the lung cancer incidence rate model, groundwater radon is associated with an incidence rate ratio of 1.03 [95% confidence interval (CI) = 1.01, 1.06] for every 100 Bq/l increase in census tract averaged concentration. For the cluster membership models, groundwater radon exposure results in an odds ratio for lung cancer of 1.13 (95% CI = 1.04, 1.23) and for stomach cancer of 1.24 (95% CI = 1.03, 1.49), which means groundwater radon, after controlling for multiple confounders and spatial auto-correlation, increases the odds that lung and stomach cancer cases are members of their respective cancer clusters.
+
+#### Conclusion
+
+Our study provides epidemiological evidence of a positive association between groundwater radon exposure and lung cancer incidence rates. The cluster membership model results find groundwater radon increases the odds that both lung and stomach cancer cases occur within their respective cancer clusters. The results corroborate previous biokinetic and mortality studies that groundwater radon is associated with increased risk for lung and stomach cancer.
