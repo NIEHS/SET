@@ -17,8 +17,6 @@ Sincerely,
 
 Kyle P Messier, PhD
 
-
-
 ## General On-Boarding Steps
 
 1.  Get NIH Badge (Background Check, Fingerprints, VISA if applicable)
@@ -38,13 +36,13 @@ Kyle P Messier, PhD
 
 ### Project Management
 
-We utilize GitHub Projects to manage our projects. Currently,Each project has a project board with the following columns:
+We utilize GitHub Projects to manage our projects. Currently, each project has a project board with the following columns:
 
-1. New Issues: General ideas and tasks that need to be fleshed out
-2. Backlog: Fleshed out ideas and tasks that need to be done. Priority is set by tasks at the top of the backlog.
-3. In Progress: Tasks that are currently being worked on. A best-practice is to minimize the number of tasks in this column.
-4. Review: Tasks that are ready for review by a collaborator
-5. Done: Completed tasks
+1.  New Issues: General ideas and tasks that need to be fleshed out
+2.  Backlog: Fleshed out ideas and tasks that need to be done. Priority is set by tasks at the top of the backlog.
+3.  In Progress: Tasks that are currently being worked on. A best-practice is to minimize the number of tasks in this column.
+4.  Review: Tasks that are ready for review by a collaborator
+5.  Done: Completed tasks
 
 GitHub Project tasks can be directly linked to **issues** on the corresponding GitHub repository. This allows for a seamless integration of project management and issue tracking.
 
@@ -59,129 +57,141 @@ GitHub Project tasks can be directly linked to **issues** on the corresponding G
 7.  mySQL (optional)
 8.  PostgresSQL (optional)
 
-
 ## eIDP (Individual Development Plans)
 
 In the first few weeks to months as a fellow, we will develop an [eIDP](https://www.cancer.gov/grants-training/training/resources-trainees/new-to-nci/eidp-at-a-glance.pdf). This will be a living document that outlines your career goals and the steps you will take to achieve them. We will review this document quarterly and update it as needed.
 
 ## Software Best Practices
 
-We are focused on developing and promoting software and computational best-practices such as test-driven-development ([TDD](https://en.wikipedia.org/wiki/Test-driven_development)) and open-source code for the environmental health sciences. To this end, we have protocols in place
-to ensure that our code is well-documented, tested, and reproducible. Below are some of the key practices we follow:
+We are focused on developing and promoting software and computational best-practices such as test-driven-development ([TDD](https://en.wikipedia.org/wiki/Test-driven_development)) and open-source code for the environmental health sciences. To this end, we have protocols in place to ensure that our code is well-documented, tested, and reproducible. Below are some of the key practices we follow:
 
-###  Unit and Integration Testing 
+### Unit and Integration Testing
 
 We will utilize various testing approaches to ensure functionality and quality of code.
 
-### Git + GitHub 
+### Git + GitHub
 
 Version control of software is essential for reproducibility and collaboration. We use Git and the [NIEHS Enterprise GitHub](https://github.com/NIEHS) for version control and collaboration.
 
 #### CI/CD Workflows
 
-Within GitHub, we will utilize continuous integration and continuous deployment workflows to ensure that our code is always functional and up-to-date. Multiple ** branch protection rules** within GitHub aresetup and enforced for our GitHub repositories:
+Within GitHub, we will utilize continuous integration and continuous deployment workflows to ensure that our code is always functional and up-to-date. Multiple \*\* branch protection rules\*\* within GitHub aresetup and enforced for our GitHub repositories:
 
-1. Require pull request and 1 review before merging to `main`
-2. Test pass: [Linting](https://lintr.r-lib.org/index.html): Code shall adhere to the style/linting rules defined in the repository.
-3. Test pass: [Tets Coverage](https://testthat.r-lib.org/): A given push should not decrease overall test coverage of the repository.
-4. Test pass: [Build Checks](https://github.com/r-lib/actions/blob/v2-branch/examples/check-standard.yaml): The code should build without errors or warnings.
+1.  Require pull request and 1 review before merging to `main`
+2.  Test pass: [Linting](https://lintr.r-lib.org/index.html): Code shall adhere to the style/linting rules defined in the repository.
+3.  Test pass: [Tets Coverage](https://testthat.r-lib.org/): A given push should not decrease overall test coverage of the repository.
+4.  Test pass: [Build Checks](https://github.com/r-lib/actions/blob/v2-branch/examples/check-standard.yaml): The code should build without errors or warnings.
 
 The CI/CD workflows in GitHub are setup to run on every push to the main branch and on every pull request. The workflows are setup using yaml files in the `.github/workflows` directory of the repository.
 
+### Processes to test or check
 
-### Processes to test or check 
-1) data type
-2) data name
-3) data size
-4) relative paths
-5) output of one module is the expectation of the input of the next module
+1)  data type
+2)  data name
+3)  data size
+4)  relative paths
+5)  output of one module is the expectation of the input of the next module
 
 ### Test Drive Development
+
 Starting from the end product, we work backwards while articulating the tests needed at each stage.
 
 #### Key Points of Unit and Integration Testing
+
 ##### File Type
-1. NetCDF
-2. Numeric, double precision
-3. NA
-4. Variable Names Exist
-5. Naming Convention
 
-##### Stats 
-1. Non-negative variance ($\sigma^2$)
-2. Mean is reasonable ($\mu$)
-3. SI Units
+1.  NetCDF
+2.  Numeric, double precision
+3.  NA
+4.  Variable Names Exist
+5.  Naming Convention
 
-##### Domain 
-1. In the geographic domain (eg. US + buffer)
-2. In Time range (e.g. 2018-2022)
+##### Stats
 
-##### Geographic 
-1. Projections
-2. Coordinate names (e.g. lat/lon)
-3. Time in acceptable format 
+1.  Non-negative variance ($\sigma^2$)
+2.  Mean is reasonable ($\mu$)
+3.  SI Units
+
+##### Domain
+
+1.  In the geographic domain (eg. US + buffer)
+2.  In Time range (e.g. 2018-2022)
+
+##### Geographic
+
+1.  Projections
+2.  Coordinate names (e.g. lat/lon)
+3.  Time in acceptable format
 
 ### Test Driven Development (TDD)- Key Steps
 
-1. **Write a Test**: Before you start writing any code, you write a test case for the functionality you want to implement. This test should fail initially because you haven't written the code to make it pass yet. The test defines the expected behavior of your code.
+1.  **Write a Test**: Before you start writing any code, you write a test case for the functionality you want to implement. This test should fail initially because you haven't written the code to make it pass yet. The test defines the expected behavior of your code.
 
-2. **Run the Test**: Run the test to ensure it fails. This step confirms that your test is correctly assessing the functionality you want to implement.
+2.  **Run the Test**: Run the test to ensure it fails. This step confirms that your test is correctly assessing the functionality you want to implement.
 
-3. **Write the Minimum Code**: Write the minimum amount of code required to make the test pass. Don't worry about writing perfect or complete code at this stage; the goal is just to make the test pass.
+3.  **Write the Minimum Code**: Write the minimum amount of code required to make the test pass. Don't worry about writing perfect or complete code at this stage; the goal is just to make the test pass.
 
-4. **Run the Test Again**: After writing the code, run the test again. If it passes, it means your code now meets the specified requirements.
+4.  **Run the Test Again**: After writing the code, run the test again. If it passes, it means your code now meets the specified requirements.
 
-5. **Refactor (if necessary)**: If your code is working and the test passes, you can refactor your code to improve its quality, readability, or performance. The key here is that you should have test coverage to ensure you don't introduce new bugs while refactoring.
+5.  **Refactor (if necessary)**: If your code is working and the test passes, you can refactor your code to improve its quality, readability, or performance. The key here is that you should have test coverage to ensure you don't introduce new bugs while refactoring.
 
-6. **Repeat**: Continue this cycle of writing a test, making it fail, writing the code to make it pass, and refactoring as needed. Each cycle should be very short and focused on a small piece of functionality.
+6.  **Repeat**: Continue this cycle of writing a test, making it fail, writing the code to make it pass, and refactoring as needed. Each cycle should be very short and focused on a small piece of functionality.
 
-7. **Complete the Feature**: Keep repeating the process until your code meets all the requirements for the feature you're working on.
+7.  **Complete the Feature**: Keep repeating the process until your code meets all the requirements for the feature you're working on.
 
 TDD helps ensure that your code is reliable and that it remains functional as you make changes and updates. It also encourages a clear understanding of the requirements and promotes better code design.
 
-### _targets and/or snakemake pipelines
+### \_targets and/or snakemake pipelines
 
 We will utilize the `targets` and/or `snakemake` packages in R and Python respectively to create reproducible workflows for our data analysis. These packages allow us to define the dependencies between the steps in our analysis and ensure that our analysis is reproducible. Additionally, they keep track of pipeline objects and skip steps that have already been run, saving time and resources.
 
-#### Some Benefits of _targets and/or snakemake pipelines
+#### Some Benefits of \_targets and/or snakemake pipelines
 
-1. **Reproducibility**: By defining the dependencies between the steps in our analysis, we ensure that our analysis is reproducible. This is essential for scientific research and data analysis.
+1.  **Reproducibility**: By defining the dependencies between the steps in our analysis, we ensure that our analysis is reproducible. This is essential for scientific research and data analysis.
 
-2. **High-Level Abstract**: _targets and snakemake allow us to define our analysis at a high level of abstraction, making it easier to understand and maintain.
+2.  **High-Level Abstract**: \_targets and snakemake allow us to define our analysis at a high level of abstraction, making it easier to understand and maintain.
 
-3. **Testing**: Creating pipelines and unit/integration testing go hand-in-hand together. As we write the pipeline, the tests to write become obvious. 
+3.  **Testing**: Creating pipelines and unit/integration testing go hand-in-hand together. As we write the pipeline, the tests to write become obvious.
 
 ## Writing and Presentations
 
-1.  Overleaf. I have a template for manuscripts and presentations. This is a good option for writing when there are a decent amount of equations. 
-2.  Quarto. I have a template for manuscripts and presentations. Quarto RevealJS and Beamer make pretty presentations that can be easily converted to HTML or PDF and shareable on our websites. 
+1.  Overleaf. I have a template for manuscripts and presentations. This is a good option for writing when there are a decent amount of equations.
+2.  Quarto. I have a template for manuscripts and presentations. Quarto RevealJS and Beamer make pretty presentations that can be easily converted to HTML or PDF and shareable on our websites.
 
 We will use these tools to write manuscripts and presentations.
 
+## Conferences
+
+We attend one to three major research society conferences per year. These conferences are a great opportunity to present our research, network with other researchers, and learn about the latest developments in our field.
+
+The conferences can vary year-to-year depending on the research of each person, but some of the conferences we typically attend include:
+
+1. [American Geophysical Union (AGU)](https://www.agu.org/)
+2. [Society of Toxicology (SOT)](https://www.toxicology.org/)
+    - [North Carolina Chapter of the Society of Toxicology (NCSOT)](https://www.toxicology.org/groups/rc/nc/index.asp)
+3. [International Society for Environmental Epidemiology (ISEE)](https://www.iseepi.org/)
+4. [International Society for Exposure Science (ISES)](https://www.intlexposurescience.org/)
+
+
 ## Group Meetings
 
-We have 2 group meetings per week
+We have 1 group meetings per week
 
-Mondays from 10-11am \& Thursdays from 2:30-3:30pm
-
-Given, the relative frequency of the meetings, we do often only go 30 minutes, depending
-on the amount of material to cover.
+Thursdays from 10-11:30am
 
 The general format of the meetings is as follows:
 
 1.  **Check-in**: Each member of the group will give a brief update on their progress and any issues they are facing
 
-2.  **Rubber Ducking**: We'll spend 10 - 20 minutes looking at someone's code, so that 
-everyone can help and also learn new techniques, tricks, packages, etc. This could include
-code in progress, code that is not working, efficiency improvements, or unit/integreation testing review.
+2.  **Rubber Ducking**: We'll spend 10 - 20 minutes looking at someone's code, so that everyone can help and also learn new techniques, tricks, packages, etc. This could include code in progress, code that is not working, efficiency improvements, or unit/integreation testing review.
 
-3. **Logistics**: We'll discuss any upcoming deadlines, meetings, etc.
+3.  **Logistics**: We'll discuss any upcoming deadlines, meetings, etc.
 
 ## Attendance and Participation
 
-Attendance and engagement in your own research and the research of others is critical to the success of the group. I expect you to attend all group meetings and participate in group activities. If you are unable to attend a meeting, please let me know in advance. 
+Attendance and engagement in your own research and the research of others is critical to the success of the group. I expect you to attend all group meetings and participate in group activities. If you are unable to attend a meeting, please let me know in advance.
 
-In general, we work in the office but we are flexible for teleworking days. 
+In general, we work in the office but we are flexible for teleworking days.
 
 ### Time Management
 
@@ -199,7 +209,7 @@ NIH provides paid family leave for the birth or adoption of a child. This is a g
 
 1.  **NIH Ethics Training**: All members of the group are required to complete the NIH Ethics Training. This training covers topics such as conflict of interest, research misconduct, and ethical conduct in research. The training must be completed annually.
 
-2.  **NIH Information Security **: All members of the group are required to complete the NIH Information Security Training. This training covers topics such as data security, privacy, and information handling. The training must be completed annually.
+2.  **NIH Information Security** : All members of the group are required to complete the NIH Information Security Training. This training covers topics such as data security, privacy, and information handling. The training must be completed annually.
 
 ## Resources
 
