@@ -466,7 +466,7 @@
     "href": "syllabus.html#projects",
     "title": "SET group syllabus",
     "section": "Projects",
-    "text": "Projects\n\nFellows in the group are expected to have a primary project with the goal of a first author publication\nFellows are encouraged to collaborate on secondary projects with each other\nThe group has an on-going group project that everyone is expected to contribute to\n\n\nProjects should be within the SET group’s research themes of (1) geospatial analysis, (2) mixtures and exposomic predictions, and (3) source-to-outcome-continuum or GeoTox modeling. However, I encourage everyone to provide their own unique perspective and expertise to these projects. Ultimately, a project will be successful if it is of great interest to you and you are passionate about it.\n\n\nProject Management\nWe utilize GitHub Projects to manage our projects. Currently,Each project has a project board with the following columns:\n\nNew Issues: General ideas and tasks that need to be fleshed out\nBacklog: Fleshed out ideas and tasks that need to be done. Priority is set by tasks at the top of the backlog.\nIn Progress: Tasks that are currently being worked on. A best-practice is to minimize the number of tasks in this column.\nReview: Tasks that are ready for review by a collaborator\nDone: Completed tasks\n\nGitHub Project tasks can be directly linked to issues on the corresponding GitHub repository. This allows for a seamless integration of project management and issue tracking."
+    "text": "Projects\n\nFellows in the group are expected to have a primary project with the goal of a first author publication\nFellows are encouraged to collaborate on secondary projects with each other\nThe group has an on-going group project that everyone is expected to contribute to\n\n\nProjects should be within the SET group’s research themes of (1) geospatial analysis, (2) mixtures and exposomic predictions, and (3) source-to-outcome-continuum or GeoTox modeling. However, I encourage everyone to provide their own unique perspective and expertise to these projects. Ultimately, a project will be successful if it is of great interest to you and you are passionate about it.\n\n\nProject Management\nWe utilize GitHub Projects to manage our projects. Currently, each project has a project board with the following columns:\n\nNew Issues: General ideas and tasks that need to be fleshed out\nBacklog: Fleshed out ideas and tasks that need to be done. Priority is set by tasks at the top of the backlog.\nIn Progress: Tasks that are currently being worked on. A best-practice is to minimize the number of tasks in this column.\nReview: Tasks that are ready for review by a collaborator\nDone: Completed tasks\n\nGitHub Project tasks can be directly linked to issues on the corresponding GitHub repository. This allows for a seamless integration of project management and issue tracking."
   },
   {
     "objectID": "syllabus.html#software-installations",
@@ -543,7 +543,7 @@
     "href": "syllabus.html#group-meetings",
     "title": "SET group syllabus",
     "section": "Group Meetings",
-    "text": "Group Meetings\nWe have 2 group meetings per week\nMondays from 10-11am & Thursdays from 2:30-3:30pm\nGiven, the relative frequency of the meetings, we do often only go 30 minutes, depending on the amount of material to cover.\nThe general format of the meetings is as follows:\n\nCheck-in: Each member of the group will give a brief update on their progress and any issues they are facing\nRubber Ducking: We’ll spend 10 - 20 minutes looking at someone’s code, so that everyone can help and also learn new techniques, tricks, packages, etc. This could include code in progress, code that is not working, efficiency improvements, or unit/integreation testing review.\nLogistics: We’ll discuss any upcoming deadlines, meetings, etc."
+    "text": "Group Meetings\nWe have 1 group meetings per week\nThursdays from 10-11:30am\nThe general format of the meetings is as follows:\n\nCheck-in: Each member of the group will give a brief update on their progress and any issues they are facing\nRubber Ducking: We’ll spend 10 - 20 minutes looking at someone’s code, so that everyone can help and also learn new techniques, tricks, packages, etc. This could include code in progress, code that is not working, efficiency improvements, or unit/integreation testing review.\nLogistics: We’ll discuss any upcoming deadlines, meetings, etc."
   },
   {
     "objectID": "presentations.html#presentations",
@@ -1307,5 +1307,334 @@
     "title": "Lung and stomach cancer associations with groundwater radon in North Carolina, USA",
     "section": "Abstract",
     "text": "Abstract\n\nBackground\nThe risk of indoor air radon for lung cancer is well studied, but the risks of groundwater radon for both lung and stomach cancer are much less studied, and with mixed results.\n\n\nMethods\nGeomasked and geocoded stomach and lung cancer cases in North Carolina from 1999 to 2009 were obtained from the North Carolina Central Cancer Registry. Models for the association with groundwater radon and multiple confounders were implemented at two scales: (i) an ecological model estimating cancer incidence rates at the census tract level; and (ii) a case-only logistic model estimating the odds that individual cancer cases are members of local cancer clusters.\n\n\nResults\nFor the lung cancer incidence rate model, groundwater radon is associated with an incidence rate ratio of 1.03 [95% confidence interval (CI) = 1.01, 1.06] for every 100 Bq/l increase in census tract averaged concentration. For the cluster membership models, groundwater radon exposure results in an odds ratio for lung cancer of 1.13 (95% CI = 1.04, 1.23) and for stomach cancer of 1.24 (95% CI = 1.03, 1.49), which means groundwater radon, after controlling for multiple confounders and spatial auto-correlation, increases the odds that lung and stomach cancer cases are members of their respective cancer clusters.\n\n\nConclusion\nOur study provides epidemiological evidence of a positive association between groundwater radon exposure and lung cancer incidence rates. The cluster membership model results find groundwater radon increases the odds that both lung and stomach cancer cases occur within their respective cancer clusters. The results corroborate previous biokinetic and mortality studies that groundwater radon is associated with increased risk for lung and stomach cancer."
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "",
+    "text": "Spatiotemporal Exposures and Toxicology {SET} group\n\n\n\nSpatiotemporal Exposure Mapping\nChemical and Stressor Mixtures Prediction\nMechanistically Informed Geospatial Risk Assessment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProvide an overview of geospatial methods, data, applications, and future directions in toxicology and risk assessment"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#about-us",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#about-us",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "",
+    "text": "Spatiotemporal Exposures and Toxicology {SET} group\n\n\n\nSpatiotemporal Exposure Mapping\nChemical and Stressor Mixtures Prediction\nMechanistically Informed Geospatial Risk Assessment"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#objective",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#objective",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "",
+    "text": "Provide an overview of geospatial methods, data, applications, and future directions in toxicology and risk assessment"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#mining",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#mining",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Mining",
+    "text": "Mining\n\n\n\n\n\nMatheron and Krige developed geostatistical methods to predict ore content from core samples\nMatheron coined the term “Kriging” after Krige\n“Nugget” is a term used to random noise because predicting where gold nuggets were was so difficult"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#forestry",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#forestry",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Forestry",
+    "text": "Forestry\n\n\n\n\n\nMatérn developed correlation models for spatial variation for applications in Forestry\nTo this day, we use the “Matérn” covariance function"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#petroleum-engineering",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#petroleum-engineering",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Petroleum Engineering",
+    "text": "Petroleum Engineering\n\n\n\n\n\nUsed to evaluate the oil and gas field reservoirs\nUses geology and seismic data"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#public-health",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#public-health",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Public Health",
+    "text": "Public Health\n\n\n\n\n\nCressie, 1990: Statistics for Spatial Data\nWaller and Gotway, 2004: Applied Statistics for Public Health Data\nWide scale adoption for statisticians and engineers in ecological and human exposure and risk applications"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#toxicology",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#toxicology",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Toxicology",
+    "text": "Toxicology\n\n\n\n\n\nToxicology is a new frontier for geospatial methods\nAggregate Exposure Pathways\nAdverse Outcome Pathway\nGeoTox\nSource-to-Outcome"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#uses-in-public-health",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#uses-in-public-health",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Uses in Public Health",
+    "text": "Uses in Public Health\n\nEstimate exposure to air pollutants, water contaminants, and other environmental stressors\nGeocode patient addresses to link to environmental exposures\nEstimate the spatial distribution of disease rates\nEstimate the spatial distribution of health risk factors"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#land-use-regression",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#land-use-regression",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Land Use Regression",
+    "text": "Land Use Regression\nLinear regression for spatial data\n\\[\nY(s) =  X(s)\\beta + \\varepsilon\n\\]\nwhere \\(Y(s)\\) is the response variable, \\(X(s)\\) are the predictor variables, \\(\\beta\\) are the regression coefficients, \\(\\varepsilon\\) is the iid error term, and \\((s)\\) denotes the spatial location.\nNot a terrible idea for spatial data, but it directly violates the assumption of independence of observations."
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#kriging",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#kriging",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Kriging",
+    "text": "Kriging\nKriging and spatial models provide an explicit term for spatial correlation. A reasonable approach is a random-effect model:\n\\[\nY(s) = \\mu(s) + \\varepsilon +  \\eta(s)\n\\] where \\(\\eta \\sim N_n(0,\\Sigma_{\\theta})\\)\nand \\(\\Sigma_{\\theta}\\) is a covariance matrix with parameters, \\(\\theta\\), that accounts for correlation between spatial and temporal locations"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#common-data-sources-and-types",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#common-data-sources-and-types",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Common Data Sources and Types",
+    "text": "Common Data Sources and Types\n\n\n\nU.S. Census Bureau\nU.S. Environmental Protection Agency\nU.S. Geological Survey\nNational Aeronautics and Space Administration\nNational Oceanic and Atmospheric Administration\nU.S. Department of Agriculture\n\n\n\nLand cover data\nHealth statistics\nPopulation characteristics\nInfrastructure data\nAir quality data\nWater quality data\nSatellite imagery"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#satellite-imagery",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#satellite-imagery",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Satellite Imagery",
+    "text": "Satellite Imagery"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#air-quality-data",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#air-quality-data",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Air Quality Data",
+    "text": "Air Quality Data"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#toxic-release-data",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#toxic-release-data",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Toxic Release Data",
+    "text": "Toxic Release Data"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#health-information",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#health-information",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Health Information",
+    "text": "Health Information\n\n\n\nCDC Places Health Outcome Data: Diabetes Prevalence"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#air-pollution-exposure-mapping",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#air-pollution-exposure-mapping",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Air Pollution Exposure Mapping",
+    "text": "Air Pollution Exposure Mapping"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#tale-of-two-freeways",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#tale-of-two-freeways",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Tale of Two Freeways",
+    "text": "Tale of Two Freeways\n\n\n\n\n\nAll measured pollutants were consistently higher on I-880 compared to I-580\nI-580 has a heavy duty truck ban\nHeavy duty trucks are forced onto I-880 to get to the Port of Oakland"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#source-to-outcome-modeling",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#source-to-outcome-modeling",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Source-to-Outcome Modeling",
+    "text": "Source-to-Outcome Modeling"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#source-to-outcome-modeling-1",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#source-to-outcome-modeling-1",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Source-to-Outcome Modeling",
+    "text": "Source-to-Outcome Modeling\n\nSource-to-Outcome is a framework for linking environmental sources to human health outcomes\nThe framework is based on the Aggregate Exposure Pathway (AEP) and Adverse Outcome Pathway (AOP) concepts"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#source-to-outcome-modeling-2",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#source-to-outcome-modeling-2",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Source-to-Outcome Modeling",
+    "text": "Source-to-Outcome Modeling\n\nNext generation risk of cumulative and total exposomic effects on human health\nA balance between mechanistic and translational research\nA framework for integrating multiple data sources and models\nIncorporate biological and geospatial information on communities and individuals"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#getting-two-frameworks-to-work-together",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#getting-two-frameworks-to-work-together",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Getting Two Frameworks to Work Together",
+    "text": "Getting Two Frameworks to Work Together\nAggregate Exposure Pathways\n\nAEP is a comprehensive external analysis of source, media, and transformations\n\nAdverse Outcome Pathway\n\nAOPs provide a linkage specific biological target, pathway or process by a stressor and an adverse outcome(s) considered relevant to risk assessment"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#aep-aop",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#aep-aop",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "AEP-AOP",
+    "text": "AEP-AOP\n\nHines, D. E., Conolly, R. B., & Jarabek, A. M. (2019)"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#geotox",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#geotox",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "GeoTox",
+    "text": "GeoTox\n\n\n\nDr. Kristin Eccles, Former Visiting Fellow in DTT and SET, Now at Health Canada"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#geotox-1",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#geotox-1",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "GeoTox",
+    "text": "GeoTox\n\nGoal is to develop extensible, open-source software for facilitate source-to-outcome modeling (FAIR+)\nWorking with Drs. David Reif and Skylar Marvel (NIEHS/DTT)\nSubmitting to CRAN\nStatic website hosted via {SET}group website\nMaintained, Documented, and Supported"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#geotox-2",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#geotox-2",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "GeoTox",
+    "text": "GeoTox\n sf package for spatial data in R (Edzer Pebesma and others) (Illustration (c) 2018 by Allison Horst)"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#geotox-3",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#geotox-3",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "GeoTox",
+    "text": "GeoTox\n\n\n\n\n\ngraph TB;\n\n    style P1 fill:#91bcfd , stroke:#333, stroke-width:2px, rounded:true;\n    style P2 fill:#91bcfd , stroke:#333, stroke-width:2px, rounded:true;\n    style P3 fill:#91bcfd , stroke:#333, stroke-width:2px, rounded:true;\n    style P4 fill:#91bcfd , stroke:#333, stroke-width:2px, rounded:true;\n    style P5 fill:#91bcfd , stroke:#333, stroke-width:2px, rounded:true;\n    style P6 fill:#91bcfd , stroke:#333, stroke-width:2px, rounded:true;\n\n    style G1 fill:#588b3e, stroke:#333, stroke-width:2px, rounded:true;\n    style G2 fill:#588b3e, stroke:#333, stroke-width:2px, rounded:true;\n    style G3 fill:#588b3e, stroke:#333, stroke-width:2px, rounded:true;\n    style G4 fill:#588b3e, stroke:#333, stroke-width:2px, rounded:true;\n    style G5 fill:#588b3e, stroke:#333, stroke-width:2px, rounded:true;\n    style G6 fill:#588b3e, stroke:#333, stroke-width:2px, rounded:true;\n    style G7 fill:#588b3e, stroke:#333, stroke-width:2px, rounded:true;\n\n\n    P1[Person] --&gt; |Simulate, Sample| P2[Person, External Exposure];\n    G1[Group] --&gt; |Simulate, Sample| G2[Group, External Exposure];\n    P2[Person, External Exposure] --&gt; |Summarize, Simulate, Sample| G2[Group, External Exposure];\n    P2[Person, External Exposure] --&gt; |Calc_Internal_Dose| P3[Person, Internal Exposure];\n    P3[Person, Internal Exposure] --&gt; |Summarize| G3[Group, Internal Exposure];\n    G2[Group, External Exposure] --&gt; |Calc_Internal_Dose| G3[Group, Internal Exposure];\n    P3[Person, Internal Exposure] --&gt; |httk::| P4[Person, Target Organ Dose];\n    G3[Group, Internal Exposure]--&gt; |httk::| G4[Group, Target Organ Dose];\n    P4[Person, Target Organ Dose] --&gt; |summarize| G4[Group, Target Organ Dose];\n    P4[Person, Target Organ Dose] --&gt; |calc_invitro_conc| P5[Person, Invitro Concentration];\n    G4[Group, Target Organ Dose]--&gt; |calc_invitro_conc| G5[Group, Invitro Concentration];\n    P5[Person, Invitro Concentration] --&gt; |summarize| G5[Group, Invitro Concentration];\n    P5[Person, Invitro Concentration] --&gt; |calc_concentration_response| P6[Person, Mixture Response];\n    G5[Group, Invitro Concentration]--&gt; |calc_concentration_response| G6[Group, Mixture Response];\n    P6[Person, Mixture Response]--&gt; |summarize, sample, simulate| G6[Group, Mixture Response];\n    G6[Group, Mixture Response]--&gt; |plot, map| G7[Group, Mixture Response];"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#looking-forward",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#looking-forward",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Looking Forward",
+    "text": "Looking Forward\n\nThe tools for each step of the source-to-outcome modeling framework are available, but the integration is still a work in progress\nThe integration of these tools will allow for the development of a comprehensive source-to-outcome modeling framework that can be used to assess the risk of cumulative and total exposomic effects on human health"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#multiple-assays-informing-an-aop",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#multiple-assays-informing-an-aop",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Multiple Assays Informing an AOP",
+    "text": "Multiple Assays Informing an AOP"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#looking-forward-1",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#looking-forward-1",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Looking Forward",
+    "text": "Looking Forward\n\nIncorporate more refined information on individual and population-level susceptibility to environmental exposures\nIt is going to be a massive code and software development challenge"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#looking-forward-2",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#looking-forward-2",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Looking Forward",
+    "text": "Looking Forward\n\nGeospatial exposures are the foundation of a spatial, total exposome risk approach"
+  },
+  {
+    "objectID": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#acknowledgements",
+    "href": "presentations/PEGS_retreat_2024/pegs_retreat_set_group.html#acknowledgements",
+    "title": "Geospatial Methodologies in Toxicology",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\n\n\n\nDaniel Zilber\nMitchell Manware\nInsang Song\nEva Marques\nRanadeep Daw\nMariana Alifa Kassien\nKristin Eccles\nMelissa Lowe\nTaylor Potter\nAlvin Sheng\n\n\n\nJohn Wambaugh\nAlison Motsinger-Reif\nDavid Reif\nSkylar Marvel\nNicole Kleinstreuer\nJulia Rager\n\nFunding:\n\nNIEHS ZIA ES103368-02\nPatient Centered Outcome Research Trust Fund (PCOR-TF)"
+  },
+  {
+    "objectID": "jobs.html",
+    "href": "jobs.html",
+    "title": "SET group jobs",
+    "section": "",
+    "text": "We are currently looking for a postdoctoral (or post-baccalaureate) fellow to join our group at the forefront of environment, climate, and health utilizing the latest computational workflows and the GeoTox exposomic risk assessment framework. The position is open until filled."
+  },
+  {
+    "objectID": "jobs.html#current-postbaccaleaurate-and-postdoctoral-fellow-positions-in-the-set-gorup",
+    "href": "jobs.html#current-postbaccaleaurate-and-postdoctoral-fellow-positions-in-the-set-gorup",
+    "title": "SET group jobs",
+    "section": "",
+    "text": "Welcome to the Spatiotemporal Exposures and Toxicology group (a.k.a. SET group). We are currently looking for postbaccaleaurate and postdoctoral fellows to join our group. There are two positions available at either level (postbaccaleaurate and postdoctoral fellow). The positions are open until filled.\n\n\n\n\nThe SET group implements many of the best-practices for software development and computational research. We are looking to take this a step further by implementing MLOps for our geospatial exposure and risk assessment workflows. The successful candidate will work with the team to implement MLOps for our geospatial exposure and source-to-outcome-continuum risk assessment workflows.\n\n\n\n\n\n\n\nPlease send the following to Dr. Kyle P Messier at niehs-spatial-apps@nih.gov with the subject line MLOps or GeoTox:"
+  },
+  {
+    "objectID": "jobs.html#mlops-for-environmental-health-sciences",
+    "href": "jobs.html#mlops-for-environmental-health-sciences",
+    "title": "SET group jobs",
+    "section": "MLops for Environmental Health Sciences",
+    "text": "MLops for Environmental Health Sciences"
+  },
+  {
+    "objectID": "jobs.html#geospatial-exposomic-risk-assessment-within-the-geotox-framework",
+    "href": "jobs.html#geospatial-exposomic-risk-assessment-within-the-geotox-framework",
+    "title": "SET group jobs",
+    "section": "Geospatial Exposomic Risk Assessment within the GeoTox Framework",
+    "text": "Geospatial Exposomic Risk Assessment within the GeoTox Framework\nThe SET group is looking for a post-baccalaureate or postdoctoral fellow to further developments in the GeoTox exposomic risk assessment framework.\n\nOverview\nGeospatial approaches offer an attractive approach to quantify the exposome because external components such as the social and physical-chemical exposome are more accurately quantified with geospatial models of exposure. Toxic effects are mediated through chemicals that alter critical molecules, cells, and physiological processes inside the body. It follows that phenotypic outcomes (e.g. disease) at the individual or population level can only occur after a series of source, exposure, and biological dynamics (Figure 1). We refer to this as the source-to-outcome-continuum. It follows that if methods and data exist to quantify each step in the sequence, and each step can be integrated into each neighboring step, then individual and population outcomes can be quantified from spatiotemporally resolved environmental sources and exposures.\n\n\n\nFigure 1 - The source-to-outcome-continuum: A schematic showing the necessary sequence of events such that each step must occur for environmental exposures to cause individual and population outcomes\n\n\n\n\nResponsibilities and Expectations\nThe successful candidate will continue methodological and applications of the GeoTox exposomic risk assessment framework outlined in Eccles et al. 2023. Postdoctoral fellows will lead a project that is expected to culminate in first-author peer-reviewed publication in a top environmental health or general scientific journal. Post-baccalaureate are expected to contribute or co-lead projects and peer-reviewed publications. The candidate will also be expected to contribute to the development of the GeoTox package and the broader SET group software ecosystem.\n\n\nQualifications\nGeoTox bridges the fields of geospatial modeling and computational toxicology, thus a successful will have expertise in at least one of these fields and a willingness to learn the other. For expertise in geospatial modeling, the candidate should have experience with GIS, spatial models such as land-use regression, Gaussian processes, and machine learning applications of spatial data. For expertise in computational toxicology, the candidate should have experience with many of these research areas: computational toxicological and bioinformatic methods, toxicokinetic and toxicodynamic models, high-through in-vitro screening, in-vitro to in-vivo extrapolation, concentration-response modeling, and human health risk assessment. The candidate should also have an eagerness to learn new scientific and statistical skills in the environmental health sciences, and demonstrated and on-going ability to contribute to an interdisciplinary and inclusive research group. Most importantly, we are looking for positive, pleasant, and life-long learners.\nPostdoctoral candidates should have a Ph.D. (or doctoral equivalent) in a relevant field such as exposure science, computational toxicology, bioinformatics, geostatistics, statistics, or biostatistics.\nPostbaccaleaurate candidates should have a B.S. or B.A. in a relevant field such as environmental health science, toxicology, statistics, or computer science.\n\n\nSkills\nPreferences will be given to candidates with demonstrated skills in one or more of the following areas:\n\nCoding in R, Python, or Julia languages\nGIS software such as QGIS\nCode version control using Git\nLinux and high-performance computing cluster environments\nExperience with managing and utilizing public and internal databases\nData wrangling\nLaTeX/Overleaf\nStrong writing and communication skills"
+  },
+  {
+    "objectID": "jobs.html#mlops-for-geospatial-exposure-and-risk-assessment",
+    "href": "jobs.html#mlops-for-geospatial-exposure-and-risk-assessment",
+    "title": "SET group jobs",
+    "section": "MLOps for Geospatial Exposure and Risk Assessment",
+    "text": "MLOps for Geospatial Exposure and Risk Assessment\n\nOverview\nThe SET group implements many of the best-practices for software development and computational research. We are looking to take this a step further by implementing MLOps for our large-scale geospatial exposure and risk assessment workflows. The successful candidate will work with the team to improve our MLOps for geospatial exposure and source-to-outcome-continuum risk assessment workflows.\n\n\nResponsibilities and Expectations\nThe successful candidate will lead the development of reproducible and computationally efficient workflows for geospatial exposure and risk assessment. Postdoctoral fellows will lead a project that is expected to culminate in first-author peer-reviewed publication in a top environmental health, machine learning, or general scientific journal. Post-baccalaureate are expected to contribute or co-lead projects and peer-reviewed publications. The candidate will also be expected to contribute to the development of the broader SET group software ecosystem.\n\n\nQualifications\nThe SET group research bridges the fields of geospatial exposure modeling, software and computational methods development, and toxicological-based risk assessment. The candidate for this position should have expertise in the software and computational component, but also an eagerness to learn new scientific and statistical skills in the environmental health sciences such as geospatial modeling, exposure science, and toxicology. Most importantly, we are looking for positive, pleasant, and life-long learners with an ability to contribute to an interdisciplinary and inclusive research group.\nCandidates should have a Ph.D. (or doctoral equivalent), M.S. (or Master’s equivalent), or B.S. (or Bachelor’s equivalent) in a relevant field such as computer science, computational toxicology, bioinformatics, geostatistics, statistics, or biostatistics.\n\n\nSkills\nWe are looking for a candidate with expertise in many of these MLOps areas and software tools:\n\nCoding in R, Python, or Julia languages\nCoding in compiled languages such as C++ or Rust languages [optional]\nGit and GitHub\nContinuous integration and continuous deployment (CI/CD)\nDocker, Singularity, or other containerization tools\nWorkflow management tools such as targets and snakemake\nQuery and Database languages such as SQL, PostgreSQL, and PostGIS\nVersion, Deploying, and Monitoring Statistical and ML models (e.g. vetiver)\nScalable analytic tools such as Apache Arrow and Apache Spark"
+  },
+  {
+    "objectID": "software.html#BestPractices",
+    "href": "software.html#BestPractices",
+    "title": "{SET}grp",
+    "section": "Software Development Practices",
+    "text": "Software Development Practices\nWe are focused on developing and promoting software and computational best-practices such as test-driven-development (TDD) and open-source code for the environmental health sciences. To this end, we have protocols in place to ensure that our code is well-documented, tested, and reproducible. Below are some of the key practices we follow:\n\nUnit and Integration Testing\nWe will utilize various testing approaches to ensure functionality and quality of code.\n\n\nGit + GitHub\nVersion control of software is essential for reproducibility and collaboration. We use Git and the NIEHS Enterprise GitHub for version control and collaboration.\n\nCI/CD Workflows\nWithin GitHub, we will utilize continuous integration and continuous deployment workflows to ensure that our code is always functional and up-to-date. Multiple ** branch protection rules** within GitHub aresetup and enforced for our GitHub repositories:\n\nRequire pull request and 1 review before merging to main\nTest pass: Linting: Code shall adhere to the style/linting rules defined in the repository.\nTest pass: Tets Coverage: A given push should not decrease overall test coverage of the repository.\nTest pass: Build Checks: The code should build without errors or warnings.\n\nThe CI/CD workflows in GitHub are setup to run on every push to the main branch and on every pull request. The workflows are setup using yaml files in the .github/workflows directory of the repository.\n\n\n\nProcesses to test or check\n\ndata type\ndata name\ndata size\nrelative paths\noutput of one module is the expectation of the input of the next module\n\n\n\nTest Drive Development\nStarting from the end product, we work backwards while articulating the tests needed at each stage.\n\nKey Points of Unit and Integration Testing\n\nFile Type\n\nNetCDF\nNumeric, double precision\nNA\nVariable Names Exist\nNaming Convention\n\n\n\nStats\n\nNon-negative variance (\\(\\sigma^2\\))\nMean is reasonable (\\(\\mu\\))\nSI Units\n\n\n\nDomain\n\nIn the geographic domain (eg. US + buffer)\nIn Time range (e.g. 2018-2022)\n\n\n\nGeographic\n\nProjections\nCoordinate names (e.g. lat/lon)\nTime in acceptable format\n\n\n\n\n\nTest Driven Development (TDD)- Key Steps\n\nWrite a Test: Before you start writing any code, you write a test case for the functionality you want to implement. This test should fail initially because you haven’t written the code to make it pass yet. The test defines the expected behavior of your code.\nRun the Test: Run the test to ensure it fails. This step confirms that your test is correctly assessing the functionality you want to implement.\nWrite the Minimum Code: Write the minimum amount of code required to make the test pass. Don’t worry about writing perfect or complete code at this stage; the goal is just to make the test pass.\nRun the Test Again: After writing the code, run the test again. If it passes, it means your code now meets the specified requirements.\nRefactor (if necessary): If your code is working and the test passes, you can refactor your code to improve its quality, readability, or performance. The key here is that you should have test coverage to ensure you don’t introduce new bugs while refactoring.\nRepeat: Continue this cycle of writing a test, making it fail, writing the code to make it pass, and refactoring as needed. Each cycle should be very short and focused on a small piece of functionality.\nComplete the Feature: Keep repeating the process until your code meets all the requirements for the feature you’re working on.\n\nTDD helps ensure that your code is reliable and that it remains functional as you make changes and updates. It also encourages a clear understanding of the requirements and promotes better code design.\n\n\n_targets and/or snakemake pipelines\nWe will utilize the targets and/or snakemake packages in R and Python respectively to create reproducible workflows for our data analysis. These packages allow us to define the dependencies between the steps in our analysis and ensure that our analysis is reproducible. Additionally, they keep track of pipeline objects and skip steps that have already been run, saving time and resources.\n\nSome Benefits of _targets and/or snakemake pipelines\n\nReproducibility: By defining the dependencies between the steps in our analysis, we ensure that our analysis is reproducible. This is essential for scientific research and data analysis.\nHigh-Level Abstract: _targets and snakemake allow us to define our analysis at a high level of abstraction, making it easier to understand and maintain.\nTesting: Creating pipelines and unit/integration testing go hand-in-hand together. As we write the pipeline, the tests to write become obvious."
+  },
+  {
+    "objectID": "jobs.html#current-postbaccaleaurate-and-postdoctoral-fellow-positions-in-the-set-group",
+    "href": "jobs.html#current-postbaccaleaurate-and-postdoctoral-fellow-positions-in-the-set-group",
+    "title": "SET group jobs",
+    "section": "",
+    "text": "We are currently looking for postbaccaleaurate and/or postdoctoral fellows to join our group at the forefront of environment, climate, and health utilizing the latest computational workflows and the GeoTox exposomic risk assessment framework. There are two positions available at either level (postbaccaleaurate and postdoctoral fellow). The positions are open until filled."
+  },
+  {
+    "objectID": "jobs.html#how-to-apply",
+    "href": "jobs.html#how-to-apply",
+    "title": "SET group jobs",
+    "section": "How to Apply",
+    "text": "How to Apply\nPlease send the following to Dr. Kyle P Messier at niehs-spatial-apps@nih.gov with the subject line GeoTox Postdoc Application:\n\nResearch Statement or Cover Letter (1-2 pages)\nCurriculum Vitae\nPostdoctoral Required; Post-baccalaureate optional: 1-2 recent peer-review publications\n1-2 code examples\nContact Information for 3 references"
+  },
+  {
+    "objectID": "jobs.html#position-location",
+    "href": "jobs.html#position-location",
+    "title": "SET group jobs",
+    "section": "Position Location",
+    "text": "Position Location\nThe posistion is located in the Research Triangle, North Carolina (Durham, Raleigh, Chapel Hill). NIH requires that all post-baccalaureate and postdoctoral fellows be located in person, so fully remote is not an option. Teleworking approximately 20-50% of the time is possible."
+  },
+  {
+    "objectID": "jobs.html#compensation",
+    "href": "jobs.html#compensation",
+    "title": "SET group jobs",
+    "section": "Compensation",
+    "text": "Compensation\nNIEHS post-baccalaureate and postdoctoral fellowships are competitive and commensurate with experience. Fellows are eligible for health insurance, paid vacation, sick leave, and up to 12 weeks of paid family leave (i.e. child birth or adoption).\nSalaries are set by the NIH and are based on years of experience and education: https://www.niehs.nih.gov/careers/research/fellows/working/benefits/salary"
+  },
+  {
+    "objectID": "jobs.html#current-postdoctoral-and-post-baccaleaurate-fellow-positions-in-the-set-group",
+    "href": "jobs.html#current-postdoctoral-and-post-baccaleaurate-fellow-positions-in-the-set-group",
+    "title": "SET group jobs",
+    "section": "",
+    "text": "We are currently looking for postdoctoral and/or postbaccaleaurate fellows to join our group at the forefront of environment, climate, and health utilizing the latest computational workflows and the GeoTox exposomic risk assessment framework. There are two positions available at either level. The positions are open until filled."
+  },
+  {
+    "objectID": "syllabus.html#conferences",
+    "href": "syllabus.html#conferences",
+    "title": "SET group syllabus",
+    "section": "Conferences",
+    "text": "Conferences\nWe attend one to three major research society conferences per year. These conferences are a great opportunity to present our research, network with other researchers, and learn about the latest developments in our field.\nThe conferences can vary year-to-year depending on the research of each person, but some of the conferences we typically attend include:\n\nAmerican Geophysical Union (AGU)\nSociety of Toxicology (SOT)\n\nNorth Carolina Chapter of the Society of Toxicology (NCSOT)\n\nInternational Society for Environmental Epidemiology (ISEE)\nInternational Society for Exposure Science (ISES)"
+  },
+  {
+    "objectID": "jobs.html#additional-information",
+    "href": "jobs.html#additional-information",
+    "title": "SET group jobs",
+    "section": "Additional Information",
+    "text": "Additional Information\nPlease visit the SET group website for more information about the group including a syllabus - a document that outlines our general tools, philosophy, and day-to-day activities."
+  },
+  {
+    "objectID": "jobs.html#disclaimers",
+    "href": "jobs.html#disclaimers",
+    "title": "SET group jobs",
+    "section": "Disclaimers",
+    "text": "Disclaimers\nThe NIH is dedicated to building a diverse community in its training and employment programs and encourages the application and nomination of qualified women, minorities, and individuals with disabilities."
+  },
+  {
+    "objectID": "jobs.html#current-postdoctoral-fellow-position-in-the-set-group",
+    "href": "jobs.html#current-postdoctoral-fellow-position-in-the-set-group",
+    "title": "SET group jobs",
+    "section": "",
+    "text": "We are currently looking for a postdoctoral (or post-baccalaureate) fellow to join our group at the forefront of environment, climate, and health utilizing the latest computational workflows and the GeoTox exposomic risk assessment framework. The position is open until filled."
   }
 ]

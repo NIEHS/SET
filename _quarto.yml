@@ -48,7 +48,9 @@ website:
         text: Presentations
       - about.qmd
       - href: syllabus.qmd
-        text: Syllabus        
+        text: Syllabus
+      - href: jobs.qmd
+        text: Jobs
     logo: images/setlogo.jpg
 
 format:

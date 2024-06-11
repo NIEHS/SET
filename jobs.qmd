@@ -1,0 +1,84 @@
+---
+title: "SET group jobs"
+format:
+  html:
+    toc: true
+    toc-location: left
+    theme: minty
+    standalone: true
+    embed-resources: true
+date: today
+date-format: long 
+---
+
+## Current Postdoctoral Fellow Position in the {SET} group
+
+We are currently looking for a postdoctoral (or post-baccalaureate) fellow to join our group at the forefront of environment, climate, and health utilizing the latest computational workflows and the GeoTox exposomic risk assessment framework. The position is open until filled.
+
+## Geospatial Exposomic Risk Assessment within the GeoTox Framework
+
+The SET group is looking for a post-baccalaureate or postdoctoral fellow to further developments in the GeoTox exposomic risk assessment framework. 
+
+#### Overview
+
+Geospatial approaches offer an attractive approach to quantify the exposome because external components such as the social and physical-chemical exposome are more accurately quantified with geospatial models of exposure. Toxic effects are mediated through chemicals that alter critical molecules, cells, and physiological processes inside the body. It follows that phenotypic outcomes (e.g. disease) at the individual or population level can only occur after a series of source, exposure, and biological dynamics (Figure [1](bio-cascade)). We refer to this as the **source-to-outcome-continuum**. It follows that if methods and data exist to quantify each step in the sequence, and each step can be integrated into each neighboring step, then individual and population outcomes can be quantified from spatiotemporally resolved environmental sources and exposures.
+
+
+![**Figure 1 - The source-to-outcome-continuum:** A schematic showing the necessary sequence of events such that each step must occur for environmental exposures to cause individual and population outcomes](images/Exposome-Cascade.png){#bio-cascade} 
+
+
+#### Responsibilities and Expectations
+
+The successful candidate will continue methodological and applications of the GeoTox exposomic risk assessment framework outlined in [Eccles et al. 2023](publications/Eccles_etal_2023.qmd). Postdoctoral fellows will lead a project that is expected to culminate in first-author peer-reviewed publication in a top environmental health or general scientific journal. Post-baccalaureate are expected to contribute or co-lead projects and peer-reviewed publications.  The candidate will also be expected to contribute to the development of the [`GeoTox` package](https://niehs.github.io/GeoTox/index.html)  and the broader SET group [software ecosystem](software.qmd).
+
+
+#### Qualifications
+
+GeoTox bridges the fields of geospatial modeling and computational toxicology, thus a successful will have expertise in at least one of these fields and a willingness to learn the other. For expertise in geospatial modeling, the candidate should have experience with GIS, spatial models such as land-use regression, Gaussian processes, and machine learning applications of spatial data. For expertise in computational toxicology, the candidate should have experience with many of these research areas: computational toxicological and bioinformatic methods, toxicokinetic and toxicodynamic models, high-through in-vitro screening, in-vitro to in-vivo extrapolation, concentration-response modeling, and human health risk assessment. The candidate should also have an eagerness to learn new scientific and statistical skills in the environmental health sciences, and demonstrated and on-going ability to contribute to an interdisciplinary and inclusive research group. Most importantly, we are looking for positive, pleasant, and life-long learners.
+
+Postdoctoral candidates should have a Ph.D. (or doctoral equivalent) in a relevant field such as exposure science, computational toxicology, bioinformatics, geostatistics, statistics, or biostatistics.
+
+Postbaccaleaurate candidates should have a B.S. or B.A. in a relevant field such as environmental health science, toxicology, statistics, or computer science.
+
+#### Skills 
+
+Preferences will be given to candidates with demonstrated skills in one or more of the following areas:
+
+- Coding in R, Python, or Julia languages 
+- GIS software such as QGIS 
+- Code version control using Git 
+- Linux and high-performance computing cluster environments 
+- Experience with managing and utilizing public and internal databases 
+- Data wrangling 
+- LaTeX/Overleaf 
+- Strong writing and communication skills
+
+
+## Compensation
+
+NIEHS post-baccalaureate and postdoctoral fellowships are competitive and commensurate with experience. Fellows are eligible for health insurance, paid vacation, sick leave, and up to 12 weeks of paid family leave (i.e. child birth or adoption). 
+
+Salaries are set by the NIH and are based on years of experience and education: [https://www.niehs.nih.gov/careers/research/fellows/working/benefits/salary](https://www.niehs.nih.gov/careers/research/fellows/working/benefits/salary)
+
+## Position Location
+
+The posistion is located in the Research Triangle, North Carolina (Durham, Raleigh, Chapel Hill). NIH requires that all post-baccalaureate and postdoctoral fellows be located in person, so fully remote is not an option. Teleworking approximately 20-50% of the time is possible. 
+
+## Additional Information
+
+Please visit the [SET group website](https://niehs.github.io/SET/) for more information about the group including a [syllabus](https://www.niehs.github.io/SET/syllabus) - a document that outlines our general tools, philosophy, and day-to-day activities.
+
+## How to Apply
+
+Please send the following to Dr. Kyle P Messier at `niehs-spatial-apps@nih.gov` with the subject line `GeoTox Postdoc Application`:
+
+1.	Research Statement or Cover Letter (1-2 pages)
+2.	Curriculum Vitae
+3.	Postdoctoral Required; Post-baccalaureate optional: 1-2 recent peer-review publications
+4.	1-2 code examples 
+5.	Contact Information for 3 references
+
+
+## Disclaimers
+
+The NIH is dedicated to building a diverse community in its training and employment programs and encourages the application and nomination of qualified women, minorities, and individuals with disabilities. 
