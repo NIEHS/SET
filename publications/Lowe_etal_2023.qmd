@@ -22,16 +22,21 @@ categories:
 ## Abstract
 
 #### Background
+
 Autoimmune (AI) diseases appear to be a product of genetic predisposition and environmental triggers. Disruption of the skin barrier causes exacerbation of psoriasis/eczema. Oxidative stress is a mechanistic pathway for pathogenesis of the disease and is also a primary mechanism for the detrimental effects of air pollution.
 
 #### Methods
+
 We evaluated the association between autoimmune skin diseases (psoriasis or eczema) and air pollutant mixtures in 9060 subjects from the Personalized Environment and Genes Study (PEGS) cohort. Pollutant exposure data on six criteria air pollutants are publicly available from the Center for Air, Climate, and Energy Solutions and the Atmospheric Composition Analysis Group. For increased spatial resolution, we included spatially cumulative exposure to volatile organic compounds from sites in the United States Environmental Protection Agency Toxic Release Inventory and the density of major roads within a 5 km radius of a participant’s address from the United States Geological Survey. We applied logistic regression with quantile g-computation, adjusting for age, sex, diagnosis with an autoimmune disease in family or self, and smoking history to evaluate the relationship between self-reported diagnosis of an AI skin condition and air pollution mixtures.
 
 #### Results
+
 Only one air pollution variable, sulfate, was significant individually (OR = 1.06, p = 3.99E−2); however, the conditional odds ratio for the combined mixture components of PM2.5 (black carbon, sulfate, sea salt, and soil), CO, SO2, benzene, toluene, and ethylbenzene is 1.10 (p-value = 5.4E−3).
 
 #### Significance
+
 While the etiology of autoimmune skin disorders is not clear, this study provides evidence that air pollutants are associated with an increased prevalence of these disorders. The results provide further evidence of potential health impacts of air pollution exposures on life-altering diseases.
 
 ## Significance and impact statement
+
 The impact of air pollution on non-pulmonary and cardiovascular diseases is understudied and under-reported. We find that air pollution significantly increased the odds of psoriasis or eczema in our cohort and the magnitude is comparable to the risk associated with smoking exposure. Autoimmune diseases like psoriasis and eczema are likely impacted by air pollution, particularly complex mixtures and our study underscores the importance of quantifying air pollution-associated risks in autoimmune disease.

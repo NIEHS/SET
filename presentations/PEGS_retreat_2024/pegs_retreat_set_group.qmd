@@ -108,7 +108,7 @@ header-includes:
 
 ::: columns
 ::: {.column width="50%"}
-![](PublicLands.jpeg){width="97%"}
+![](../20240311_SOT_Meeting_Talk/PublicLands.jpeg){width="97%"}
 :::
 
 ::: {.column width="50%"}

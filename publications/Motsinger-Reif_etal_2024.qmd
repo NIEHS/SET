@@ -1,0 +1,21 @@
+---
+title: "Gene-environment interactions within a precision environmental health framework"
+type: "review"
+author: "Alison A. Motsinger-Reif, David M. Reif, Farida S. Akhtari, John S. House, C. Ryan Campbell, Kyle P. Messier, David C. Fargo, Tiffany A. Bowen, Srikanth S. Nadadur, Charles P. Schmitt, Kristianna G. Pettibone, David M. Balshaw, Cindy P. Lawler, Shelia A. Newton, Gwen W. Collman, Aubrey K. Miller, B. Alex Merrick, Yuxia Cui, Benedict Anchang, Quaker E. Harmon, Kimberly A. McAllister, Rick Woychik"
+year: "2024"
+publication: "Cell Genomics"
+preprint: ""
+doi: "https://doi.org/10.1016/j.xgen.2024.100591"
+materials: ""
+toc: false
+categories:
+  - gene-environment interactions
+  - precision environmental health
+  - epidemiology 
+  - genetics
+---
+
+
+## Abstract
+
+Understanding the complex interplay of genetic and environmental factors in disease etiology and the role of gene-environment interactions (GEIs) across human development stages is important. We review the state of GEI research, including challenges in measuring environmental factors and advantages of GEI analysis in understanding disease mechanisms. We discuss the evolution of GEI studies from candidate gene-environment studies to genome-wide interaction studies (GWISs) and the role of multi-omics in mediating GEI effects. We review advancements in GEI analysis methods and the importance of large-scale datasets. We also address the translation of GEI findings into precision environmental health (PEH), showcasing real-world applications in healthcare and disease prevention. Additionally, we highlight societal considerations in GEI research, including environmental justice, the return of results to participants, and data privacy. Overall, we underscore the significance of GEI for disease prediction and prevention and advocate for integrating the exposome into PEH omics studies.
