@@ -185,31 +185,31 @@ and $\Sigma_{\theta}$ is a covariance matrix with parameters, $\theta$, that acc
 
 ## Satellite Imagery
 
-![](satellite-data.png)
+![](../20240311_SOT_Meeting_Talk/satellite-data.png)
 
 ## Air Quality Data
 
-![](AQI.jpeg)
+![](../20240311_SOT_Meeting_Talk/AQI.jpeg)
 
 ## Toxic Release Data
 
-![](TRI-utah.png)
+![](../20240311_SOT_Meeting_Talk/TRI-utah.png)
 
 ## Health Information
 
-![CDC Places Health Outcome Data: Diabetes Prevalence](places.png)
+![CDC Places Health Outcome Data: Diabetes Prevalence](../20240311_SOT_Meeting_Talk/places.png)
 
 # Case Studies
 
 ## Air Pollution Exposure Mapping
 
-![](spatial-PM25.png)
+![](../20240311_SOT_Meeting_Talk/spatial-PM25.png)
 
 ## Tale of Two Freeways
 
 ::: columns
 ::: {.column width="65%"}
-![](two-freeways.png)
+![](../20240311_SOT_Meeting_Talk/two-freeways.png)
 :::
 
 ::: {.column width="35%"}
@@ -225,7 +225,7 @@ and $\Sigma_{\theta}$ is a covariance matrix with parameters, $\theta$, that acc
 
 ## Source-to-Outcome Modeling
 
-![](/presentations/20240214_SOT_ISES_Webinar/Exposome-Cascade.png)
+![](../20240214_SOT_ISES_Webinar/Exposome-Cascade.png)
 
 ## Source-to-Outcome Modeling
 
@@ -252,7 +252,7 @@ and $\Sigma_{\theta}$ is a covariance matrix with parameters, $\theta$, that acc
 
 ## AEP-AOP
 
-![](AEP-AOP-hines.jpeg){width="80%"}
+![](../20240311_SOT_Meeting_Talk/AEP-AOP-hines.jpeg){width="80%"}
 
 Hines, D. E., Conolly, R. B., & Jarabek, A. M. (2019)
 
@@ -260,13 +260,13 @@ Hines, D. E., Conolly, R. B., & Jarabek, A. M. (2019)
 
 ::: columns
 ::: {.column width="75%"}
-![](GeoToxOutline.png)
+![](../20240311_SOT_Meeting_Talk/GeoToxOutline.png)
 
 Dr. Kristin Eccles, Former Visiting Fellow in DTT and SET, Now at Health Canada
 :::
 
 ::: {.column width="25%"}
-![](/presentations/20240214_SOT_ISES_Webinar/Eccles_headshot_resized.jpg)
+![](../20240214_SOT_ISES_Webinar/Eccles_headshot_resized.jpg)
 :::
 :::
 
@@ -280,7 +280,7 @@ Dr. Kristin Eccles, Former Visiting Fellow in DTT and SET, Now at Health Canada
 
 ## GeoTox {.shrink}
 
-![](sf-sticky.jpeg) `sf` package for spatial data in R (Edzer Pebesma and others) (Illustration (c) 2018 by Allison Horst)
+![](../20240311_SOT_Meeting_Talk/sf-sticky.jpeg) `sf` package for spatial data in R (Edzer Pebesma and others) (Illustration (c) 2018 by Allison Horst)
 
 ## GeoTox {.shrink}
 
@@ -333,7 +333,7 @@ graph TB;
 
 ## Multiple Assays Informing an AOP
 
-![](mermaid-diagram-2024-03-08-160259.png){width="115%"}
+![](../20240311_SOT_Meeting_Talk/mermaid-diagram-2024-03-08-160259.png){width="115%"}
 
 ## Looking Forward
 

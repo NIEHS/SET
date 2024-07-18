@@ -4,7 +4,7 @@ subtitle: "Deploying exposure models in a timely manner"
 author: "Kyle P Messier, MS, PhD"
 institute: "NIEHS/DTT"
 format: blackboard-revealjs
-self-contained: true
+self-contained: false
 ---
 
 ```{r setup, include=FALSE}
