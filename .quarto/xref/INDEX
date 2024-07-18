@@ -1,0 +1,120 @@
+{
+  "index.qmd": {
+    "index.html": "7dd614b8"
+  },
+  "about.qmd": {
+    "about.html": "58ffc8a5"
+  },
+  "people.qmd": {
+    "people.html": "3bf90c79"
+  },
+  "teaching.qmd": {
+    "teaching.html": "d5712266"
+  },
+  "presentations/20240214_SOT_ISES_Webinar/presentation-01.qmd": {
+    "KPM_SOT_ISES_Webinar_20240214.html": "fa304168"
+  },
+  "presentations/20240222_UNC_ESE_Guest_Lecture/20240222_UNC_ESE_Guest_Lecture.qmd": {
+    "20240222_UNC_ESE_Guest_Lecture.html": "26de3786"
+  },
+  "software.qmd": {
+    "software.html": "e9ca9f4c"
+  },
+  "presentations.qmd": {
+    "presentations.html": "3abe40e7"
+  },
+  "syllabus.qmd": {
+    "syllabus.html": "6561d678"
+  },
+  "chords-activities.qmd": {
+    "chords-activities.tex": "8ac59043"
+  },
+  "presentations/20240223_CEHD_Workshop/20240223_CEHD_Workshop.qmd": {
+    "20240223_CEHD_Workshop.html": "a6f7ebcf"
+  },
+  "presentations/20240311_SOT_Meeting_Talk/sot_ej_talk_kpm.qmd": {
+    "sot_ej_talk_kpm.tex": "b7868ed5"
+  },
+  "publications/Zilber_Messier_2024.qmd": {
+    "Zilber_Messier_2024.html": "e1439f82"
+  },
+  "Publications.qmd": {
+    "Publications.html": "6fa5ea70"
+  },
+  "publications/Sheng_etal_2024.qmd": {
+    "Sheng_etal_2024.html": "c41e3c63"
+  },
+  "publications/Lowe_etal_2023.qmd": {
+    "Lowe_etal_2023.html": "5d62a7ef"
+  },
+  "publications/Eccles_etal_2023.qmd": {
+    "Eccles_etal_2023.html": "57b7b1f4"
+  },
+  "pubs-rss.qmd": {
+    "pubs-rss.html": "34d39619"
+  },
+  "publications/Lipner_etal_2022.qmd": {
+    "Lipner_etal_2022.html": "6738ba2e"
+  },
+  "publications/Cui_etal_2022.qmd": {
+    "Cui_etal_2022.html": "415e1c38"
+  },
+  "publications/Jahnke_etal_2022.qmd": {
+    "Jahnke_etal_2022.html": "ec228808"
+  },
+  "publications/Messier_and_Katzfuss_2021.qmd": {
+    "Messier_and_Katzfuss_2021.html": "1333d4a7"
+  },
+  "publications/Chambliss_etal_2021.qmd": {
+    "Chambliss_etal_2021.html": "31e67601"
+  },
+  "publications/DeFlorio-Baker_etal_2021.qmd": {
+    "DeFlorio-Baker_etal_2021.html": "e0a2da17"
+  },
+  "publications/Chambliss_etal_2020.qmd": {
+    "Chambliss_etal_2020.html": "747bc948"
+  },
+  "publications/Guan_etal_2020.qmd": {
+    "Guan_etal_2020.html": "b2db96b5"
+  },
+  "publications/Apte_etal_2017.qmd": {
+    "Apte_etal_2017.html": "624945db"
+  },
+  "publications/Ghio_etal_2019.qmd": {
+    "Ghio_etal_2019.html": "a41ffa4f"
+  },
+  "publications/Downward_etal_2018.qmd": {
+    "Downward_etal_2018.html": "059f119f"
+  },
+  "publications/Messier_etal_2019.qmd": {
+    "Messier_etal_2019.html": "0159d099"
+  },
+  "publications/Messier_etal_2018.qmd": {
+    "Messier_etal_2018.html": "d752d482"
+  },
+  "publications/Holcomb_etal_2018.qmd": {
+    "Holcomb_etal_2018.html": "82b79494"
+  },
+  "publications/Smith_etal_2017.qmd": {
+    "Smith_etal_2017.html": "f3643d2d"
+  },
+  "publications/Kerckhoffs_etal_2016.qmd": {
+    "Kerckhoffs_etal_2016.html": "b38d1ba0"
+  },
+  "publications/Messier_etal_2017.qmd": {
+    "Messier_etal_2017.html": "9ab0996d"
+  },
+  "presentations/PEGS_retreat_2024/pegs_retreat_set_group.qmd": {
+    "pegs_retreat_set_group.html": "719120a1",
+    "pegs_retreat_set_group.tex": "4d17171f"
+  },
+  "jobs.qmd": {
+    "jobs.html": "c53ddb63"
+  },
+  "publications/Motsinger-Reif_etal_2024.qmd": {
+    "Motsinger-Reif_etal_2024.html": "6c3e38c1"
+  },
+  "presentations/20240214_SOT_ISES_Webinar/template.qmd": {
+    "template.html": "f54dbb7a"
+  }
+}

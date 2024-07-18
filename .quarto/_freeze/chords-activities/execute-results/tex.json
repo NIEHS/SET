@@ -1,0 +1,15 @@
+{
+  "hash": "dbe0fa90f4fcbdea2b0214a786e2c812",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"CHORDS and CAFE Coordinating\"\nsubtitle: \"SET group activities\"\nauthor: \"Kyle P Messier, PhD\"\ninstitute:  \"National Institute of Environmental Health Sciences - Division of Translational Toxicology - Predictive Toxicology Branch\"\nformat: beamer\ntheme: \"Singapore\"\ntoc: false\ntoc-depth: 1\nheader-includes: \n- \\titlegraphic{\\includegraphics[width=3cm]{presentations/20240214_SOT_ISES_Webinar/set-logo.jpg}}\n- \\setbeamertemplate{frametitle continuation}[from second]\n---\n\n\n## Packges\n\n1. [amadeus](https://github.com/NIEHS/amadeus)\n2. [beethoven](https://github.com/NIEHS/beethoven) \n3. [chopin](https://github.com/NIEHS/chopin)\n\n## Bullets\n\nWhen you click the **Render** button a document will be generated that includes:\n\n-   Content authored with markdown\n-   Output from executable code\n\n## Code\n\nWhen you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": null,
+    "postProcess": false
+  }
+}
