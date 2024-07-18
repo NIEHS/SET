@@ -303,27 +303,23 @@ Group project using TDD and CI/CD principles
 
 ![](continuous-integration.png)
 
-- Frequent code commits
-- Detect Errors Sooner
-- Reduces Complexity of Debugging
-- Run Code Tests Automatically
-- Make Working in Groups Easier
-
+-   Frequent code commits
+-   Detect Errors Sooner
+-   Reduces Complexity of Debugging
+-   Run Code Tests Automatically
+-   Make Working in Groups Easier
 
 ## Style/Linting
 
-- Consistent style --> rEdabIliTY and_maintainability 
-- Identifying syn.tax errors;
-- Semantic Errors
-
-
+-   Consistent style --\> rEdabIliTY and_maintainability
+-   Identifying syn.tax errors;
+-   Semantic Errors
 
 ## Pipelines and Workflows
 
-- A pipeline is a computational workflow that does statistics, analytics, or data science
-- Coordinate analysis with a DAG like structure
-- Skip steps that are not needed with updates
-- Facilitates code and package integration
-
+-   A pipeline is a computational workflow that does statistics, analytics, or data science
+-   Coordinate analysis with a DAG like structure
+-   Skip steps that are not needed with updates
+-   Facilitates code and package integration
 
 ## Let's hop over to the GitHub repository
