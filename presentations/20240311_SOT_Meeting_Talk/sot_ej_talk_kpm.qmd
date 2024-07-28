@@ -278,13 +278,9 @@ Dr. Kristin Eccles, Former Visiting Fellow in DTT and SET, Now at Health Canada
 -   Static website hosted via {SET}group website
 -   Maintained, Documented, and Supported
 
-## GeoTox{.shrink}
+## GeoTox {.shrink}
 
- 
-
-![](sf-sticky.jpeg)
-`sf` package for spatial data in R (Edzer Pebesma and others)
-(Illustration (c) 2018 by Allison Horst)
+![](sf-sticky.jpeg) `sf` package for spatial data in R (Edzer Pebesma and others) (Illustration (c) 2018 by Allison Horst)
 
 ## GeoTox {.shrink}
 
@@ -335,13 +331,11 @@ graph TB;
 
 -   The integration of these tools will allow for the development of a comprehensive source-to-outcome modeling framework that can be used to assess the risk of cumulative and total exposomic effects on human health
 
-
-## Multiple Assays Informing an AOP 
+## Multiple Assays Informing an AOP
 
 ![](mermaid-diagram-2024-03-08-160259.png){width="115%"}
 
 ## Looking Forward
-
 
 -   Incorporate more refined information on individual and population-level susceptibility to environmental exposures
 
@@ -349,7 +343,7 @@ graph TB;
 
 ## Looking Forward
 
--  Geospatial **exposures** are the foundation of a spatial, total exposome risk approach
+-   Geospatial **exposures** are the foundation of a spatial, total exposome risk approach
 
 ## Acknowledgements
 
@@ -377,8 +371,8 @@ graph TB;
 
 **Funding:**
 
-- NIEHS ZIA ES103368-02
+-   NIEHS ZIA ES103368-02
 
-- Patient Centered Outcome Research Trust Fund (PCOR-TF) 
+-   Patient Centered Outcome Research Trust Fund (PCOR-TF)
 :::
 :::

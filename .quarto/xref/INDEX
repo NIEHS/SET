@@ -33,7 +33,8 @@
     "20240223_CEHD_Workshop.html": "a6f7ebcf"
   },
   "presentations/20240311_SOT_Meeting_Talk/sot_ej_talk_kpm.qmd": {
-    "sot_ej_talk_kpm.tex": "b7868ed5"
+    "sot_ej_talk_kpm.tex": "b7868ed5",
+    "sot_ej_talk_kpm.html": "f4380ff4"
   },
   "publications/Zilber_Messier_2024.qmd": {
     "Zilber_Messier_2024.html": "e1439f82"
@@ -116,5 +117,8 @@
   },
   "presentations/20240214_SOT_ISES_Webinar/template.qmd": {
     "template.html": "f54dbb7a"
+  },
+  "presentations/TACC_2024/TACC_2024.qmd": {
+    "TACC_2024.tex": "4f561b2c"
   }
 }
