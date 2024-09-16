@@ -16,8 +16,6 @@ website:
             href: people.html#MAK
           - text: "Eva Marques"
             href: people.html#ESM
-          - text: "Insang Song"
-            href: people.html#IS
           - text: "Mitchell Manware"
             href: people.html#MM
           - text: "Former Members"
@@ -42,7 +40,6 @@ website:
             href: https://niehs.github.io/PrestoGP/
       - href: presentations.qmd 
         text: Presentations
-      - about.qmd
       - href: syllabus.qmd
         text: Syllabus
       - href: jobs.qmd

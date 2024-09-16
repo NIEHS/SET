@@ -3,9 +3,9 @@ title: "Associations between Flood Risk and United States Census Tract-Level Hea
 type: "article"
 author: "Alvin Sheng, Brian J Reich, & Kyle P Messier"
 year: "2024"
-publication: "American Journal of Epidemiology (In Press)"
+publication: "American Journal of Epidemiology"
 preprint: ""
-doi: ""
+doi: "https://doi.org/10.1093/aje/kwae093"
 pmc: ""
 materials: ""
 toc: false

@@ -1,0 +1,31 @@
+---
+title: "A review of geospatial exposure models and approaches for health data integration"
+type: "review"
+author: "Lara P Clark, Daniel Zilber, Charles Schmitt, David C Fargo, David M Reif, Alison A Motsinger-Reif, Kyle P Messier"
+year: "2024"
+publication: "Journal of Exposure Science and Environmental Epidemiology"
+preprint: ""
+doi: "https://www.nature.com/articles/s41370-024-00712-8"
+materials: ""
+toc: false
+categories:
+  - geospatial
+  - exposure
+  - exposomics 
+  - epidemiology
+---
+
+
+## Abstract
+
+Background
+Geospatial methods are common in environmental exposure assessments and increasingly integrated with health data to generate comprehensive models of environmental impacts on public health.
+
+Objective
+Our objective is to review geospatial exposure models and approaches for health data integration in environmental health applications.
+
+Methods
+We conduct a literature review and synthesis.
+
+Results
+First, we discuss key concepts and terminology for geospatial exposure data and models. Second, we provide an overview of workflows in geospatial exposure model development and health data integration. Third, we review modeling approaches, including proximity-based, statistical, and mechanistic approaches, across diverse exposure types, such as air quality, water quality, climate, and socioeconomic factors. For each model type, we provide descriptions, general equations, and example applications for environmental exposure assessment. Fourth, we discuss the approaches used to integrate geospatial exposure data and health data, such as methods to link data sources with disparate spatial and temporal scales. Fifth, we describe the landscape of open-source tools supporting these workflows.

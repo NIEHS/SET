@@ -3,6 +3,8 @@ title: "People"
 toc-depth: 2
 ---
 
+![The Spatiotemporal Exposures and Toxicology group in October 2023. Top Row: Eva Marques, Daniel Zilber, Ranadeep Daw, Mariana Alifa. Bottom Row: Insang Song, Kyle Messier](images/SETgroup-Oct2023.jpg){width="75%"}
+
 # Group Lead
 
 ## Kyle P Messier, PhD {#KPM}
@@ -23,10 +25,6 @@ Current fellows, alphabetically by last name:
 
 ![Dr. Eva Marques is an applied geostatistician with a primary focus in urban climatology. She uses Bayesian and machine learning methods to predict climate exposures such as the urban heat island effect. She holds a MS in Applied Math from the National Institute of Applied Sciences (INSA) in Toulouse, France, and a PhD in Urban Climatology from the National Meteorlogical Center in Toulouse, France.](images/ESM-headshot-Oct2023.jpg){width="21%"}
 
-## [Insang Song](https://sigmafelix.wixsite.com/mysite/ "Postdoctoral Fellow") {#IS}
-
-![Dr. Insang Song is spatial scientist interested in the impact of socioenvironmental nexus on human health. He has a BA and MS in Geography from Seoul National University in Korea and PhD in Geography from the University of Oregon. His current research projects include developing scalable GIS software for climate and health, hybrid air pollution modeling, and mental health impacts from climate related exposures.](images/IS-Headshot-Oct2023.jpg){width="20%"}
-
 # Data Analyst
 
 ## Mitchell Manware {#MM}
@@ -46,3 +44,6 @@ Current fellows, alphabetically by last name:
 5. [Daniel Zilber](https://www.niehs.nih.gov/research/atniehs/labs/bb/staff), Postdoctoral Fellow, Now a Staff Scientist at NIEHS with Shanshan Zhao in the Biostatistics and Computational Biology Branch
 
 6. Ranadeep Daw, Postdoctoral Fellow, Now a tenure-track Assistant Professor at the University of West Florida in the Department of Mathematics and Statistics
+
+7. [Insang Song](https://sigmafelix.wixsite.com/mysite/), Now a tenure-track Assistant Professor in the Department of Geography at Seoul National University, Korea
+
