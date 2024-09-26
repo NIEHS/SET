@@ -123,5 +123,8 @@
   },
   "publications/Clark_etal_2024.qmd": {
     "Clark_etal_2024.html": "34efc6d8"
+  },
+  "presentations/tutorials/censored-MLE.Rmd": {
+    "censored-MLE.html": "f3f06cc0"
   }
 }

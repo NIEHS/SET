@@ -9,6 +9,10 @@ date: today
 date-format: long 
 ---
 
+### Tutorials 
+
+1.  [Maximum Likelihood Estimation (MLE) and Censored Data Analysis](presentations/tutorials/censored-MLE.html)
+
 ### 2023
 
 1.  [Ichan School of Medicine, Department of Environmental Medicine and Public Health Grand Rounds Seminar, 2023-11-08](presentations/MSSM_GrandRounds/KPM_MSSM.pdf)

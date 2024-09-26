@@ -1573,5 +1573,33 @@
     "title": "A review of geospatial exposure models and approaches for health data integration",
     "section": "",
     "text": "Background Geospatial methods are common in environmental exposure assessments and increasingly integrated with health data to generate comprehensive models of environmental impacts on public health.\nObjective Our objective is to review geospatial exposure models and approaches for health data integration in environmental health applications.\nMethods We conduct a literature review and synthesis.\nResults First, we discuss key concepts and terminology for geospatial exposure data and models. Second, we provide an overview of workflows in geospatial exposure model development and health data integration. Third, we review modeling approaches, including proximity-based, statistical, and mechanistic approaches, across diverse exposure types, such as air quality, water quality, climate, and socioeconomic factors. For each model type, we provide descriptions, general equations, and example applications for environmental exposure assessment. Fourth, we discuss the approaches used to integrate geospatial exposure data and health data, such as methods to link data sources with disparate spatial and temporal scales. Fifth, we describe the landscape of open-source tools supporting these workflows."
+  },
+  {
+    "objectID": "presentations/tutorials/censored-MLE.html",
+    "href": "presentations/tutorials/censored-MLE.html",
+    "title": "MLE Simulation and Censored Data Analysis",
+    "section": "",
+    "text": "In this brief tutorial, we will explore how to estimate parameters for a normal distribution given observed and censored data. Censored data is encountered in many fields, including environmental science, where we often have data below the method detection limit (MDL). That is generally a good thing for public health as it means the concentration of the contaminant is below a level that we can detect; however, it is a challenge for statisticians and data analysts as more sophisticated methods are needed. Here, we show how to produce these estimates using base R code and functions."
+  },
+  {
+    "objectID": "presentations/tutorials/censored-MLE.html#censored-mle-function",
+    "href": "presentations/tutorials/censored-MLE.html#censored-mle-function",
+    "title": "MLE Simulation and Censored Data Analysis",
+    "section": "Censored MLE function",
+    "text": "Censored MLE function\n\n cMLE &lt;- function(params, y.obs, y.cens = NULL){\n   \n   mu = params[1]\n   sigma = params[2]\n   \n   \n    obs_ll &lt;- sum(dnorm(y.obs, mean = mu, sd = sigma, log = TRUE))\n    cens_ll &lt;- sum(pnorm(y.cens, mean = mu, sd = sigma, log.p = TRUE, lower.tail = TRUE))\n    nll &lt;- -1 * (obs_ll + cens_ll)\n    \n    return(nll)\n   \n }"
+  },
+  {
+    "objectID": "presentations/tutorials/censored-MLE.html#check-that-the-censored-ml-is-working.",
+    "href": "presentations/tutorials/censored-MLE.html#check-that-the-censored-ml-is-working.",
+    "title": "MLE Simulation and Censored Data Analysis",
+    "section": "Check that the censored ML is working.",
+    "text": "Check that the censored ML is working.\nWe will do a loop by censoring more and more data below the MDL. The MLE estimates should deviate more and more from the observed mean and standard deviation as we censor more data.\n\nMDL &lt;- -1.5\n\np &lt;- seq(0.1, 1, by = 0.1)\n\nresults &lt;- list()\n  \n  \nfor (i in 1:length(p)){\n  \n  # random sample of p percent of the data\n  idx &lt;- c(1:length(x)) %in% sample.int(length(x), length(x) * p[i])\n  \n  cens_data &lt;- rep(MDL, length(x) * (1-p[i]))\n  obs_data &lt;- x[idx]\n  \n  mle &lt;- optim(par = c(0,1), cMLE, y.obs = obs_data, y.cens = cens_data)\n  \n  results[[i]] &lt;- mle$par\n  \n  print(paste(\"mu = \",results[[i]][1], \"sd = \", results[[i]][2], \"censored percentag = \", (100-p[i]*100)))\n  \n}\n\n[1] \"mu =  -5.31295111696782 sd =  2.99465946322953 censored percentag =  90\"\n[1] \"mu =  -3.59274967700239 sd =  2.52425941085783 censored percentag =  80\"\n[1] \"mu =  -2.62342561722098 sd =  2.22101600564199 censored percentag =  70\"\n[1] \"mu =  -1.95584702894848 sd =  1.98245580759904 censored percentag =  60\"\n[1] \"mu =  -1.45329958683228 sd =  1.78273322855834 censored percentag =  50\"\n[1] \"mu =  -1.05288124602521 sd =  1.6050590533443 censored percentag =  40\"\n[1] \"mu =  -0.724596932357054 sd =  1.44301744047257 censored percentag =  30\"\n[1] \"mu =  -0.447302513060276 sd =  1.29082201750498 censored percentag =  20\"\n[1] \"mu =  -0.209039573092014 sd =  1.14433175532613 censored percentag =  10\"\n[1] \"mu =  -0.00145143757326878 sd =  0.999962550339114 censored percentag =  0\"\n\n\nThe results seem to make sense; As the censoring decrease the MLE estimates get closer to the true values. Additionally, as the censoring increases, the mean moves farther towards -Inf, away from the MDL."
+  },
+  {
+    "objectID": "presentations/tutorials/censored-MLE.html#mle-for-observed-data-and-log-parameters",
+    "href": "presentations/tutorials/censored-MLE.html#mle-for-observed-data-and-log-parameters",
+    "title": "MLE Simulation and Censored Data Analysis",
+    "section": "MLE for observed data and log parameters",
+    "text": "MLE for observed data and log parameters\n\n rMLE_log &lt;- function(params, y){\n   \n   mu = exp(params[1])\n   sigma = exp(params[2])\n   \n   return(-1 * sum(dnorm(y, mean = mu, sd = sigma, log = TRUE)))\n   \n }\n\n# Simulate strictly positive log-normal data\nz &lt;- rlnorm(10^3, meanlog = 3, sdlog = 1)\n\nmle_log &lt;- optim(par = c(5,1), rMLE_log, y = z)\n\nresults &lt;- exp(mle_log$par)\n\nprint(paste(\"mu = \",results[1], \"sd = \", results[2]))\n\n[1] \"mu =  32.7443708708927 sd =  46.9332865785716\"\n\nprint(paste(\"observed mean = \", mean(z), \"observed sd = \", sd(z)))\n\n[1] \"observed mean =  32.7381472745086 observed sd =  47.0335037546815\""
   }
 ]
