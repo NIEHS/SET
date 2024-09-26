@@ -1,7 +1,11 @@
 ---
 title: "MLE Simulation and Censored Data Analysis"
-output: html_document
 author: "Kyle P Messier, PhD"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
 ---
 
 ```{r, setup, include=FALSE}
