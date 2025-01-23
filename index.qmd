@@ -5,7 +5,7 @@ toc: false
 
 ## The Spatiotemporal Exposures and Toxicology group, {SET} group, has a broad interest in geospatial [exposomics](https://factor.niehs.nih.gov/2022/9/feature/2-feature-exposomics-research) and risk mapping. Key areas of research include:
 
-#### ***Geospatial Exposure:*** Spatiotemporal exposure mapping of environmental and climate variables (e.g. chemical mixtures, social, behaviorial, environmental, and climate factors)
+#### ***Geospatial Exposure:*** Spatiotemporal exposure mapping of environmental variables (e.g. chemicals, meteorology) 
 
 #### ***GeoTox:*** Otherwise known as **source-to-outcome** modeling, GeoTox is the integration of geospatial exposures, toxicokinetic modeling, and non-animal toxicological data such as high-through *in vitro* screen assays to develop mechanistically-informed risk maps
 
