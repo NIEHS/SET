@@ -126,5 +126,8 @@
   },
   "presentations/tutorials/censored-MLE.Rmd": {
     "censored-MLE.html": "f3f06cc0"
+  },
+  "presentations/ISES_2024/ISES_2024.qmd": {
+    "ISES_2024.html": "ba494ae3"
   }
 }

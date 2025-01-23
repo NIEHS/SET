@@ -1615,5 +1615,180 @@
     "title": "MLE Simulation and Censored Data Analysis",
     "section": "Censored MLE",
     "text": "Censored MLE\n\n cMLE &lt;- function(params, y.obs, y.cens = NULL){\n   \n   mu = params[1]\n   sigma = params[2]\n   \n   \n    obs_ll &lt;- sum(dnorm(y.obs, mean = mu, sd = sigma, log = TRUE))\n    cens_ll &lt;- sum(pnorm(y.cens, mean = mu, sd = sigma, log.p = TRUE, lower.tail = TRUE))\n    nll &lt;- -1 * (obs_ll + cens_ll)\n    \n    return(nll)\n   \n }\n\n\nCheck that the censored ML is working.\nWe will do a loop by censoring more and more data below the MDL. The MLE estimates should deviate more and more from the observed mean and standard deviation as we censor more data.\n\nMDL &lt;- -1.5\n\np &lt;- seq(0.1, 1, by = 0.1)\n\nresults &lt;- list()\n  \n  \nfor (i in 1:length(p)){\n  \n  # random sample of p percent of the data\n  idx &lt;- c(1:length(x)) %in% sample.int(length(x), length(x) * p[i])\n  \n  cens_data &lt;- rep(MDL, length(x) * (1-p[i]))\n  obs_data &lt;- x[idx]\n  \n  mle &lt;- optim(par = c(0,1), cMLE, y.obs = obs_data, y.cens = cens_data)\n  \n  results[[i]] &lt;- mle$par\n  \n  print(paste(\"mu = \",results[[i]][1], \"sd = \", results[[i]][2], \"censored percentage = \", (100-p[i]*100)))\n  \n}\n\n[1] \"mu =  -5.3170578161404 sd =  2.99552572519583 censored percentage =  90\"\n[1] \"mu =  -3.59501563712979 sd =  2.52878645139076 censored percentage =  80\"\n[1] \"mu =  -2.62489728294855 sd =  2.22261673356226 censored percentage =  70\"\n[1] \"mu =  -1.95581674394198 sd =  1.98394025323214 censored percentage =  60\"\n[1] \"mu =  -1.45331242730463 sd =  1.78209387965581 censored percentage =  50\"\n[1] \"mu =  -1.05303517142347 sd =  1.60611252514873 censored percentage =  40\"\n[1] \"mu =  -0.72394077493318 sd =  1.44413185037906 censored percentage =  30\"\n[1] \"mu =  -0.446214181679534 sd =  1.29243989070092 censored percentage =  20\"\n[1] \"mu =  -0.207790097501129 sd =  1.14572968191933 censored percentage =  10\"\n[1] \"mu =  -0.00038899346254766 sd =  1.00118853645399 censored percentage =  0\"\n\n\nThe results seem to make sense; As the censoring decrease the MLE estimates get closer to the true values. Additionally, as the censoring increases, the mean moves farther towards -Inf, away from the MDL."
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html",
+    "href": "presentations/ISES_2024/ISES_2024.html",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "",
+    "text": "Spatiotemporal Exposures and Toxicology {SET} group\n\nGeospatial Exposure Mapping: Spatiotemporal exposure mapping of environmental and climate variables (e.g. chemical mixtures, social, behaviorial, environmental, and climate factors)\nGeoTox: Otherwise known as source to outcome continuum modeling, GeoTox is the integration of geospatial exposures, toxicokinetic modeling, and non-animal toxicological data such as high-through in vitro screen assays to develop mechanistically-informed risk maps of chemical mixtures\nSoftware Development: Developing and promoting software and computational best-practices such as test driven development (TDD) and open-source code for the environmental health sciences\n\n\n\n\n\n\n\n\n\nI am a co-lead on the CHORDS project with Aubrey Miller, Charles Schmitt, and Trisha Castranio.\nDavid Reif, Alison Motsigner-Reif, David Fargo, among many others involved a regular contributors\nThe project represents a major NIEHS initiative for climate change and health research that I am involved in. It has come with additional monies for postdocs and data analysts in my group\nIt also comes with significant time commitments and responsibilities\nA lot of the CHORDS work/deliverables are folded into my group’s work and manuscripts\n\n\n\n\n\nIn late 2023/ early 2024, with help from the new CHORDS funding, my group was poised to expand from 2 postdocs to 5 postdocs and a data analyst.\nI took 30 hours of project management courses to prepare\nI adopted software best practices as both a technique to help manage the group and to improve the quality of our software products, as well as increase software as a product of our research group\nSoftware best practices will help ensure that I have knowledge retention, reproducibility, and extensibility built into the core of my group\n\nYou’ll see why this is important in the next few slides\n\n\n\n\n\n\nTest Driven Development\nContinuous Integration\nBuild Checks\nStyle/Linting\nWorkflows/Pipelines"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#about-us",
+    "href": "presentations/ISES_2024/ISES_2024.html#about-us",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "",
+    "text": "Spatiotemporal Exposures and Toxicology {SET} group\n\nGeospatial Exposure Mapping: Spatiotemporal exposure mapping of environmental and climate variables (e.g. chemical mixtures, social, behaviorial, environmental, and climate factors)\nGeoTox: Otherwise known as source to outcome continuum modeling, GeoTox is the integration of geospatial exposures, toxicokinetic modeling, and non-animal toxicological data such as high-through in vitro screen assays to develop mechanistically-informed risk maps of chemical mixtures\nSoftware Development: Developing and promoting software and computational best-practices such as test driven development (TDD) and open-source code for the environmental health sciences"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#chords-project",
+    "href": "presentations/ISES_2024/ISES_2024.html#chords-project",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "",
+    "text": "I am a co-lead on the CHORDS project with Aubrey Miller, Charles Schmitt, and Trisha Castranio.\nDavid Reif, Alison Motsigner-Reif, David Fargo, among many others involved a regular contributors\nThe project represents a major NIEHS initiative for climate change and health research that I am involved in. It has come with additional monies for postdocs and data analysts in my group\nIt also comes with significant time commitments and responsibilities\nA lot of the CHORDS work/deliverables are folded into my group’s work and manuscripts"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#group-management",
+    "href": "presentations/ISES_2024/ISES_2024.html#group-management",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "",
+    "text": "In late 2023/ early 2024, with help from the new CHORDS funding, my group was poised to expand from 2 postdocs to 5 postdocs and a data analyst.\nI took 30 hours of project management courses to prepare\nI adopted software best practices as both a technique to help manage the group and to improve the quality of our software products, as well as increase software as a product of our research group\nSoftware best practices will help ensure that I have knowledge retention, reproducibility, and extensibility built into the core of my group\n\nYou’ll see why this is important in the next few slides"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#software-and-computational-best-practices",
+    "href": "presentations/ISES_2024/ISES_2024.html#software-and-computational-best-practices",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "",
+    "text": "Test Driven Development\nContinuous Integration\nBuild Checks\nStyle/Linting\nWorkflows/Pipelines"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#daniel-zilber",
+    "href": "presentations/ISES_2024/ISES_2024.html#daniel-zilber",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "Daniel Zilber",
+    "text": "Daniel Zilber\n\nPostdoc with me ~2.5 years\n1 first/last author publication (Zilber and Messier, 2024)\n1 first/second author publication (me 2nd, Matt Wheeler last) in major revisions\n1 last/second (me last, Daniel 2nd) in press\nDaniel is now a staff scientist with Shanshan Zhao as of July 7, 2024 (BCBB)\nOverall, Daniel has been an excellent postdoc and demonstrated how providing flexibility and intellectual freedom can lead to high-impact research"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#ranadeep-daw",
+    "href": "presentations/ISES_2024/ISES_2024.html#ranadeep-daw",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "Ranadeep Daw",
+    "text": "Ranadeep Daw\n\nPostdoc with me 1 year\n0 publications or products. 1 manuscript in progress, but not holding my breath for seeing it completed\nOverall, disappointing, not meeting expectations, and negative attitude\nComplained about data set being too large for the proposed methodology, then complained about it being too small\nNonetheless, a positive outcome as he accepted a position as a tenure-track assistant professor in Statistics at the University of West Florida"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#insang-song",
+    "href": "presentations/ISES_2024/ISES_2024.html#insang-song",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "Insang Song",
+    "text": "Insang Song\n\nPostdoc with me 1 year and as a contractor for 4 months before that\n1st author publication in NIEHS internal review (chopin software manuscript).\n1st author publication (beethoven group project) in preparation.\n2nd author on PrestoGP manuscript in preparation\nRecent Big News He has been offered and accepted a tenure-track assistant professor position at Seoul National University (Top Public University in Korea- Top 30-50 Worldwide). It is a great opportunity for him for a highly competitive position. A bit bittersweet for me because he has been an amazing postdoc and extremely productive.\n\nStart date is surprisingly soon, Sept 1 2024."
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#eva-marques",
+    "href": "presentations/ISES_2024/ISES_2024.html#eva-marques",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "Eva Marques",
+    "text": "Eva Marques\n\nPostdoc with me 1 year\nExcellent group member and attitude\nProject on high-resolution heat exposure mapping is going well\n\n2 first author publications in progress. 1 first author publication in 2025 is realistic."
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#mariana-alifa-kassien",
+    "href": "presentations/ISES_2024/ISES_2024.html#mariana-alifa-kassien",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "Mariana Alifa Kassien",
+    "text": "Mariana Alifa Kassien\n\nPostdoc with me 1 year\nExcellent group member and positive attiude\nProject goal is to develop a geospatial of 100+ VOCs in air.\n\nThe methodology has changed from a physics-informed neural network to something more tractable that builds upon our previous spatial models and pipeline developments.\nAdditionally, we hope to integrate this into the GeoTox framework towards a geospatial mixtures risk assessment.\n\nSpends 10-20% of her time working with the CHORDS knowledge dissemination team and has some interest science communication and outreach.\nWas on maternity leave from Mar - May 2024."
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#mitchell-manware",
+    "href": "presentations/ISES_2024/ISES_2024.html#mitchell-manware",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "Mitchell Manware",
+    "text": "Mitchell Manware\n\nWith me 1 year as a fully-remote data analyst supported by the CHORDS project.\nHas been a great team member contributing to amadeus and beethoven software as well as leading the first-author for the amadeus manuscript (currently under internal NIEHS review).\nHe is interested in doing a PhD with the goal of learning and developing ML/AI models for environmental exposure and risk assessment, but has a likely geographical constraint of New England. Will discuss the possibility of supporting a PhD at UNC ESE."
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#postbac-outcomes",
+    "href": "presentations/ISES_2024/ISES_2024.html#postbac-outcomes",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "Postbac Outcomes",
+    "text": "Postbac Outcomes\n\nTaylor Potter, BS, IRTA Postbac 2020-2022, now in MD program at Meherry Medical College\nMelissa Lowe, BS, MS, IRTA Postbac 2020-2022, 1st author publication, Biostatistician at Duke Cancer Center, Recently resigned to purse a JD and focus on environmental justice, I wrote her a recomomendation letter for law school."
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#postdoc-outcomes",
+    "href": "presentations/ISES_2024/ISES_2024.html#postdoc-outcomes",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "Postdoc Outcomes",
+    "text": "Postdoc Outcomes\n\nDr. Kristin Eccles - Research Scientist, Computational Toxicology Research group, Exposure and Biomonitoring Division, Health Canada\nDr. Ranadeep Daw - Tenure Track Assistant Professor, Department of Mathematics and Statistics, University of West Florida\nDr. Daniel Zilber - Staff Scientist, BCBB, NIEHS\nDr. Insang Song - Tenure Track Assistant Professor, Seoul National University"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#summer-intern-outcomes",
+    "href": "presentations/ISES_2024/ISES_2024.html#summer-intern-outcomes",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "Summer Intern Outcomes",
+    "text": "Summer Intern Outcomes\n\nAlvin Sheng, PhD candidate, SIP 2021, NCSU Department of Statistics (Advisor: Brian Reich), Project manuscript is now in press in American Journal of Epidemiology, Included as 3rd chapter in dissertation.\nJennifer Kampe, PhD candidate, SIP 2024, Duke Department of Statistics (Advisor: David Dunson), Project is on the development of a Bayesian latent variable model for chemical mixture prediction. She is hoping it can be incorporated into her dissertation."
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#prestogp",
+    "href": "presentations/ISES_2024/ISES_2024.html#prestogp",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "PrestoGP",
+    "text": "PrestoGP\n\nPrestoGP and the application on US-wide groundwater pesticides is proceeding with steady progress. The publication is in preparation, but we are unlikely to get it done in 2024. Nonetheless, I am still excited at this development and the potential for a high-impact publication in late 2024 or 2025.\nJump over to PrestoGP GitHub repo and website: https://niehs.github.io/PrestoGP/"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#beethoven-set-group-project",
+    "href": "presentations/ISES_2024/ISES_2024.html#beethoven-set-group-project",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "beethoven SET Group Project",
+    "text": "beethoven SET Group Project\n\nGoal: Develop an air pollution model for the last 5 years that is updated bi-annually\nEntire SET group, Cavin Ward-Caviness, Lara Clark, Anisha Singh\nTest-Driven Development\nGitHub with strict rules\nTargets make-like pipeline\nFine spatial and temporal resolution\nPost-processing for aggregated spatial and temporal resolutions"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#beethoven-pipeline-overview",
+    "href": "presentations/ISES_2024/ISES_2024.html#beethoven-pipeline-overview",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "beethoven pipeline overview",
+    "text": "beethoven pipeline overview"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#beethoven-pipeline-implementation",
+    "href": "presentations/ISES_2024/ISES_2024.html#beethoven-pipeline-implementation",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "beethoven pipeline implementation",
+    "text": "beethoven pipeline implementation"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#beethoven-targets-pipeline",
+    "href": "presentations/ISES_2024/ISES_2024.html#beethoven-targets-pipeline",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "beethoven targets pipeline",
+    "text": "beethoven targets pipeline"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#geotox-package-development",
+    "href": "presentations/ISES_2024/ISES_2024.html#geotox-package-development",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "GeoTox package development",
+    "text": "GeoTox package development\n\nWorking with David Reif and Skylar Marvel to develop the GeoTox framework into an open-source, extensible, R-package.\nManuscript in preparation for special issue in Human Genomics. Expect to have draft in the next month or two.\nIncorporating multi-assay chemical risk characterization"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#geotox-package-development-1",
+    "href": "presentations/ISES_2024/ISES_2024.html#geotox-package-development-1",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "GeoTox package development",
+    "text": "GeoTox package development"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#set-software",
+    "href": "presentations/ISES_2024/ISES_2024.html#set-software",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "SET Software",
+    "text": "SET Software"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#section",
+    "href": "presentations/ISES_2024/ISES_2024.html#section",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "2024",
+    "text": "2024\n\n2023/2024 was spent doing lots of logistical work and project management\nOn-boarding of a large group and setting up projects\nTDD and software development practices has helped ensure that we are building robust and reproducible software and that I can trust what are large team is doing without having to micromanage\nSome publications such as PrestoGP were not finished, but steady progress is being made and I am optimistic about the potential for high-impact publications in 2025"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#section-1",
+    "href": "presentations/ISES_2024/ISES_2024.html#section-1",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "2025",
+    "text": "2025\n\nAnalytical pipelines and tools have been developed, which should make my life easier and more productive\nI am excited about the potential for high-impact publications in 2025\nBSC preparation is starting\n\nThe two GeoTox manuscript (POY and package development) will considered as publications to highlight\nPrestoGP and beethoven will be good to highlight as current and future progress\nGood trainee outcomes will be highlighted\nClimate and health research (AJE pub, CHORDS)\nSoftware development and open science (GeoTox, PrestoGP, beethoven)"
+  },
+  {
+    "objectID": "presentations/ISES_2024/ISES_2024.html#hiring",
+    "href": "presentations/ISES_2024/ISES_2024.html#hiring",
+    "title": "Spatiotemporal Exposure and Toxicology {SET} Group",
+    "section": "Hiring",
+    "text": "Hiring\n\nI have base funding for 2 postdocs (replacing Daniel Zilber and Ranadeep Daw)\nI have options through CHORDS to hire data analysts and utilize SOARS (Replacing Insang Song)\nI have options through PTB, perhaps combined with SET group CAN, to support a PhD student"
   }
 ]

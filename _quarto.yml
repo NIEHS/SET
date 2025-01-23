@@ -19,9 +19,7 @@ website:
           - text: "Mitchell Manware"
             href: people.html#MM
           - text: "Former Members"
-            href: people.html#FormerMembers
-      - href: Publications.qmd 
-        text: Publications            
+            href: people.html#FormerMembers         
       - text: "Software"
         menu: 
           - text: "Software Overview"
@@ -38,12 +36,6 @@ website:
             href: https://niehs.github.io/RGCA/               
           - text: "prestoGP"
             href: https://niehs.github.io/PrestoGP/
-      - href: presentations.qmd 
-        text: Presentations
-      - href: syllabus.qmd
-        text: Syllabus
-      - href: jobs.qmd
-        text: Jobs
     logo: images/setlogo.jpg
 
 format:
