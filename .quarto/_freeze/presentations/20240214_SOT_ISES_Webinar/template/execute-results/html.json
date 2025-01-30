@@ -1,11 +1,9 @@
 {
-  "hash": "9b25a84363c19056e31473b5df629aec",
+  "hash": "13bb23d2c9769111c95d25b0e79b0d20",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Quarto Blackboard theme\"\nsubtitle: \"for revealjs\"\nauthor: \"Kyle P Messier, MS, PhD\"\ninstitute: \"NIEHS\"\nformat: blackboard-revealjs\n---\n\n\n\n\n## Code style and ggplot theme\n\n\n::: {.cell layout-align=\"center\"}\n\n```{.r .cell-code}\nggplot(cars) +\n  geom_point(aes(speed,dist),col=\"white\")+\n  theme_chalk()\n```\n\n::: {.cell-output-display}\n![](template_files/figure-revealjs/testing-1.png){fig-align='center' width=1152 height=100%}\n:::\n:::\n\n\n## Images and text with frame\n\n:::{.framed}\nImages and text can be framed!\n:::\n\n![](https://via.placeholder.com/450x200){.framed}\n\n## Lists\n\n- Lists\n\n- are \n\n- fun\n\n",
-    "supporting": [
-      "template_files"
-    ],
+    "markdown": "---\ntitle: \"Quarto Blackboard theme\"\nsubtitle: \"for revealjs\"\nauthor: \"Kyle P Messier, MS, PhD\"\ninstitute: \"NIEHS\"\nformat: blackboard-revealjs\n---\n\n\n\n\n## Code style and ggplot theme\n\n\n::: {.cell layout-align=\"center\"}\n\n```{.r .cell-code}\nggplot(cars) +\n  geom_point(aes(speed,dist),col=\"white\")+\n  theme_chalk()\n```\n\n::: {.cell-output-display}\n![](template_files/figure-revealjs/testing-1.png){fig-align='center' width=1152 height=100%}\n:::\n:::\n\n\n## Images and text with frame\n\n::: framed\nImages and text can be framed!\n:::\n\n![](https://via.placeholder.com/450x200){.framed}\n\n## Lists\n\n-   Lists\n\n-   are\n\n-   fun",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
