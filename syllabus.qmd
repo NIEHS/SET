@@ -166,12 +166,11 @@ We attend one to three major research society conferences per year. These confer
 
 The conferences can vary year-to-year depending on the research of each person, but some of the conferences we typically attend include:
 
-1. [American Geophysical Union (AGU)](https://www.agu.org/)
-2. [Society of Toxicology (SOT)](https://www.toxicology.org/)
-    - [North Carolina Chapter of the Society of Toxicology (NCSOT)](https://www.toxicology.org/groups/rc/nc/index.asp)
-3. [International Society for Environmental Epidemiology (ISEE)](https://www.iseepi.org/)
-4. [International Society for Exposure Science (ISES)](https://www.intlexposurescience.org/)
-
+1.  [American Geophysical Union (AGU)](https://www.agu.org/)
+2.  [Society of Toxicology (SOT)](https://www.toxicology.org/)
+    -   [North Carolina Chapter of the Society of Toxicology (NCSOT)](https://www.toxicology.org/groups/rc/nc/index.asp)
+3.  [International Society for Environmental Epidemiology (ISEE)](https://www.iseepi.org/)
+4.  [International Society for Exposure Science (ISES)](https://www.intlexposurescience.org/)
 
 ## Group Meetings
 
