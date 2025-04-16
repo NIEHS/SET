@@ -10,4 +10,6 @@ website:
         text: Home
       - href: About.qmd
         text: About
+      - href: syllabus.qmd
+        text: Syllabus
 
