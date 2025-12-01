@@ -11,25 +11,23 @@ toc-depth: 2
 
 ![Kyle P Messier is a Stadtman Tenure-Track Investigator at the National Institute of Environmental Health Sciences (NIEHS) in the Division of Translational Toxicology (DTT). He leads the Spatiotemporal Exposures and Toxicology group, {SET}grp, within the Predictive Toxicology Branch. He also holds a joint appointment with the National Institute of Minority Health and Health Disparities (NIMHD) in Bethesda, Maryland and a secondary appointment in the NIEHS Biostatistics and Computational Biology Branch. Messier received a B.S. in Environmental Studies from the University of North Carolina at Asheville and a M.S. and Ph.D. from the University of North Carolina at Chapel Hill.](images/KPM-headshot-Oct2023.jpg){width="30%"}
 
-# Postdoctoral Fellows
+# Postdoctoral Fellows and Contractors
 
-It's no secret that the engine driving cutting edge research across the world is postdoctoral fellows. The SET group has many talented postdoctoral fellows with a variety of backgrounds including spatial statistics, machine learning, epidemiology, atmospheric sciences, and geography.
+## Paul Kruse {#PK}
 
-Current fellows, alphabetically by last name:
+![Dr. Paul Kruse is a mathematician with interests in computational toxicology, exposure, and risk assessment. Currently, Kruse is an IRTA postdoctoral fellow developing models to characterize how human populations respond biologically to dynamic chemical exposures as a part of a broader source-to-outcome modeling framework. Kruse received a B.S. in mathematics from Carnegie Mellon University and a Ph.D. in mathematics from the University of North Carolina at Chapel Hill.](images/Paul-Kruse-headshot.jpg){width="20%"}
 
-## Mariana Alifa {#MAK}
+## Austin Rau {#AR}
 
-![Dr. Mariana Alifa research interets lie at the nexus of environment and society. She has experience in air quality modeling, health effect quantification, uncertainty assessment, and space-time geospatial data resources. Currently, Dr. Alifa Kassien is working on novel physics informed neural networks for atmospheric dispersion models of data sparse chemicals. She also has interest in science education and outreach where she is working on developing knowledge and dissemination materials on climate change and health effects.](images/MAK-headshot-Oct2023.jpg){width="20%"}
+![Dr. Austin Rau](images/austin-rau.jpg){width="21%"}
 
-## Eva Marques {#ESM}
+##  Kate Goodrich {#KG}
 
-![Dr. Eva Marques is an applied geostatistician with a primary focus in urban climatology. She uses Bayesian and machine learning methods to predict climate exposures such as the urban heat island effect. She holds a MS in Applied Math from the National Institute of Applied Sciences (INSA) in Toulouse, France, and a PhD in Urban Climatology from the National Meteorlogical Center in Toulouse, France.](images/ESM-headshot-Oct2023.jpg){width="21%"}
+![Kate Goodrich is a postbaccalaureate fellow whose research interests include wastewater-based epidemiology, big data analytics, and environmental exposure modeling. She has experience in global health research and environmental data science, and holds a BS in Public Health with a secondary major in Statistics from Baylor University. Goodrich is developing a US-wide spatiotemporal exposure model for PM2.5 chemical speciation using multivariate, penalized spatiotemporal Gaussian process models. ](images/kate-goodrich.jpg){width="21%"}
 
-# Data Analyst
+##  Zach Stanfield {#ZS}
 
-## Mitchell Manware {#MM}
-
-![Mr. Mitchell Manware holds a BS in Business and Health Care Management from the University of Connecticut and a MPH from the Yale School of Public Health. He has experience in geospatial data analysis, public health data visualization, and policy-oriented writing. Currently, he is a geospatial analyst in climate change and health funded by the Climate and Health Outcomes Research Data Systems (CHORDS) project where is developing geospatial tools and educational resources focused on environment, climate, and health.](images/manware_headshot.jpeg){width="20%"}
+![Dr. Zachary Stanfield is an environmental data scientist with experience in air pollution exposure modeling, consumer product exposures, new approach methods (NAMs), machine learning, and data mining. He holds a BS in Physics from North Carolina State University and a PhD in Systems Biology and Bioinformatics from Case Western Reserve University. Currently, he is working on a reproducible pipeline for spatio-temporal mapping of hazardous air pollutants across the US using Bayesian hierarchical modeling.]()
 
 # Former Members {#FormerMembers}
 
@@ -47,3 +45,8 @@ Current fellows, alphabetically by last name:
 
 7. [Insang Song](https://sigmafelix.wixsite.com/mysite/), Now a tenure-track Assistant Professor in the Department of Geography at Seoul National University, Korea
 
+8. [Mitchell Manware](), Data Analyst, Now a PhD Student at Yale School of Public Health, Environmental Health Sciences
+
+9. [Mariana Alifa](https://www.enverus.com/), IRTA Postdoctoral Fellow, Now a Data Scientist at Enverus
+
+10. [Eva Marques](), Visiting Postdoctoral Fellow, Now a Federal Engineer for Meteorology at the Ministry of Ecology, Biodiversity, Forests, and Fisheries (France)

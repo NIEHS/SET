@@ -3,13 +3,13 @@ project:
   output-dir: .
 
 website:
-  title: "SET group internal"
+  title: "{SET}grp"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - href: About.qmd
-        text: About
-      - href: syllabus.qmd
-        text: Syllabus
+      - href: people.qmd
+        text: People
+      - href: software.qmd
+        text: Software
 

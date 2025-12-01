@@ -32,7 +32,7 @@ Version control of software is essential for reproducibility and collaboration. 
 
 #### CI/CD Workflows
 
-Within GitHub, we will utilize continuous integration and continuous deployment workflows to ensure that our code is always functional and up-to-date. Multiple \*\* branch protection rules\*\* within GitHub aresetup and enforced for our GitHub repositories:
+Within GitHub, we will utilize continuous integration and continuous deployment workflows to ensure that our code is always functional and up-to-date. Multiple \*\* branch protection rules\*\* within GitHub are setup and enforced for our GitHub repositories:
 
 1.  Require pull request and 1 review before merging to `main`
 2.  Test pass: [Linting](https://lintr.r-lib.org/index.html): Code shall adhere to the style/linting rules defined in the repository.
